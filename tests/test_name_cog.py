@@ -1,10 +1,8 @@
 """SVGfig tests based on the original pynames cog figures."""
 
-import functools
-import itertools
-import re
 import textwrap
-import unittest
+
+from .tools import SvgTest
 
 from svgfig import PyFig, PyLayout
 
@@ -69,160 +67,11 @@ def auto_name(fig, layout, text, **args):
     return fig.name(pos=layout.next_name(), size=(width,50), text=text, **args)
 
 
-def renumber_svg_ids(svg):
-    """Renumber the ids in `svg`.
 
-    Ids are either::
-
-        id='id10'
-
-    or::
-
-        #id10
-
-    Return the same string, but with new ids.
-
-    """
-    id_map = {}
-    new_ids = ("newid{}".format(i) for i in itertools.count())
-    def new_repl(m, new=None):
-        id = m.group(1)
-        if id not in id_map:
-            id_map[id] = next(new_ids)
-        return new.format(id_map[id])
-    svg = re.sub(
-        r"""\bid=['"](id\d+)['"]""",
-        functools.partial(new_repl, new="id='{}'"),
-        svg
-    )
-    svg = re.sub(
-        r"""#(id\d+)\b""",
-        functools.partial(new_repl, new="#{}"),
-        svg
-    )
-    return svg
-
-
-class RenumberTest(unittest.TestCase):
-
-    def test_it(self):
-        self.assertEqual(
-            renumber_svg_ids("<svg id='id10' id='id20'>"),
-            "<svg id='newid0' id='newid1'>"
-        )
-        self.assertEqual(
-            renumber_svg_ids("<svg id='id10' also='#id10'>"),
-            "<svg id='newid0' also='#newid0'>"
-        )
-        self.assertEqual(
-            renumber_svg_ids("<svg id='id10' butnotid='id10'>"),
-            "<svg id='newid0' butnotid='id10'>"
-        )
-
-SVG_STYLE = """
-svg {
-    stroke: black;
-    fill: white;
-}
-
-svg text {
-    stroke: none;
-    fill: black;
-}
-
-svg .name {
-    stroke: black;
-    stroke-width: 2;
-    fill: #ddd;
-}
-
-svg .value {
-    stroke: black;
-    stroke-width: 1;
-    fill: white;
-}
-
-svg .list {
-    stroke: black;
-    stroke-width: 1;
-    fill: white;
-}
-
-svg .arrow {
-    fill: none;
-    stroke: black;
-    stroke-width: 1;
-}
-
-svg .frame {
-    stroke-width: 3;
-    stroke: #666;
-    stroke-dasharray: 10 10;
-    fill: none;
-}
-
-svg text.framelabel {
-    font-size: 75%;
-    font-family: monospace;
-}
-
-svg .highlight {
-    stroke-width: 5;
-    stroke: #f00;
-    fill: none;
-    opacity: 0.5;
-}
-
-svg .grid {
-    stroke: #8ff; stroke-width: 1; fill: none;
-}
-svg .grid .half {
-    stroke-dasharray: 12.5 12.5;
-    stroke-dashoffset: 6.25;
-    stroke-dasharray: 2 2;
-    stroke-dashoffset: 1;
-}
-svg .grid .tiny {
-    stroke-dasharray: 1 2;
-    stroke: #cff;
-}
-svg .grid .number {
-    font-size: .5em;
-    stroke: none;
-    fill: #0cc;
-}
-
-svg .framenum {
-    font-size: .75em;
-    stroke: none;
-    fill: #f00;
-}
-"""
-
-class PyNameCogTest(unittest.TestCase):
-
-    maxDiff = None  # Show me error diffs, no matter how long.
+class PyNameCogTest(SvgTest):
 
     def setUp(self):
         cog.__init__()
-
-    def assert_same_svg(self, svg1, svg2):
-        # SVG has ids in it that might differ.  Replace them, but preserve
-        # identity within the SVG.
-        svg1 = renumber_svg_ids(svg1)
-        svg1 = svg1.replace("><", ">\n<")
-        svg2 = renumber_svg_ids(svg2)
-        svg2 = svg2.replace("><", ">\n<")
-        if svg1 != svg2:
-            for i, svg in enumerate([svg1, svg2], start=1):
-                fname = "{}_{}.html".format(self._testMethodName, i)
-                with open(fname, "w") as svgout:
-                    svgout.write("<!DOCTYPE html>\n<html><head><style>\n")
-                    svgout.write(SVG_STYLE)
-                    svgout.write("</style></head><body><div>")
-                    svgout.write(svg)
-                    svgout.write("</div></body></html>\n")
-        self.assertMultiLineEqual(svg1, svg2)
 
     def assert_cog_output(self, text):
         text = textwrap.dedent(text)
