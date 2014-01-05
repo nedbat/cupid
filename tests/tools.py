@@ -1,5 +1,6 @@
 """Tools for testing SVGfig."""
 
+import collections
 import functools
 import itertools
 import re
@@ -15,31 +16,29 @@ def renumber_svg_ids(svg):
     Return the same string, but with new ids.
 
     """
-    id_map = {}
     new_ids = ("newid{}".format(i) for i in itertools.count())
+    id_map = collections.defaultdict(lambda: next(new_ids))
 
-    def new_repl(match, new=None):
+    def new_repl(match, new_id_fmt):
         r"""re.sub function for renumbering.
 
-        Match has an id in \1.  Re-number it with a new id, then return `new`
-        with the new id in place of "{}".
+        The `match` object has an id in \1.  Re-number it with a new id, then
+        return `new_id_fmt` with the new id in place of "{}".
 
         """
         found_id = match.group(1)
-        if found_id not in id_map:
-            id_map[found_id] = next(new_ids)
-        return new.format(id_map[found_id])
+        return new_id_fmt.format(id_map[found_id])
 
     # Replace ids that look like: id="id123"
     svg = re.sub(
         r"""\bid=['"](id\d+)['"]""",
-        functools.partial(new_repl, new="id='{}'"),
+        functools.partial(new_repl, new_id_fmt="id='{}'"),
         svg
     )
     # Replace ids that look like: #id123
     svg = re.sub(
         r"""#(id\d+)\b""",
-        functools.partial(new_repl, new="#{}"),
+        functools.partial(new_repl, new_id_fmt="#{}"),
         svg
     )
 
