@@ -4,8 +4,6 @@ import textwrap
 
 from .tools import SvgTest
 
-from svgfig import PyFig, PyLayout
-
 # A fake cog
 
 class FakeCog(object):
@@ -30,7 +28,7 @@ from contextlib import contextmanager
 import random
 import string
 
-from svgfig import PyFig, PyLayout
+from pyfig import PyFig, PyLayout
 PyFig.set_options(draw_grid=False, label_frames=False)
 
 @contextmanager
