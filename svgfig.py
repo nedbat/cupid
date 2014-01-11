@@ -4,6 +4,8 @@ import math
 
 import svgwrite
 
+from helpers import poparg
+
 
 class SvgFig(object):
 
@@ -176,10 +178,6 @@ class SvgFig(object):
             highlight_size = (box.size[0] + padding, box.size[1] + padding)
             self.rect(center=box.center, size=highlight_size, rx=5, ry=5, class_="highlight")
 
-
-def poparg(args, **argdef):
-    name, value = argdef.popitem()
-    return args.pop(name, value)
 
 def pathop(op, *coords):
     res = op

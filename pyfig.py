@@ -1,4 +1,6 @@
-from svgfig import SvgFig, Box, poparg
+from svgfig import SvgFig, Box
+from helpers import defarg, poparg
+
 
 class PyFig(SvgFig):
     def __init__(self, **kwargs):
@@ -48,10 +50,6 @@ class PyFig(SvgFig):
             self.text_for_box(text, box=text_box, class_=tclass, opacity=args.get('opacity', 1))
         return box
 
-
-def defarg(args, **argdef):
-    name, value = argdef.popitem()
-    args.setdefault(name, value)
 
 def add_class(add, class_):
     if class_:
