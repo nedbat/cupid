@@ -28,7 +28,7 @@ from contextlib import contextmanager
 import random
 import string
 
-from pyfig import PyFig, PyLayout
+from cupid.pyfig import PyFig, PyLayout
 
 @contextmanager
 def vim_fold(label):

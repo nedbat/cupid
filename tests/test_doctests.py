@@ -2,10 +2,10 @@
 
 import doctest
 
-import box
-import helpers
+import cupid.box
+import cupid.helpers
 
 def load_tests(loader, tests, ignore):
-    tests.addTests(doctest.DocTestSuite(box))
-    tests.addTests(doctest.DocTestSuite(helpers))
+    tests.addTests(doctest.DocTestSuite(cupid.box))
+    tests.addTests(doctest.DocTestSuite(cupid.helpers))
     return tests

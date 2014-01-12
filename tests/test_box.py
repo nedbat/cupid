@@ -2,7 +2,7 @@
 
 import unittest
 
-from box import Box
+from cupid.box import Box
 
 
 class BoxTest(unittest.TestCase):

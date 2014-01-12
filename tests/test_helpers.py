@@ -2,7 +2,7 @@
 
 import unittest
 
-from helpers import defarg, poparg
+from cupid.helpers import defarg, poparg
 
 
 class TestHelpers(unittest.TestCase):

@@ -1,6 +1,6 @@
 """Box geometry."""
 
-from helpers import poparg
+from .helpers import poparg
 
 
 class Box(object):

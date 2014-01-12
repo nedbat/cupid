@@ -4,8 +4,8 @@ import math
 
 import svgwrite
 
-from box import Box
-from helpers import poparg
+from .box import Box
+from .helpers import poparg
 
 
 class SvgFig(object):
