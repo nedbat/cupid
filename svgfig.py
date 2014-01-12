@@ -36,29 +36,32 @@ class SvgFig(object):
 
         # Draw a grid if desired.
         if self.draw_grid:
-            grid = self.dwg.g(class_="grid")
-            self.dwg.add(grid)
-
-            def lineclass(d):
-                if d == 0:
-                    return "whole"
-                elif d == 50:
-                    return "half"
-                else:
-                    return "tiny"
-
-            w, h = size
-            for x in range(0, w, 100):
-                grid.add(self.dwg.text(str(x), insert=(x+2, 7), class_="number"))
-                for d in range(0, 100, 10):
-                    grid.add(self.dwg.polyline([(x+d, 0), (x+d, h)], class_=lineclass(d)))
-            for y in range(0, h, 100):
-                grid.add(self.dwg.text(str(y), insert=(2, y+7), class_="number"))
-                for d in range(0, 100, 10):
-                    grid.add(self.dwg.polyline([(0, y+d), (w, y+d)], class_=lineclass(d)))
+            self._draw_a_grid(size)
 
         if self.label_frames:
             self.dwg.add(self.dwg.text(str(frame_num), insert=(2, 20), class_="framenum"))
+
+    def _draw_a_grid(self, size):
+        grid = self.dwg.g(class_="grid")
+        self.dwg.add(grid)
+
+        def lineclass(d):
+            if d == 0:
+                return "whole"
+            elif d == 50:
+                return "half"
+            else:
+                return "tiny"
+
+        w, h = size
+        for x in range(0, w, 100):
+            grid.add(self.dwg.text(str(x), insert=(x+2, 7), class_="number"))
+            for d in range(0, 100, 10):
+                grid.add(self.dwg.polyline([(x+d, 0), (x+d, h)], class_=lineclass(d)))
+        for y in range(0, h, 100):
+            grid.add(self.dwg.text(str(y), insert=(2, y+7), class_="number"))
+            for d in range(0, 100, 10):
+                grid.add(self.dwg.polyline([(0, y+d), (w, y+d)], class_=lineclass(d)))
 
     @property
     def ARROW(self):

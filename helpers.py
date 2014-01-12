@@ -1,4 +1,5 @@
-"""Miscellaneous helpers for SvgFig."""
+# -*- coding: utf8 -*-
+"""Miscellaneous helpers for SvgFig □→♡ """
 
 def poparg(kwargs, **argdef):
     """
