@@ -19,6 +19,17 @@ class Box(object):
         >>> args
         {'foo': 17}
 
+    The center and size are available as individual components also::
+
+        >>> b.cx
+        105
+        >>> b.cy
+        200
+        >>> b.w
+        10
+        >>> b.h
+        50
+
     You can ask about the edges of the box as coordinates or points::
 
         >>> b.north
@@ -70,9 +81,6 @@ class Box(object):
         else:
             assert False, "Have to specify a position!"
 
-        self.center = center
-        self.size = size
-
         self.cx, self.cy = center
         self.w, self.h = size
 
@@ -94,7 +102,16 @@ class Box(object):
     def translate(self, dx, dy):
         self.cx += dx
         self.cy += dy
-        self.center = self.cx, self.cy
+
+    @property
+    def center(self):
+        """The center point of the box."""
+        return self.cx, self.cy
+
+    @property
+    def size(self):
+        """The width and height as a pair."""
+        return self.w, self.h
 
     @property
     def top(self):
