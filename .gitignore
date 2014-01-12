@@ -1,6 +1,13 @@
+# Python things
 *.pyc
+
+# Testing things
 .coverage
 htmlcov
 .tox
+
+# Setup things
 MANIFEST
 *.egg-info
+build
+dist
