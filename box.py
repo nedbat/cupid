@@ -30,7 +30,8 @@ class Box(object):
         >>> b.h
         50
 
-    You can ask about the edges of the box as coordinates or points::
+    You can ask about the edges of the box as coordinates (top, bottom, left,
+    right) or points (north, south, east, west)::
 
         >>> b.north
         (105, 175)
@@ -99,9 +100,32 @@ class Box(object):
             self.fade == other.fade
         )
 
+    def __ne__(self, other):
+        return not self == other
+
     def translate(self, dx, dy):
-        self.cx += dx
-        self.cy += dy
+        """Create a new box just like this one, but translated.
+
+        `dx` and `dy` are deltas for the center point.  The returned box is
+        the same as this one, but the center has moved::
+
+            >>> b = Box(dict(size=(10,20), center=(100,200)))
+            >>> b2 = b.translate(1, 2)
+            >>> b2.center
+            (101, 202)
+            >>> b2.size
+            (10, 20)
+
+        The original box is unchanged::
+
+            >>> b.center
+            (100, 200)
+
+        """
+        box = Box(dict(box=self))
+        box.cx += dx
+        box.cy += dy
+        return box
 
     @property
     def center(self):

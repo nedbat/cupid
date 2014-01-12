@@ -27,7 +27,7 @@ class PyFig(SvgFig):
         for text in texts:
             b = self.rect(box=box, class_=class_, text=text, **args)
             boxes.append(b)
-            box.translate(box.w, 0)
+            box = box.translate(box.w, 0)
         return boxes
 
     def reference(self, name, val, **args):

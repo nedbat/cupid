@@ -30,6 +30,21 @@ class BoxTest(unittest.TestCase):
         self.assertEqual(b.left, 100)
         self.assertEqual(b.right, 110)
 
+    def test_equal(self):
+        b1 = Box(dict(size=(10, 50), left=(100, 200)))
+        b2 = Box(dict(size=(10, 50), right=(110, 200)))
+        b3 = Box(dict(size=(10, 50), left=(100, 201)))
+        self.assertEqual(b1, b2)
+        self.assertNotEqual(b1, b3)
+
+        class NotBox(object):
+            def __init__(self, size, center):
+                self.cx, self.cy = center
+                self.w, self.h = size
+
+        not_box = NotBox(size=b1.size, center=b1.center)
+        self.assertNotEqual(b1, not_box)
+
     def test_copying(self):
         b1 = Box(dict(size=(10, 50), left=(100, 200)))
         b2 = Box(dict(box=b1))
@@ -64,3 +79,8 @@ class BoxTest(unittest.TestCase):
         self.assertEqual(b, Box(dict(size=(10, 50), center=(105, 200))))
         self.assertEqual(b, Box(dict(size=(10, 50), topleft=(100, 175))))
         self.assertEqual(b, Box(dict(size=(10, 50), topright=(110, 175))))
+
+    def test_translate(self):
+        b = Box(dict(size=(10, 50), left=(100, 200)))
+        b2 = b.translate(dx=1000, dy=2000)
+        self.assertEqual(b2, Box(dict(size=(10, 50), left=(1100, 2200))))
