@@ -1,5 +1,6 @@
-from svgfig import SvgFig, Box
+from box import Box
 from helpers import add_class, defarg, poparg
+from svgfig import SvgFig
 
 
 class PyFig(SvgFig):

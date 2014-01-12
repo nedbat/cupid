@@ -4,6 +4,7 @@ import math
 
 import svgwrite
 
+from box import Box
 from helpers import poparg
 
 
@@ -207,90 +208,3 @@ def toward(start, dist, end):
     start_to_end = math.sqrt(dx*dx + dy*dy)
     frac = float(dist) / start_to_end
     return x0 + frac*dx, y0 + frac*dy
-
-
-class Box(object):
-    def __init__(self, args):
-        other_box = poparg(args, box=None)
-        if other_box is not None:
-            # Copy all the attributes of the other box.
-            self.__dict__.update(other_box.__dict__)
-            return
-
-        size = poparg(args, size=None)
-        assert size, "Have to specify a size!"
-
-        pos_name = pos = None
-        arg_names = "left center right topleft topright".split()
-        for arg_name in arg_names:
-            arg = poparg(args, **{arg_name: None})
-            if arg is not None:
-                assert pos is None, "Got duplicate position: %s" % pos_name
-                pos_name = arg_name
-                pos = arg
-
-        # Can specify position as pos=('topright', (100,200))
-        pos_arg = poparg(args, pos=None)
-        if pos_arg is not None:
-            assert pos is None, "Got duplicate position: pos"
-            pos_name, pos = pos_arg
-
-        if pos_name == 'left':
-            center = (pos[0]+size[0]/2, pos[1])
-        elif pos_name == 'right':
-            center = (pos[0]-size[0]/2, pos[1])
-        elif pos_name == 'center':
-            center = pos
-        elif pos_name == 'topleft':
-            center = (pos[0]+size[0]/2, pos[1]+size[1]/2)
-        elif pos_name == 'topright':
-            center = (pos[0]-size[0]/2, pos[1]+size[1]/2)
-        else:
-            assert False, "Have to specify a position!"
-
-        self.center = center
-        self.size = size
-
-        self.cx, self.cy = center
-        self.w, self.h = size
-
-        self.rise = poparg(args, rise=0)
-        self.set = poparg(args, set=999999)
-        self.fade = poparg(args, fade=0)
-
-    def translate(self, dx, dy):
-        self.cx += dx
-        self.cy += dy
-        self.center = self.cx, self.cy
-
-    @property
-    def top(self):
-        return self.cy - self.h/2
-
-    @property
-    def bottom(self):
-        return self.cy + self.h/2
-
-    @property
-    def left(self):
-        return self.cx - self.w/2
-
-    @property
-    def right(self):
-        return self.cx + self.w/2
-
-    @property
-    def north(self):
-        return self.cx, self.top
-
-    @property
-    def south(self):
-        return self.cx, self.bottom
-
-    @property
-    def east(self):
-        return self.right, self.cy
-
-    @property
-    def west(self):
-        return self.left, self.cy
