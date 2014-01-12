@@ -3,9 +3,6 @@ from helpers import defarg, poparg
 
 
 class PyFig(SvgFig):
-    def __init__(self, **kwargs):
-        super(PyFig, self).__init__(**kwargs)
-
     def name(self, **args):
         class_ = add_class("name", poparg(args, class_=None))
         return self.rect(class_=class_, **args)

@@ -29,7 +29,6 @@ import random
 import string
 
 from pyfig import PyFig, PyLayout
-PyFig.set_options(draw_grid=False, label_frames=False)
 
 @contextmanager
 def vim_fold(label):

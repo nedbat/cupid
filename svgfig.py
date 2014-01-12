@@ -9,17 +9,7 @@ from helpers import poparg
 
 class SvgFig(object):
 
-    draw_grid = False
-    label_frames = False
-
-    @classmethod
-    def set_options(cls, draw_grid=None, label_frames=None):
-        if draw_grid is not None:
-            cls.draw_grid = draw_grid
-        if label_frames is not None:
-            cls.label_frames = label_frames
-
-    def __init__(self, size, frame_num=None, scale=None, **extra):
+    def __init__(self, size, frame_num=None, scale=None, draw_grid=False, label_frames=False, **extra):
         self.frame_num = frame_num
 
         self.dwg = svgwrite.Drawing(debug=True, size=size, **extra)
@@ -35,10 +25,11 @@ class SvgFig(object):
         self._dot = None
 
         # Draw a grid if desired.
-        if self.draw_grid:
+        if draw_grid:
             self._draw_a_grid(size)
 
-        if self.label_frames:
+        # Indicate which animation frame this is, if desired.
+        if label_frames:
             self.dwg.add(self.dwg.text(str(frame_num), insert=(2, 20), class_="framenum"))
 
     def _draw_a_grid(self, size):
