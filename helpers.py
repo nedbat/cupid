@@ -45,3 +45,24 @@ def defarg(kwargs, **argdef):
     assert len(argdef) == 1
     name, value = argdef.popitem()
     kwargs.setdefault(name, value)
+
+
+def add_class(add, class_):
+    """Add to a CSS class attribute.
+
+    The string `add` will be added to the classes already in `class_`, with
+    a space if needed.  `class_` can be None::
+
+        >>> add_class("foo", None)
+        'foo'
+        >>> add_class("foo", "bar")
+        'bar foo'
+
+    Returns the amended class string.
+
+    """
+    if class_:
+        class_ += " "
+    else:
+        class_ = ""
+    return class_ + add

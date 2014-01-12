@@ -1,5 +1,5 @@
 from svgfig import SvgFig, Box
-from helpers import defarg, poparg
+from helpers import add_class, defarg, poparg
 
 
 class PyFig(SvgFig):
@@ -46,14 +46,6 @@ class PyFig(SvgFig):
             # PAIN: having to dig out the opacity from args.
             self.text_for_box(text, box=text_box, class_=tclass, opacity=args.get('opacity', 1))
         return box
-
-
-def add_class(add, class_):
-    if class_:
-        class_ += " "
-    else:
-        class_ = ""
-    return class_ + add
 
 
 class PyLayout(object):
