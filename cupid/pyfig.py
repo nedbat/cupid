@@ -48,6 +48,39 @@ class PyFig(SvgFig):
             self.text_for_box(text, box=text_box, class_=tclass, opacity=args.get('opacity', 1))
         return box
 
+    # CSS to normalize the styling.  Use this in your pages containing figures.
+    CSS = SvgFig.CSS + """
+    svg .name {
+        stroke: black;
+        stroke-width: 2;
+        fill: #ddd;
+    }
+
+    svg .value {
+        stroke: black;
+        stroke-width: 1;
+        fill: white;
+    }
+
+    svg .list {
+        stroke: black;
+        stroke-width: 1;
+        fill: white;
+    }
+
+    svg .frame {
+        stroke-width: 3;
+        stroke: #666;
+        stroke-dasharray: 10 10;
+        fill: none;
+    }
+
+    svg text.framelabel {
+        font-size: 75%;
+        font-family: monospace;
+    }
+    """
+
 
 class PyLayout(object):
     def __init__(self, y=100, y_stride=75, name_right=200, val_gap=100):

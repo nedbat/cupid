@@ -173,6 +173,56 @@ class SvgFig(object):
             highlight_size = (box.size[0] + padding, box.size[1] + padding)
             self.rect(center=box.center, size=highlight_size, rx=5, ry=5, class_="highlight")
 
+    # CSS to normalize the styling.  Use this in your pages containing figures.
+    CSS = """
+    svg {
+        stroke: black;
+        fill: white;
+    }
+
+    svg text {
+        stroke: none;
+        fill: black;
+    }
+
+    svg .arrow {
+        fill: none;
+        stroke: black;
+        stroke-width: 1;
+    }
+
+    svg .highlight {
+        stroke-width: 5;
+        stroke: #f00;
+        fill: none;
+        opacity: 0.5;
+    }
+
+    svg .grid {
+        stroke: #8ff; stroke-width: 1; fill: none;
+    }
+    svg .grid .half {
+        stroke-dasharray: 12.5 12.5;
+        stroke-dashoffset: 6.25;
+        stroke-dasharray: 2 2;
+        stroke-dashoffset: 1;
+    }
+    svg .grid .tiny {
+        stroke-dasharray: 1 2;
+        stroke: #cff;
+    }
+    svg .grid .number {
+        font-size: .5em;
+        stroke: none;
+        fill: #0cc;
+    }
+
+    svg .framenum {
+        font-size: .75em;
+        stroke: none;
+        fill: #f00;
+    }
+    """
 
 def pathop(op, *coords):
     res = op

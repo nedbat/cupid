@@ -6,6 +6,8 @@ import itertools
 import re
 import unittest
 
+from cupid.pyfig import PyFig
+
 
 def renumber_svg_ids(svg):
     """Renumber the ids in `svg`.
@@ -66,89 +68,8 @@ class SvgTest(unittest.TestCase):
                 fname = "{}_{}.html".format(self._testMethodName, i)
                 with open(fname, "w") as svgout:
                     svgout.write("<!DOCTYPE html>\n<html><head><style>\n")
-                    svgout.write(SVG_STYLE)
+                    svgout.write(PyFig.CSS)
                     svgout.write("</style></head><body><div>")
                     svgout.write(svg)
                     svgout.write("</div></body></html>\n")
         self.assertMultiLineEqual(svg1, svg2)
-
-
-SVG_STYLE = """
-svg {
-    stroke: black;
-    fill: white;
-}
-
-svg text {
-    stroke: none;
-    fill: black;
-}
-
-svg .name {
-    stroke: black;
-    stroke-width: 2;
-    fill: #ddd;
-}
-
-svg .value {
-    stroke: black;
-    stroke-width: 1;
-    fill: white;
-}
-
-svg .list {
-    stroke: black;
-    stroke-width: 1;
-    fill: white;
-}
-
-svg .arrow {
-    fill: none;
-    stroke: black;
-    stroke-width: 1;
-}
-
-svg .frame {
-    stroke-width: 3;
-    stroke: #666;
-    stroke-dasharray: 10 10;
-    fill: none;
-}
-
-svg text.framelabel {
-    font-size: 75%;
-    font-family: monospace;
-}
-
-svg .highlight {
-    stroke-width: 5;
-    stroke: #f00;
-    fill: none;
-    opacity: 0.5;
-}
-
-svg .grid {
-    stroke: #8ff; stroke-width: 1; fill: none;
-}
-svg .grid .half {
-    stroke-dasharray: 12.5 12.5;
-    stroke-dashoffset: 6.25;
-    stroke-dasharray: 2 2;
-    stroke-dashoffset: 1;
-}
-svg .grid .tiny {
-    stroke-dasharray: 1 2;
-    stroke: #cff;
-}
-svg .grid .number {
-    font-size: .5em;
-    stroke: none;
-    fill: #0cc;
-}
-
-svg .framenum {
-    font-size: .75em;
-    stroke: none;
-    fill: #f00;
-}
-"""
