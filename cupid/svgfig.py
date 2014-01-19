@@ -10,10 +10,17 @@ from .helpers import poparg
 
 class SvgFig(object):
 
-    def __init__(self, frame_num=None, scale=None, draw_grid=False, label_frames=False, **extra):
+    def __init__(self,
+            frame_num=None, scale=None, draw_grid=False, label_frames=False,
+            title=None,
+            **extra
+            ):
+
         self.scale = scale
         self.size = extra.get('size')
         self.dwg = svgwrite.Drawing(debug=True, **extra)
+        if title:
+            self.dwg.set_desc(title=title)
 
         need_container = scale or not self.size
 
