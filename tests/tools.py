@@ -83,5 +83,5 @@ class SvgTest(unittest.TestCase):
         else:
             # Remove any remaining previous test failures.
             for fname in glob.glob("{}_?.html".format(self._testMethodName)):
-                os.remove(fname)
+                os.remove(fname)        # pragma: no cover
         self.assertMultiLineEqual(svg1, svg2)

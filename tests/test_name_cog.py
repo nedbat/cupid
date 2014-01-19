@@ -2568,7 +2568,8 @@ class PyNameCogTest(SvgTest):
             elif type == 'string':
                 s = rand_name()
                 val = fig.string(pos=pos, text=repr(s), size=(70+10*len(s), 50))
-            elif type == 'list':
+            else:
+                assert type == 'list'
                 els = r.randint(4, 10)
                 val = fig.list(pos=pos, texts=[str(r.randint(5,20)) for i in range(els)])
                 val = val[0]
