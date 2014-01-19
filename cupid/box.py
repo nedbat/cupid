@@ -89,6 +89,9 @@ class Box(object):
         self.set = poparg(args, set=999999)
         self.fade = poparg(args, fade=0)
 
+    def __repr__(self):
+        return "<Box ={0.w}x{0.h} @{0.cx},{0.cy}>".format(self)
+
     def __eq__(self, other):
         if not isinstance(other, Box):
             return False
@@ -125,6 +128,26 @@ class Box(object):
         box = Box(dict(box=self))
         box.cx += dx
         box.cy += dy
+        return box
+
+    def scale(self, sx, sy=None):
+        """Make a new box that is scaled from this one."""
+        sy = sy or sx
+        cx = self.cx * sx
+        cy = self.cy * sy
+        w = self.w * sx
+        h = self.h * sy
+        return Box(dict(size=(w, h), center=(cx, cy)))
+
+    def union(self, other):
+        """Create a new box that covers self and other."""
+        left = min(self.left, other.left)
+        right = max(self.right, other.right)
+        top = min(self.top, other.top)
+        bottom = max(self.bottom, other.bottom)
+        width = right - left
+        height = bottom - top
+        box = Box(dict(size=(width, height), topleft=(left, top)))
         return box
 
     @property

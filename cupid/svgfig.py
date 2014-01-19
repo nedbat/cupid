@@ -10,24 +10,31 @@ from .helpers import poparg
 
 class SvgFig(object):
 
-    def __init__(self, size, frame_num=None, scale=None, draw_grid=False, label_frames=False, **extra):
-        self.frame_num = frame_num
+    def __init__(self, frame_num=None, scale=None, draw_grid=False, label_frames=False, **extra):
+        self.scale = scale
+        self.size = extra.get('size')
+        self.dwg = svgwrite.Drawing(debug=True, **extra)
 
-        self.dwg = svgwrite.Drawing(debug=True, size=size, **extra)
+        need_container = scale or not self.size
 
-        if scale:
+        if need_container:
             self.root = self.dwg.g()
-            self.root.scale(scale)
+            if scale:
+                self.root.scale(scale)
             self.dwg.add(self.root)
         else:
             self.root = self.dwg
 
+        self.frame_num = frame_num
+        self.bbox = None
+
+        # Markers we might eventually create.
         self._arrow = None
         self._dot = None
 
         # Draw a grid if desired.
         if draw_grid:
-            self._draw_a_grid(size)
+            self._draw_a_grid(size or (1000, 1000))
 
         # Indicate which animation frame this is, if desired.
         if label_frames:
@@ -55,6 +62,13 @@ class SvgFig(object):
             for d in range(0, 100, 10):
                 grid.add(self.dwg.polyline([(0, y+d), (w, y+d)], class_=lineclass(d)))
 
+    def _add_to_bbox(self, box):
+        """Accumulate `box` into the bounding box."""
+        if self.bbox:
+            self.bbox = self.bbox.union(box)
+        else:
+            self.bbox = box
+
     @property
     def ARROW(self):
         if self._arrow is None:
@@ -80,6 +94,16 @@ class SvgFig(object):
         return self._dot
 
     def tostring(self):
+        if not self.size:
+            margin = 10
+            bbox = self.bbox
+            #if self.scale:
+            #    bbox = bbox.scale(self.scale)
+            tx, ty = bbox.left, bbox.top
+            self.root.translate(margin-tx, margin-ty)
+            w, h = bbox.size
+            self.dwg['width'] = w + margin * 2
+            self.dwg['height'] = h + margin * 2
         return self.dwg.tostring()
 
     def should_draw(self, box, args):
@@ -105,6 +129,7 @@ class SvgFig(object):
             self.root.add(r)
 
             self.text_for_box(text, box)
+        self._add_to_bbox(box)
         return box
 
     def circle(self, **args):
@@ -119,6 +144,7 @@ class SvgFig(object):
             self.root.add(c)
 
             self.text_for_box(text, box)
+        self._add_to_bbox(box)
         return box
 
     def pill(self, **args):

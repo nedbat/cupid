@@ -84,3 +84,12 @@ class BoxTest(unittest.TestCase):
         b = Box(dict(size=(10, 50), left=(100, 200)))
         b2 = b.translate(dx=1000, dy=2000)
         self.assertEqual(b2, Box(dict(size=(10, 50), left=(1100, 2200))))
+
+    def test_union(self):
+        b1 = Box(dict(size=(10, 50), topleft=(100, 200)))
+        b2 = Box(dict(size=(10, 50), topleft=(101, 201)))
+        self.assertEqual(b1.union(b2), Box(dict(size=(11, 51), topleft=(100, 200))))
+
+        b1 = Box(dict(size=(1, 1), topleft=(100, 200)))
+        b2 = Box(dict(size=(1, 1), topleft=(200, 300)))
+        self.assertEqual(b1.union(b2), Box(dict(size=(100, 100), topleft=(100, 200))))
