@@ -4,13 +4,41 @@ from .svgfig import SvgFig
 
 
 class PyFig(SvgFig):
-    def __init__(self, unit=25, **kwargs):
+    def __init__(self, unit=25, y=None, y_stride=None, name_right=None, val_gap=None, **kwargs):
         super(PyFig, self).__init__(**kwargs)
         self.unit = unit
+        self.y = y or 1#self.unit*4
+        self.y_stride = y_stride or self.unit*3
+        self.name_right = name_right or 1#self.unit*8
+        self.val_left = self.name_right + (val_gap or self.unit*4)
+
+    def next_name(self):
+        """Produce a position for the next name."""
+        topright = (self.name_right, self.y)
+        self.y += self.y_stride
+        return ('topright', topright)
+
+    def val_for_name(self, name):
+        """Produce a position for a val alongside `name`."""
+        left = (self.val_left, name.cy)
+        return ('left', left)
+
+    def next_frame(self):
+        """Produce a position for the next frame."""
+        topright = (self.name_right + self.unit, self.y)
+        self.y += self.unit * 2
+        return ('topright', topright)
+
+    def end_frame(self):
+        self.y += self.unit
 
     def name(self, **args):
         class_ = add_class("name", poparg(args, class_=None))
         return self.rect(class_=class_, **args)
+
+    def auto_name(self, text, **args):
+        width = self.unit * 2 + 12*len(text)
+        return self.name(pos=self.next_name(), size=(width,50), text=text, **args)
 
     def int(self, **args):
         defarg(args, size=(self.unit*2, self.unit*2))
@@ -85,32 +113,3 @@ class PyFig(SvgFig):
         font-family: monospace;
     }
     """
-
-
-class PyLayout(object):
-    def __init__(self, unit=25, y=None, y_stride=None, name_right=None, val_gap=None):
-        self.unit = unit
-        self.y = y or self.unit*4
-        self.y_stride = y_stride or self.unit*3
-        self.name_right = name_right or self.unit*8
-        self.val_left = self.name_right + (val_gap or self.unit*4)
-
-    def next_name(self):
-        """Produce a position for the next name."""
-        topright = (self.name_right, self.y)
-        self.y += self.y_stride
-        return ('topright', topright)
-
-    def val_for_name(self, name):
-        """Produce a position for a val alongside `name`."""
-        left = (self.val_left, name.cy)
-        return ('left', left)
-
-    def next_frame(self):
-        """Produce a position for the next frame."""
-        topright = (self.name_right + self.unit, self.y)
-        self.y += self.unit * 2
-        return ('topright', topright)
-
-    def end_frame(self):
-        self.y += self.unit

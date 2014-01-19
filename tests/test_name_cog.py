@@ -28,7 +28,7 @@ from contextlib import contextmanager
 import random
 import string
 
-from cupid.pyfig import PyFig, PyLayout
+from cupid.pyfig import PyFig
 
 @contextmanager
 def vim_fold(label):
@@ -59,11 +59,6 @@ def pyfig_animation(code, figfunc, lines=None):
             #cog.outl('''</div>''')
             cog.outl('''</div>''')
 
-def auto_name(fig, layout, text, **args):
-    width = 50 + 12*len(text)
-    return fig.name(pos=layout.next_name(), size=(width,50), text=text, **args)
-
-
 
 class PyNameCogTest(SvgTest):
 
@@ -86,11 +81,10 @@ class PyNameCogTest(SvgTest):
             '''
 
         def figure(frame):
-            fig = PyFig(size=(500,400), frame_num=frame)
-            layout = PyLayout(y=25, name_right=200, val_gap=75)
+            fig = PyFig(size=(500,400), frame_num=frame, y=25, name_right=200, val_gap=75)
 
-            x = auto_name(fig, layout, "x")
-            c = fig.int(pos=layout.val_for_name(x), text="23")
+            x = fig.auto_name("x")
+            c = fig.int(pos=fig.val_for_name(x), text="23")
             fig.reference(x, c)
 
             cog.outl(fig.tostring())
@@ -133,15 +127,14 @@ class PyNameCogTest(SvgTest):
             '''
 
         def figure(frame):
-            layout = PyLayout(y=25, name_right=200, val_gap=75)
-            fig = PyFig(size=(500,400), frame_num=frame)
+            fig = PyFig(size=(500,400), frame_num=frame, y=25, name_right=200, val_gap=75)
 
-            n_x = auto_name(fig, layout, "x")
-            i_23 = fig.int(pos=layout.val_for_name(n_x), text="23", set=2)
+            n_x = fig.auto_name("x")
+            i_23 = fig.int(pos=fig.val_for_name(n_x), text="23", set=2)
             fig.reference(n_x, i_23)
-            n_y = auto_name(fig, layout, "y", rise=2)
+            n_y = fig.auto_name("y", rise=2)
             c_23 = (n_x.cy + n_y.cy) / 2
-            i_23 = fig.int(left=(layout.val_left, c_23), text="23", rise=2)
+            i_23 = fig.int(left=(fig.val_left, c_23), text="23", rise=2)
             fig.reference(n_x, i_23)
             fig.reference(n_y, i_23)
             cog.outl(fig.tostring())
@@ -210,21 +203,20 @@ class PyNameCogTest(SvgTest):
             '''
 
         def figure(frame):
-            fig = PyFig(size=(500,400), frame_num=frame)
-            layout = PyLayout(y=25, name_right=200, val_gap=75)
+            fig = PyFig(size=(500,400), frame_num=frame, y=25, name_right=200, val_gap=75)
 
-            n_x = auto_name(fig, layout, "x", set=3)
-            i_23 = fig.int(pos=layout.val_for_name(n_x), text="23", set=2)
+            n_x = fig.auto_name("x", set=3)
+            i_23 = fig.int(pos=fig.val_for_name(n_x), text="23", set=2)
             fig.reference(n_x, i_23)
-            layout.next_name()  # Burn a name to space them out.
-            n_y = auto_name(fig, layout, "y", rise=2)
+            fig.next_name()  # Burn a name to space them out.
+            n_y = fig.auto_name("y", rise=2)
             c_23 = (n_x.cy + n_y.cy) / 2
-            i_23 = fig.int(left=(layout.val_left, c_23), text="23", rise=2)
+            i_23 = fig.int(left=(fig.val_left, c_23), text="23", rise=2)
             fig.reference(n_x, i_23)
             fig.reference(n_y, i_23)
 
             n_x = fig.name(center=n_x.center, size=n_x.size, text="x")
-            i_12 = fig.int(pos=layout.val_for_name(n_x), text="12", rise=3)
+            i_12 = fig.int(pos=fig.val_for_name(n_x), text="12", rise=3)
             fig.reference(n_x, i_12)
 
             cog.outl(fig.tostring())
@@ -326,15 +318,14 @@ class PyNameCogTest(SvgTest):
             '''
 
         def figure(frame):
-            fig = PyFig(size=(500,400), frame_num=frame)
-            layout = PyLayout(y=25, name_right=200, val_gap=75)
+            fig = PyFig(size=(500,400), frame_num=frame, y=25, name_right=200, val_gap=75)
 
-            n_x = auto_name(fig, layout, "x", set=2)
-            n_hidden = auto_name(fig, layout, "", set=0)
-            s_hello = fig.string(pos=layout.val_for_name(n_x), size=(120,50), text=repr("hello"), set=2, fade=1)
+            n_x = fig.auto_name("x", set=2)
+            n_hidden = fig.auto_name("", set=0)
+            s_hello = fig.string(pos=fig.val_for_name(n_x), size=(120,50), text=repr("hello"), set=2, fade=1)
             fig.reference(n_x, s_hello)
             n_x = fig.name(center=n_x.center, size=n_x.size, text="x", rise=2)
-            s_hello = fig.string(pos=layout.val_for_name(n_hidden), size=(120, 50), text=repr("world"), rise=2)
+            s_hello = fig.string(pos=fig.val_for_name(n_hidden), size=(120, 50), text=repr("world"), rise=2)
             fig.reference(n_x, s_hello)
 
             cog.outl(fig.tostring())
@@ -425,14 +416,13 @@ class PyNameCogTest(SvgTest):
             '''
 
         def figure(frame):
-            fig = PyFig(size=(500,400), frame_num=frame)
-            layout = PyLayout(y=25, name_right=200, val_gap=75)
+            fig = PyFig(size=(500,400), frame_num=frame, y=25, name_right=200, val_gap=75)
 
-            n_nums = auto_name(fig, layout, "nums")
-            l_nums = fig.list(texts="123", pos=layout.val_for_name(n_nums))
+            n_nums = fig.auto_name("nums")
+            l_nums = fig.list(texts="123", pos=fig.val_for_name(n_nums))
             fig.reference(n_nums, l_nums[0])
 
-            n_other = auto_name(fig, layout, "other", rise=2)
+            n_other = fig.auto_name("other", rise=2)
             fig.reference(n_other, l_nums[0])
 
             cog.outl(fig.tostring())
@@ -510,14 +500,13 @@ class PyNameCogTest(SvgTest):
             '''
 
         def figure(frame):
-            fig = PyFig(size=(500,400), frame_num=frame)
-            layout = PyLayout(y=25, name_right=200, val_gap=75)
+            fig = PyFig(size=(500,400), frame_num=frame, y=25, name_right=200, val_gap=75)
 
-            n_nums = auto_name(fig, layout, "nums")
-            l_nums = fig.list(texts="123", pos=layout.val_for_name(n_nums))
+            n_nums = fig.auto_name("nums")
+            l_nums = fig.list(texts="123", pos=fig.val_for_name(n_nums))
             fig.reference(n_nums, l_nums[0])
 
-            n_other = auto_name(fig, layout, "other", rise=2)
+            n_other = fig.auto_name("other", rise=2)
             fig.reference(n_other, l_nums[0])
 
             l_nums = fig.list(texts=["1", "2", "3" ,"4"], center=l_nums[0].center, rise=3)
@@ -675,15 +664,14 @@ class PyNameCogTest(SvgTest):
             '''
 
         def figure(frame):
-            fig = PyFig(size=(500,400), frame_num=frame)
-            layout = PyLayout(y=25, name_right=200, val_gap=75)
+            fig = PyFig(size=(500,400), frame_num=frame, y=25, name_right=200, val_gap=75)
 
-            n_x = auto_name(fig, layout, "x", set=4)
-            n_y = auto_name(fig, layout, "y", rise=2)
-            s_hello = fig.string(pos=layout.val_for_name(n_y), size=(120,50), text=repr("hello"))
+            n_x = fig.auto_name("x", set=4)
+            n_y = fig.auto_name("y", rise=2)
+            s_hello = fig.string(pos=fig.val_for_name(n_y), size=(120,50), text=repr("hello"))
             fig.reference(n_x, s_hello)
             fig.reference(n_y, s_hello)
-            s_there = fig.string(pos=layout.val_for_name(n_x), size=(200, 50), text=repr("hello there"), rise=3)
+            s_there = fig.string(pos=fig.val_for_name(n_x), size=(200, 50), text=repr("hello there"), rise=3)
             n_x = fig.name(center=n_x.center, size=n_x.size, text="x", rise=4)
             fig.reference(n_x, s_there)
             cog.outl(fig.tostring())
@@ -806,21 +794,20 @@ class PyNameCogTest(SvgTest):
             '''
 
         def figure(frame):
-            fig = PyFig(size=(500,400), frame_num=frame)
-            layout = PyLayout(y=25, name_right=200, val_gap=75)
+            fig = PyFig(size=(500,400), frame_num=frame, y=25, name_right=200, val_gap=75)
 
-            n_nums = auto_name(fig, layout, "nums")
-            l_nums = fig.list(texts="123", pos=layout.val_for_name(n_nums), set=2)
+            n_nums = fig.auto_name("nums")
+            l_nums = fig.list(texts="123", pos=fig.val_for_name(n_nums), set=2)
             fig.reference(n_nums, l_nums[0])
-            l_nums = fig.list(texts=["", "", ""], pos=layout.val_for_name(n_nums), rise=2)
+            l_nums = fig.list(texts=["", "", ""], pos=fig.val_for_name(n_nums), rise=2)
             fig.reference(n_nums, l_nums[0])
-            n_hidden = auto_name(fig, layout, "", set=0)
+            n_hidden = fig.auto_name("", set=0)
             int_y = n_hidden.cy
-            ints = [fig.int(left=(layout.val_left+i*60, int_y), text=str(i+1), rise=2) for i in range(3)]
+            ints = [fig.int(left=(fig.val_left+i*60, int_y), text=str(i+1), rise=2) for i in range(3)]
             for i in range(3):
                 fig.connect(l_nums[i].center, 90, ints[i].north, 90, start_marker=fig.DOT, class_="arrow", rise=2)
 
-            n_x = auto_name(fig, layout, "x", rise=3)
+            n_x = fig.auto_name("x", rise=3)
             fig.connect(n_x.east, 0, ints[1].south, -90, class_="arrow", rise=3)
 
             cog.outl(fig.tostring())
@@ -945,15 +932,14 @@ class PyNameCogTest(SvgTest):
             '''
 
         def figure(frame):
-            fig = PyFig(size=(500,400), frame_num=frame)
-            layout = PyLayout(y=25, name_right=200, val_gap=75)
+            fig = PyFig(size=(500,400), frame_num=frame, y=25, name_right=200, val_gap=75)
 
-            n_num = auto_name(fig, layout, "num")
-            i_17 = fig.int(pos=layout.val_for_name(n_num), text="17")
+            n_num = fig.auto_name("num")
+            i_17 = fig.int(pos=fig.val_for_name(n_num), text="17")
             fig.reference(n_num, i_17)
 
-            fig.frame(pos=layout.next_frame(), size=(200, 125), text="func", rise=2, set=5, fade=1)
-            n_x = auto_name(fig, layout, "x", rise=2, set=5, fade=1)
+            fig.frame(pos=fig.next_frame(), size=(200, 125), text="func", rise=2, set=5, fade=1)
+            n_x = fig.auto_name("x", rise=2, set=5, fade=1)
             fig.reference(n_x, i_17)
 
             cog.outl(fig.tostring())
@@ -1152,18 +1138,17 @@ class PyNameCogTest(SvgTest):
             '''
 
         def figure(frame):
-            fig = PyFig(size=(500,400), frame_num=frame)
-            layout = PyLayout(y=25, name_right=200, val_gap=75)
+            fig = PyFig(size=(500,400), frame_num=frame, y=25, name_right=200, val_gap=75)
 
-            n_nums = auto_name(fig, layout, "nums")
-            l_nums = fig.list(texts=["1", "2", "3"], pos=layout.val_for_name(n_nums))
+            n_nums = fig.auto_name("nums")
+            l_nums = fig.list(texts=["1", "2", "3"], pos=fig.val_for_name(n_nums))
             fig.reference(n_nums, l_nums[0])
 
-            fig.frame(pos=layout.next_frame(), size=(200,200), text="augment_twice", rise=2, set=6, fade=1)
-            n_a_list = auto_name(fig, layout, "a_list", rise=2, set=6, fade=1)
+            fig.frame(pos=fig.next_frame(), size=(200,200), text="augment_twice", rise=2, set=6, fade=1)
+            n_a_list = fig.auto_name("a_list", rise=2, set=6, fade=1)
             fig.reference(n_a_list, l_nums[0])
-            n_val = auto_name(fig, layout, "val", rise=2, set=6, fade=1)
-            i_val = fig.int(pos=layout.val_for_name(n_val), text="7", rise=2, set=7, fade=1)
+            n_val = fig.auto_name("val", rise=2, set=6, fade=1)
+            i_val = fig.int(pos=fig.val_for_name(n_val), text="7", rise=2, set=7, fade=1)
             fig.reference(n_val, i_val)
 
             l_nums = fig.list(texts=["1", "2", "3", "7"], center=l_nums[0].center, rise=4)
@@ -1577,22 +1562,21 @@ class PyNameCogTest(SvgTest):
             '''
 
         def figure(frame):
-            fig = PyFig(size=(550,400), frame_num=frame)
-            layout = PyLayout(y=25, name_right=230, val_gap=75)
+            fig = PyFig(size=(550,400), frame_num=frame, y=25, name_right=230, val_gap=75)
 
-            n_nums = auto_name(fig, layout, "nums")
-            l_nums = fig.list(texts=["1", "2", "3"], pos=layout.val_for_name(n_nums))
+            n_nums = fig.auto_name("nums")
+            l_nums = fig.list(texts=["1", "2", "3"], pos=fig.val_for_name(n_nums))
             fig.reference(n_nums, l_nums[0])
 
-            fig.frame(pos=layout.next_frame(), size=(230,200), text="augment_twice_bad", rise=2, set=6, fade=1)
-            n_a_list = auto_name(fig, layout, "a_list", rise=2, set=5)
+            fig.frame(pos=fig.next_frame(), size=(230,200), text="augment_twice_bad", rise=2, set=6, fade=1)
+            n_a_list = fig.auto_name("a_list", rise=2, set=5)
             fig.reference(n_a_list, l_nums[0])
-            n_val = auto_name(fig, layout, "val", rise=2, set=6, fade=1)
-            i_val = fig.int(pos=layout.val_for_name(n_val), text="7", rise=2, set=7, fade=1)
+            n_val = fig.auto_name("val", rise=2, set=6, fade=1)
+            i_val = fig.int(pos=fig.val_for_name(n_val), text="7", rise=2, set=7, fade=1)
             fig.reference(n_val, i_val)
 
             n_a_list = fig.name(center=n_a_list.center, size=n_a_list.size, text="a_list", rise=5, set=6, fade=1)
-            l_a_list = fig.list(texts=["1", "2", "3", "7", "7"], pos=layout.val_for_name(n_a_list), rise=4, set=7, fade=1)
+            l_a_list = fig.list(texts=["1", "2", "3", "7", "7"], pos=fig.val_for_name(n_a_list), rise=4, set=7, fade=1)
             fig.reference(n_a_list, l_a_list[0])
 
             cog.outl(fig.tostring())
@@ -1951,22 +1935,21 @@ class PyNameCogTest(SvgTest):
             '''
 
         def figure(frame):
-            fig = PyFig(size=(550,400), frame_num=frame)
-            layout = PyLayout(y=25, name_right=230, val_gap=75)
+            fig = PyFig(size=(550,400), frame_num=frame, y=25, name_right=230, val_gap=75)
 
-            n_nums = auto_name(fig, layout, "nums")
-            l_nums = fig.list(texts=["1", "2", "3"], pos=layout.val_for_name(n_nums), set=8, fade=1)
+            n_nums = fig.auto_name("nums")
+            l_nums = fig.list(texts=["1", "2", "3"], pos=fig.val_for_name(n_nums), set=8, fade=1)
             fig.reference(n_nums, l_nums[0])
 
-            the_frame = fig.frame(pos=layout.next_frame(), size=(230,200), text="augment_twice_bad", rise=2, set=7, fade=1)
-            n_a_list = auto_name(fig, layout, "a_list", rise=2, set=5)
+            the_frame = fig.frame(pos=fig.next_frame(), size=(230,200), text="augment_twice_bad", rise=2, set=7, fade=1)
+            n_a_list = fig.auto_name("a_list", rise=2, set=5)
             fig.reference(n_a_list, l_nums[0])
-            n_val = auto_name(fig, layout, "val", rise=2, set=6, fade=1)
-            i_val = fig.int(pos=layout.val_for_name(n_val), text="7", rise=2, set=6, fade=1)
+            n_val = fig.auto_name("val", rise=2, set=6, fade=1)
+            i_val = fig.int(pos=fig.val_for_name(n_val), text="7", rise=2, set=6, fade=1)
             fig.reference(n_val, i_val)
 
             n_a_list = fig.name(center=n_a_list.center, size=n_a_list.size, text="a_list", rise=5, set=6, fade=1)
-            l_a_list = fig.list(texts=["1", "2", "3", "7", "7"], pos=layout.val_for_name(n_a_list), rise=4)
+            l_a_list = fig.list(texts=["1", "2", "3", "7", "7"], pos=fig.val_for_name(n_a_list), rise=4)
             fig.reference(n_a_list, l_a_list[0])
 
             n_return = fig.name(center=(the_frame.right, n_a_list.cy), size=(25,25), text="", rise=6, set=8)
@@ -2380,21 +2363,20 @@ class PyNameCogTest(SvgTest):
             '''
 
         def figure(frame):
-            fig = PyFig(size=(500,400), frame_num=frame)
-            layout = PyLayout(y=25, name_right=200, val_gap=75)
+            fig = PyFig(size=(500,400), frame_num=frame, y=25, name_right=200, val_gap=75)
 
-            x0 = auto_name(fig, layout, "", set=0)
-            x = auto_name(fig, layout, "x")
-            x2 = auto_name(fig, layout, "", set=0)
-            x3 = auto_name(fig, layout, "", set=0)
+            x0 = fig.auto_name("", set=0)
+            x = fig.auto_name("x")
+            x2 = fig.auto_name("", set=0)
+            x3 = fig.auto_name("", set=0)
 
-            i_12 = fig.int(pos=layout.val_for_name(x0), text="12", set=2, fade=10)
+            i_12 = fig.int(pos=fig.val_for_name(x0), text="12", set=2, fade=10)
             fig.reference(x, i_12)
-            s_hello = fig.string(pos=layout.val_for_name(x), text=repr("hello"), size=(130,50), rise=2, set=3, fade=10)
+            s_hello = fig.string(pos=fig.val_for_name(x), text=repr("hello"), size=(130,50), rise=2, set=3, fade=10)
             fig.reference(x, s_hello)
-            l_123 = fig.list(pos=layout.val_for_name(x2), texts="123", rise=3)
+            l_123 = fig.list(pos=fig.val_for_name(x2), texts="123", rise=3)
             fig.reference(x, l_123[0])
-            l_1s3 = fig.list(pos=layout.val_for_name(x2), texts="1 3", rise=4)
+            l_1s3 = fig.list(pos=fig.val_for_name(x2), texts="1 3", rise=4)
             fig.reference(x, l_1s3[0])
             s_two = fig.string(center=(l_123[1].cx, x3.cy), text=repr("two"), size=(100, 50), rise=4)
             fig.connect(l_1s3[1].center, 90, s_two.north, 90, class_="arrow", start_marker=fig.DOT, rise=4)
@@ -2551,8 +2533,7 @@ class PyNameCogTest(SvgTest):
 
     def test_names_have_no_type_values_have_no_scope(self):
         # Random figure!
-        fig = PyFig(size=(400,600), scale=0.55)
-        layout = PyLayout(y=25, name_right=200, val_gap=175)
+        fig = PyFig(size=(400,600), scale=0.55, y=25, name_right=200, val_gap=175)
 
         r = random.Random(14)   # seeded to make it pretty good.
 
@@ -2569,18 +2550,18 @@ class PyNameCogTest(SvgTest):
 
         names = []
         for i in range(r.randint(2,3)):
-            names.append(auto_name(fig, layout, rand_name()))
+            names.append(fig.auto_name(rand_name()))
 
         for f in range(3):
             num_vars = r.randint(2,3)
-            fig.frame(pos=layout.next_frame(), size=(200,50+75*num_vars), text="func_"+rand_name())
+            fig.frame(pos=fig.next_frame(), size=(200,50+75*num_vars), text="func_"+rand_name())
             for i in range(num_vars):
-                names.append(auto_name(fig, layout, rand_name()))
-            layout.end_frame()
+                names.append(fig.auto_name(rand_name()))
+            fig.end_frame()
 
         values = []
         for name in names:
-            pos = layout.val_for_name(name)
+            pos = fig.val_for_name(name)
             type = r.choice(['int']*2 + ['string']*4 + ['list']*8)
             if type == 'int':
                 val = fig.int(pos=pos, text=str(r.randint(5,20)))
