@@ -2,7 +2,9 @@
 
 import collections
 import functools
+import glob
 import itertools
+import os
 import re
 import unittest
 
@@ -72,4 +74,8 @@ class SvgTest(unittest.TestCase):
                     svgout.write("</style></head><body><div>")
                     svgout.write(svg)
                     svgout.write("</div></body></html>\n")
+        else:
+            # Remove any remaining previous test failures.
+            for fname in glob.glob("{}_?.html".format(self._testMethodName)):
+                os.remove(fname)
         self.assertMultiLineEqual(svg1, svg2)
