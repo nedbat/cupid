@@ -89,7 +89,7 @@ class SvgFig(object):
                 insert=(2,2), size=(4,4), orient="auto",
             )
             self._dot.viewbox(0, 0, 4, 4)
-            self._dot.add(self.dwg.circle(center=(2,2), r=2, fill="black"))
+            self._dot.add(self.dwg.circle(center=(2,2), r=2, stroke="none", fill="black"))
             self.dwg.defs.add(self._dot)
         return self._dot
 

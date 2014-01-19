@@ -834,7 +834,7 @@ class PyNameCogTest(SvgTest):
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                     <marker id="id21" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
-                        <circle cx="2" cy="2" fill="black" r="2" />
+                        <circle cx="2" cy="2" fill="black" r="2" stroke="none" />
                     </marker>
                 </defs>
                 <rect class="name" height="50" width="98" x="102" y="25" />
@@ -861,7 +861,7 @@ class PyNameCogTest(SvgTest):
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                     <marker id="id23" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
-                        <circle cx="2" cy="2" fill="black" r="2" />
+                        <circle cx="2" cy="2" fill="black" r="2" stroke="none" />
                     </marker>
                 </defs>
                 <rect class="name" height="50" width="98" x="102" y="25" />
@@ -894,7 +894,7 @@ class PyNameCogTest(SvgTest):
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                     <marker id="id25" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
-                        <circle cx="2" cy="2" fill="black" r="2" />
+                        <circle cx="2" cy="2" fill="black" r="2" stroke="none" />
                     </marker>
                 </defs>
                 <rect class="name" height="50" width="98" x="102" y="25" />
@@ -2409,7 +2409,7 @@ class PyNameCogTest(SvgTest):
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                     <marker id="id58" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
-                        <circle cx="2" cy="2" fill="black" r="2" />
+                        <circle cx="2" cy="2" fill="black" r="2" stroke="none" />
                     </marker>
                 </defs>
                 <rect class="name" height="50" width="62" x="138" y="100" />
@@ -2434,7 +2434,7 @@ class PyNameCogTest(SvgTest):
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                     <marker id="id60" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
-                        <circle cx="2" cy="2" fill="black" r="2" />
+                        <circle cx="2" cy="2" fill="black" r="2" stroke="none" />
                     </marker>
                 </defs>
                 <rect class="name" height="50" width="62" x="138" y="100" />
@@ -2462,7 +2462,7 @@ class PyNameCogTest(SvgTest):
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                     <marker id="id62" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
-                        <circle cx="2" cy="2" fill="black" r="2" />
+                        <circle cx="2" cy="2" fill="black" r="2" stroke="none" />
                     </marker>
                 </defs>
                 <rect class="name" height="50" width="62" x="138" y="100" />
@@ -2497,7 +2497,7 @@ class PyNameCogTest(SvgTest):
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                     <marker id="id64" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
-                        <circle cx="2" cy="2" fill="black" r="2" />
+                        <circle cx="2" cy="2" fill="black" r="2" stroke="none" />
                     </marker>
                 </defs>
                 <rect class="name" height="50" width="62" x="138" y="100" />
