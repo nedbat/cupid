@@ -7,10 +7,10 @@ class PyFig(SvgFig):
     def __init__(self, unit=25, y=None, y_stride=None, name_right=None, val_gap=None, **kwargs):
         super(PyFig, self).__init__(**kwargs)
         self.unit = unit
-        self.y = y or 1#self.unit*4
+        self.y = y or self.unit
         self.y_stride = y_stride or self.unit*3
-        self.name_right = name_right or 1#self.unit*8
-        self.val_left = self.name_right + (val_gap or self.unit*4)
+        self.name_right = name_right or self.unit*8
+        self.val_left = self.name_right + (val_gap or self.unit*3)
 
     def next_name(self):
         """Produce a position for the next name."""
@@ -38,7 +38,7 @@ class PyFig(SvgFig):
 
     def auto_name(self, text, **args):
         width = self.unit * 2 + 12*len(text)
-        return self.name(pos=self.next_name(), size=(width,50), text=text, **args)
+        return self.name(pos=self.next_name(), size=(width,self.unit*2), text=text, **args)
 
     def int(self, **args):
         defarg(args, size=(self.unit*2, self.unit*2))
