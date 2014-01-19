@@ -109,7 +109,18 @@ class PyNameCogTest(SvgTest):
                         x = 23
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id1" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="62" x="138" y="25" /><text dy=".3em" text-anchor="middle" x="169" y="50">x</text><circle class="int value" cx="300" cy="50" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="50">23</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id1)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id1" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="62" x="138" y="25" />
+                <text dy=".3em" text-anchor="middle" x="169" y="50">x</text>
+                <circle class="int value" cx="300" cy="50" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="50">23</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id1)" />
+            </svg>
             </div>
             </div>
             <!-- }}} -->
@@ -151,7 +162,18 @@ class PyNameCogTest(SvgTest):
                         y = x
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id2" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="62" x="138" y="25" /><text dy=".3em" text-anchor="middle" x="169" y="50">x</text><circle class="int value" cx="300" cy="50" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="50">23</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id2)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id2" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="62" x="138" y="25" />
+                <text dy=".3em" text-anchor="middle" x="169" y="50">x</text>
+                <circle class="int value" cx="300" cy="50" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="50">23</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id2)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -160,7 +182,21 @@ class PyNameCogTest(SvgTest):
                         y = x
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id3" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="62" x="138" y="25" /><text dy=".3em" text-anchor="middle" x="169" y="50">x</text><rect class="name" height="50" width="62" x="138" y="100" /><text dy=".3em" text-anchor="middle" x="169" y="125">y</text><circle class="int value" cx="300" cy="87" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="87">23</text><path class="arrow" d="M 200,50 C 220,50 223,52 237,68 C 251,84 254,87 275,87" fill="none" marker-end="url(#id3)" /><path class="arrow" d="M 200,125 C 221,125 223,121 237,106 C 251,90 253,87 275,87" fill="none" marker-end="url(#id3)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id3" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="62" x="138" y="25" />
+                <text dy=".3em" text-anchor="middle" x="169" y="50">x</text>
+                <rect class="name" height="50" width="62" x="138" y="100" />
+                <text dy=".3em" text-anchor="middle" x="169" y="125">y</text>
+                <circle class="int value" cx="300" cy="87" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="87">23</text>
+                <path class="arrow" d="M 200,50 C 220,50 223,52 237,68 C 251,84 254,87 275,87" fill="none" marker-end="url(#id3)" />
+                <path class="arrow" d="M 200,125 C 221,125 223,121 237,106 C 251,90 253,87 275,87" fill="none" marker-end="url(#id3)" />
+            </svg>
             </div>
             </div>
             <!-- }}} -->
@@ -211,7 +247,20 @@ class PyNameCogTest(SvgTest):
                         x = 12
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id4" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="62" x="138" y="25" /><text dy=".3em" text-anchor="middle" x="169" y="50">x</text><circle class="int value" cx="300" cy="50" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="50">23</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id4)" /><rect class="name" height="50" width="62" x="138" y="25" /><text dy=".3em" text-anchor="middle" x="169" y="50">x</text></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id4" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="62" x="138" y="25" />
+                <text dy=".3em" text-anchor="middle" x="169" y="50">x</text>
+                <circle class="int value" cx="300" cy="50" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="50">23</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id4)" />
+                <rect class="name" height="50" width="62" x="138" y="25" />
+                <text dy=".3em" text-anchor="middle" x="169" y="50">x</text>
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -221,7 +270,23 @@ class PyNameCogTest(SvgTest):
                         x = 12
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id5" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="62" x="138" y="25" /><text dy=".3em" text-anchor="middle" x="169" y="50">x</text><rect class="name" height="50" width="62" x="138" y="175" /><text dy=".3em" text-anchor="middle" x="169" y="200">y</text><circle class="int value" cx="300" cy="125" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="125">23</text><path class="arrow" d="M 200,50 C 226,50 230,62 237,87 C 244,112 248,125 275,125" fill="none" marker-end="url(#id5)" /><path class="arrow" d="M 200,200 C 226,200 230,187 237,162 C 244,137 248,125 275,125" fill="none" marker-end="url(#id5)" /><rect class="name" height="50" width="62" x="138" y="25" /><text dy=".3em" text-anchor="middle" x="169" y="50">x</text></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id5" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="62" x="138" y="25" />
+                <text dy=".3em" text-anchor="middle" x="169" y="50">x</text>
+                <rect class="name" height="50" width="62" x="138" y="175" />
+                <text dy=".3em" text-anchor="middle" x="169" y="200">y</text>
+                <circle class="int value" cx="300" cy="125" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="125">23</text>
+                <path class="arrow" d="M 200,50 C 226,50 230,62 237,87 C 244,112 248,125 275,125" fill="none" marker-end="url(#id5)" />
+                <path class="arrow" d="M 200,200 C 226,200 230,187 237,162 C 244,137 248,125 275,125" fill="none" marker-end="url(#id5)" />
+                <rect class="name" height="50" width="62" x="138" y="25" />
+                <text dy=".3em" text-anchor="middle" x="169" y="50">x</text>
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -231,7 +296,23 @@ class PyNameCogTest(SvgTest):
                         x = 12
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id6" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="62" x="138" y="175" /><text dy=".3em" text-anchor="middle" x="169" y="200">y</text><circle class="int value" cx="300" cy="125" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="125">23</text><path class="arrow" d="M 200,200 C 226,200 230,187 237,162 C 244,137 248,125 275,125" fill="none" marker-end="url(#id6)" /><rect class="name" height="50" width="62" x="138" y="25" /><text dy=".3em" text-anchor="middle" x="169" y="50">x</text><circle class="int value" cx="300" cy="50" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="50">12</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id6)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id6" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="62" x="138" y="175" />
+                <text dy=".3em" text-anchor="middle" x="169" y="200">y</text>
+                <circle class="int value" cx="300" cy="125" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="125">23</text>
+                <path class="arrow" d="M 200,200 C 226,200 230,187 237,162 C 244,137 248,125 275,125" fill="none" marker-end="url(#id6)" />
+                <rect class="name" height="50" width="62" x="138" y="25" />
+                <text dy=".3em" text-anchor="middle" x="169" y="50">x</text>
+                <circle class="int value" cx="300" cy="50" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="50">12</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id6)" />
+            </svg>
             </div>
             </div>
             <!-- }}} -->
@@ -276,7 +357,18 @@ class PyNameCogTest(SvgTest):
                         x = "world"
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id7" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="62" x="138" y="25" /><text dy=".3em" text-anchor="middle" x="169" y="50">x</text><rect class="string value" height="50" rx="25" ry="25" width="120" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">'hello'</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id7)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id7" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="62" x="138" y="25" />
+                <text dy=".3em" text-anchor="middle" x="169" y="50">x</text>
+                <rect class="string value" height="50" rx="25" ry="25" width="120" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">'hello'</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id7)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -286,7 +378,20 @@ class PyNameCogTest(SvgTest):
                         x = "world"
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id8" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="string value" height="50" opacity="0.25" rx="25" ry="25" width="120" x="275" y="25" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="335" y="50">'hello'</text><rect class="name" height="50" width="62" x="138" y="25" /><text dy=".3em" text-anchor="middle" x="169" y="50">x</text><rect class="string value" height="50" rx="25" ry="25" width="120" x="275" y="100" /><text dy=".3em" text-anchor="middle" x="335" y="125">'world'</text><path class="arrow" d="M 200,50 C 226,50 230,62 237,87 C 244,112 248,125 275,125" fill="none" marker-end="url(#id8)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id8" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="string value" height="50" opacity="0.25" rx="25" ry="25" width="120" x="275" y="25" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="335" y="50">'hello'</text>
+                <rect class="name" height="50" width="62" x="138" y="25" />
+                <text dy=".3em" text-anchor="middle" x="169" y="50">x</text>
+                <rect class="string value" height="50" rx="25" ry="25" width="120" x="275" y="100" />
+                <text dy=".3em" text-anchor="middle" x="335" y="125">'world'</text>
+                <path class="arrow" d="M 200,50 C 226,50 230,62 237,87 C 244,112 248,125 275,125" fill="none" marker-end="url(#id8)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -296,7 +401,18 @@ class PyNameCogTest(SvgTest):
                         x = "world"
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id9" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="62" x="138" y="25" /><text dy=".3em" text-anchor="middle" x="169" y="50">x</text><rect class="string value" height="50" rx="25" ry="25" width="120" x="275" y="100" /><text dy=".3em" text-anchor="middle" x="335" y="125">'world'</text><path class="arrow" d="M 200,50 C 226,50 230,62 237,87 C 244,112 248,125 275,125" fill="none" marker-end="url(#id9)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id9" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="62" x="138" y="25" />
+                <text dy=".3em" text-anchor="middle" x="169" y="50">x</text>
+                <rect class="string value" height="50" rx="25" ry="25" width="120" x="275" y="100" />
+                <text dy=".3em" text-anchor="middle" x="335" y="125">'world'</text>
+                <path class="arrow" d="M 200,50 C 226,50 230,62 237,87 C 244,112 248,125 275,125" fill="none" marker-end="url(#id9)" />
+            </svg>
             </div>
             </div>
             <!-- }}} -->
@@ -337,7 +453,22 @@ class PyNameCogTest(SvgTest):
                         other = nums
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id10" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="102" y="25" /><text dy=".3em" text-anchor="middle" x="151" y="50">nums</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id10)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id10" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="102" y="25" />
+                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id10)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -346,7 +477,25 @@ class PyNameCogTest(SvgTest):
                         other = nums
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id11" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="102" y="25" /><text dy=".3em" text-anchor="middle" x="151" y="50">nums</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id11)" /><rect class="name" height="50" width="110" x="90" y="100" /><text dy=".3em" text-anchor="middle" x="145" y="125">other</text><path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id11)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id11" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="102" y="25" />
+                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id11)" />
+                <rect class="name" height="50" width="110" x="90" y="100" />
+                <text dy=".3em" text-anchor="middle" x="145" y="125">other</text>
+                <path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id11)" />
+            </svg>
             </div>
             </div>
             <!-- }}} -->
@@ -394,7 +543,22 @@ class PyNameCogTest(SvgTest):
                         print other     # [1, 2, 3, 4] !!!
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id12" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="102" y="25" /><text dy=".3em" text-anchor="middle" x="151" y="50">nums</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id12)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id12" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="102" y="25" />
+                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id12)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -405,7 +569,25 @@ class PyNameCogTest(SvgTest):
                         print other     # [1, 2, 3, 4] !!!
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id13" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="102" y="25" /><text dy=".3em" text-anchor="middle" x="151" y="50">nums</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id13)" /><rect class="name" height="50" width="110" x="90" y="100" /><text dy=".3em" text-anchor="middle" x="145" y="125">other</text><path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id13)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id13" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="102" y="25" />
+                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id13)" />
+                <rect class="name" height="50" width="110" x="90" y="100" />
+                <text dy=".3em" text-anchor="middle" x="145" y="125">other</text>
+                <path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id13)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -416,7 +598,33 @@ class PyNameCogTest(SvgTest):
                         print other     # [1, 2, 3, 4] !!!
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id14" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="102" y="25" /><text dy=".3em" text-anchor="middle" x="151" y="50">nums</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id14)" /><rect class="name" height="50" width="110" x="90" y="100" /><text dy=".3em" text-anchor="middle" x="145" y="125">other</text><path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id14)" /><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><rect class="list" height="50" width="40" x="395" y="25" /><text dy=".3em" text-anchor="middle" x="415" y="50">4</text></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id14" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="102" y="25" />
+                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id14)" />
+                <rect class="name" height="50" width="110" x="90" y="100" />
+                <text dy=".3em" text-anchor="middle" x="145" y="125">other</text>
+                <path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id14)" />
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <rect class="list" height="50" width="40" x="395" y="25" />
+                <text dy=".3em" text-anchor="middle" x="415" y="50">4</text>
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -427,7 +635,33 @@ class PyNameCogTest(SvgTest):
                         print other     # [1, 2, 3, 4] !!!
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id15" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="102" y="25" /><text dy=".3em" text-anchor="middle" x="151" y="50">nums</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id15)" /><rect class="name" height="50" width="110" x="90" y="100" /><text dy=".3em" text-anchor="middle" x="145" y="125">other</text><path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id15)" /><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><rect class="list" height="50" width="40" x="395" y="25" /><text dy=".3em" text-anchor="middle" x="415" y="50">4</text></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id15" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="102" y="25" />
+                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id15)" />
+                <rect class="name" height="50" width="110" x="90" y="100" />
+                <text dy=".3em" text-anchor="middle" x="145" y="125">other</text>
+                <path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id15)" />
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <rect class="list" height="50" width="40" x="395" y="25" />
+                <text dy=".3em" text-anchor="middle" x="415" y="50">4</text>
+            </svg>
             </div>
             </div>
             <!-- }}} -->
@@ -472,7 +706,18 @@ class PyNameCogTest(SvgTest):
                         x = x + " there"
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id16" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="62" x="138" y="25" /><text dy=".3em" text-anchor="middle" x="169" y="50">x</text><rect class="string value" height="50" rx="25" ry="25" width="120" x="275" y="100" /><text dy=".3em" text-anchor="middle" x="335" y="125">'hello'</text><path class="arrow" d="M 200,50 C 226,50 230,62 237,87 C 244,112 248,125 275,125" fill="none" marker-end="url(#id16)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id16" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="62" x="138" y="25" />
+                <text dy=".3em" text-anchor="middle" x="169" y="50">x</text>
+                <rect class="string value" height="50" rx="25" ry="25" width="120" x="275" y="100" />
+                <text dy=".3em" text-anchor="middle" x="335" y="125">'hello'</text>
+                <path class="arrow" d="M 200,50 C 226,50 230,62 237,87 C 244,112 248,125 275,125" fill="none" marker-end="url(#id16)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -482,7 +727,21 @@ class PyNameCogTest(SvgTest):
                         x = x + " there"
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id17" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="62" x="138" y="25" /><text dy=".3em" text-anchor="middle" x="169" y="50">x</text><rect class="name" height="50" width="62" x="138" y="100" /><text dy=".3em" text-anchor="middle" x="169" y="125">y</text><rect class="string value" height="50" rx="25" ry="25" width="120" x="275" y="100" /><text dy=".3em" text-anchor="middle" x="335" y="125">'hello'</text><path class="arrow" d="M 200,50 C 226,50 230,62 237,87 C 244,112 248,125 275,125" fill="none" marker-end="url(#id17)" /><path class="arrow" d="M 200,125 C 218,125 218,125 237,125 C 256,125 256,125 275,125" fill="none" marker-end="url(#id17)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id17" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="62" x="138" y="25" />
+                <text dy=".3em" text-anchor="middle" x="169" y="50">x</text>
+                <rect class="name" height="50" width="62" x="138" y="100" />
+                <text dy=".3em" text-anchor="middle" x="169" y="125">y</text>
+                <rect class="string value" height="50" rx="25" ry="25" width="120" x="275" y="100" />
+                <text dy=".3em" text-anchor="middle" x="335" y="125">'hello'</text>
+                <path class="arrow" d="M 200,50 C 226,50 230,62 237,87 C 244,112 248,125 275,125" fill="none" marker-end="url(#id17)" />
+                <path class="arrow" d="M 200,125 C 218,125 218,125 237,125 C 256,125 256,125 275,125" fill="none" marker-end="url(#id17)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -492,7 +751,23 @@ class PyNameCogTest(SvgTest):
                         x = x + " there"
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id18" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="62" x="138" y="25" /><text dy=".3em" text-anchor="middle" x="169" y="50">x</text><rect class="name" height="50" width="62" x="138" y="100" /><text dy=".3em" text-anchor="middle" x="169" y="125">y</text><rect class="string value" height="50" rx="25" ry="25" width="120" x="275" y="100" /><text dy=".3em" text-anchor="middle" x="335" y="125">'hello'</text><path class="arrow" d="M 200,50 C 226,50 230,62 237,87 C 244,112 248,125 275,125" fill="none" marker-end="url(#id18)" /><path class="arrow" d="M 200,125 C 218,125 218,125 237,125 C 256,125 256,125 275,125" fill="none" marker-end="url(#id18)" /><rect class="string value" height="50" rx="25" ry="25" width="200" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">'hello there'</text></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id18" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="62" x="138" y="25" />
+                <text dy=".3em" text-anchor="middle" x="169" y="50">x</text>
+                <rect class="name" height="50" width="62" x="138" y="100" />
+                <text dy=".3em" text-anchor="middle" x="169" y="125">y</text>
+                <rect class="string value" height="50" rx="25" ry="25" width="120" x="275" y="100" />
+                <text dy=".3em" text-anchor="middle" x="335" y="125">'hello'</text>
+                <path class="arrow" d="M 200,50 C 226,50 230,62 237,87 C 244,112 248,125 275,125" fill="none" marker-end="url(#id18)" />
+                <path class="arrow" d="M 200,125 C 218,125 218,125 237,125 C 256,125 256,125 275,125" fill="none" marker-end="url(#id18)" />
+                <rect class="string value" height="50" rx="25" ry="25" width="200" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">'hello there'</text>
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -502,7 +777,23 @@ class PyNameCogTest(SvgTest):
                         x = x + " there"
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id19" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="62" x="138" y="100" /><text dy=".3em" text-anchor="middle" x="169" y="125">y</text><rect class="string value" height="50" rx="25" ry="25" width="120" x="275" y="100" /><text dy=".3em" text-anchor="middle" x="335" y="125">'hello'</text><path class="arrow" d="M 200,125 C 218,125 218,125 237,125 C 256,125 256,125 275,125" fill="none" marker-end="url(#id19)" /><rect class="string value" height="50" rx="25" ry="25" width="200" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">'hello there'</text><rect class="name" height="50" width="62" x="138" y="25" /><text dy=".3em" text-anchor="middle" x="169" y="50">x</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id19)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id19" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="62" x="138" y="100" />
+                <text dy=".3em" text-anchor="middle" x="169" y="125">y</text>
+                <rect class="string value" height="50" rx="25" ry="25" width="120" x="275" y="100" />
+                <text dy=".3em" text-anchor="middle" x="335" y="125">'hello'</text>
+                <path class="arrow" d="M 200,125 C 218,125 218,125 237,125 C 256,125 256,125 275,125" fill="none" marker-end="url(#id19)" />
+                <rect class="string value" height="50" rx="25" ry="25" width="200" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">'hello there'</text>
+                <rect class="name" height="50" width="62" x="138" y="25" />
+                <text dy=".3em" text-anchor="middle" x="169" y="50">x</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id19)" />
+            </svg>
             </div>
             </div>
             <!-- }}} -->
@@ -550,7 +841,25 @@ class PyNameCogTest(SvgTest):
                         x = nums[1]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id20" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker><marker id="id21" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4"><circle cx="2" cy="2" fill="black" r="2" /></marker></defs><rect class="name" height="50" width="98" x="102" y="25" /><text dy=".3em" text-anchor="middle" x="151" y="50">nums</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id20)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id20" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                    <marker id="id21" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
+                        <circle cx="2" cy="2" fill="black" r="2" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="102" y="25" />
+                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id20)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -559,7 +868,31 @@ class PyNameCogTest(SvgTest):
                         x = nums[1]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id22" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker><marker id="id23" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4"><circle cx="2" cy="2" fill="black" r="2" /></marker></defs><rect class="name" height="50" width="98" x="102" y="25" /><text dy=".3em" text-anchor="middle" x="151" y="50">nums</text><rect class="list" height="50" width="40" x="275" y="25" /><rect class="list" height="50" width="40" x="315" y="25" /><rect class="list" height="50" width="40" x="355" y="25" /><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id22)" /><circle class="int value" cx="300" cy="125" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="125">1</text><circle class="int value" cx="360" cy="125" r="25" /><text dy=".3em" text-anchor="middle" x="360" y="125">2</text><circle class="int value" cx="420" cy="125" r="25" /><text dy=".3em" text-anchor="middle" x="420" y="125">3</text><path class="arrow" d="M 295,50 C 295,62 295,62 297,75 C 299,87 300,87 300,100" fill="none" marker-end="url(#id22)" marker-start="url(#id23)" /><path class="arrow" d="M 335,50 C 335,63 337,65 347,75 C 357,84 360,86 360,100" fill="none" marker-end="url(#id22)" marker-start="url(#id23)" /><path class="arrow" d="M 375,50 C 375,66 381,69 397,75 C 413,80 420,83 420,100" fill="none" marker-end="url(#id22)" marker-start="url(#id23)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id22" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                    <marker id="id23" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
+                        <circle cx="2" cy="2" fill="black" r="2" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="102" y="25" />
+                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id22)" />
+                <circle class="int value" cx="300" cy="125" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="125">1</text>
+                <circle class="int value" cx="360" cy="125" r="25" />
+                <text dy=".3em" text-anchor="middle" x="360" y="125">2</text>
+                <circle class="int value" cx="420" cy="125" r="25" />
+                <text dy=".3em" text-anchor="middle" x="420" y="125">3</text>
+                <path class="arrow" d="M 295,50 C 295,62 295,62 297,75 C 299,87 300,87 300,100" fill="none" marker-end="url(#id22)" marker-start="url(#id23)" />
+                <path class="arrow" d="M 335,50 C 335,63 337,65 347,75 C 357,84 360,86 360,100" fill="none" marker-end="url(#id22)" marker-start="url(#id23)" />
+                <path class="arrow" d="M 375,50 C 375,66 381,69 397,75 C 413,80 420,83 420,100" fill="none" marker-end="url(#id22)" marker-start="url(#id23)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -568,7 +901,34 @@ class PyNameCogTest(SvgTest):
                         x = nums[1]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id24" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker><marker id="id25" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4"><circle cx="2" cy="2" fill="black" r="2" /></marker></defs><rect class="name" height="50" width="98" x="102" y="25" /><text dy=".3em" text-anchor="middle" x="151" y="50">nums</text><rect class="list" height="50" width="40" x="275" y="25" /><rect class="list" height="50" width="40" x="315" y="25" /><rect class="list" height="50" width="40" x="355" y="25" /><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id24)" /><circle class="int value" cx="300" cy="125" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="125">1</text><circle class="int value" cx="360" cy="125" r="25" /><text dy=".3em" text-anchor="middle" x="360" y="125">2</text><circle class="int value" cx="420" cy="125" r="25" /><text dy=".3em" text-anchor="middle" x="420" y="125">3</text><path class="arrow" d="M 295,50 C 295,62 295,62 297,75 C 299,87 300,87 300,100" fill="none" marker-end="url(#id24)" marker-start="url(#id25)" /><path class="arrow" d="M 335,50 C 335,63 337,65 347,75 C 357,84 360,86 360,100" fill="none" marker-end="url(#id24)" marker-start="url(#id25)" /><path class="arrow" d="M 375,50 C 375,66 381,69 397,75 C 413,80 420,83 420,100" fill="none" marker-end="url(#id24)" marker-start="url(#id25)" /><rect class="name" height="50" width="62" x="138" y="175" /><text dy=".3em" text-anchor="middle" x="169" y="200">x</text><path class="arrow" d="M 200,200 C 241,200 259,198 300,195 C 342,193 360,191 360,150" fill="none" marker-end="url(#id24)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id24" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                    <marker id="id25" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
+                        <circle cx="2" cy="2" fill="black" r="2" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="102" y="25" />
+                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id24)" />
+                <circle class="int value" cx="300" cy="125" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="125">1</text>
+                <circle class="int value" cx="360" cy="125" r="25" />
+                <text dy=".3em" text-anchor="middle" x="360" y="125">2</text>
+                <circle class="int value" cx="420" cy="125" r="25" />
+                <text dy=".3em" text-anchor="middle" x="420" y="125">3</text>
+                <path class="arrow" d="M 295,50 C 295,62 295,62 297,75 C 299,87 300,87 300,100" fill="none" marker-end="url(#id24)" marker-start="url(#id25)" />
+                <path class="arrow" d="M 335,50 C 335,63 337,65 347,75 C 357,84 360,86 360,100" fill="none" marker-end="url(#id24)" marker-start="url(#id25)" />
+                <path class="arrow" d="M 375,50 C 375,66 381,69 397,75 C 413,80 420,83 420,100" fill="none" marker-end="url(#id24)" marker-start="url(#id25)" />
+                <rect class="name" height="50" width="62" x="138" y="175" />
+                <text dy=".3em" text-anchor="middle" x="169" y="200">x</text>
+                <path class="arrow" d="M 200,200 C 241,200 259,198 300,195 C 342,193 360,191 360,150" fill="none" marker-end="url(#id24)" />
+            </svg>
             </div>
             </div>
             <!-- }}} -->
@@ -622,7 +982,18 @@ class PyNameCogTest(SvgTest):
                         func(num)
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id26" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="86" x="114" y="25" /><text dy=".3em" text-anchor="middle" x="157" y="50">num</text><circle class="int value" cx="300" cy="50" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="50">17</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id26)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id26" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="86" x="114" y="25" />
+                <text dy=".3em" text-anchor="middle" x="157" y="50">num</text>
+                <circle class="int value" cx="300" cy="50" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="50">17</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id26)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -635,7 +1006,23 @@ class PyNameCogTest(SvgTest):
                         func(num)
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id27" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="86" x="114" y="25" /><text dy=".3em" text-anchor="middle" x="157" y="50">num</text><circle class="int value" cx="300" cy="50" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="50">17</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id27)" /><rect class="frame" height="125" rx="20" ry="20" width="200" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="125">func</text><rect class="name" height="50" width="62" x="138" y="150" /><text dy=".3em" text-anchor="middle" x="169" y="175">x</text><path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id27)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id27" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="86" x="114" y="25" />
+                <text dy=".3em" text-anchor="middle" x="157" y="50">num</text>
+                <circle class="int value" cx="300" cy="50" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="50">17</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id27)" />
+                <rect class="frame" height="125" rx="20" ry="20" width="200" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="125">func</text>
+                <rect class="name" height="50" width="62" x="138" y="150" />
+                <text dy=".3em" text-anchor="middle" x="169" y="175">x</text>
+                <path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id27)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -648,7 +1035,23 @@ class PyNameCogTest(SvgTest):
                         func(num)
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id28" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="86" x="114" y="25" /><text dy=".3em" text-anchor="middle" x="157" y="50">num</text><circle class="int value" cx="300" cy="50" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="50">17</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id28)" /><rect class="frame" height="125" rx="20" ry="20" width="200" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="125">func</text><rect class="name" height="50" width="62" x="138" y="150" /><text dy=".3em" text-anchor="middle" x="169" y="175">x</text><path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id28)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id28" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="86" x="114" y="25" />
+                <text dy=".3em" text-anchor="middle" x="157" y="50">num</text>
+                <circle class="int value" cx="300" cy="50" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="50">17</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id28)" />
+                <rect class="frame" height="125" rx="20" ry="20" width="200" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="125">func</text>
+                <rect class="name" height="50" width="62" x="138" y="150" />
+                <text dy=".3em" text-anchor="middle" x="169" y="175">x</text>
+                <path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id28)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -661,7 +1064,23 @@ class PyNameCogTest(SvgTest):
                         func(num)
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id29" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="86" x="114" y="25" /><text dy=".3em" text-anchor="middle" x="157" y="50">num</text><circle class="int value" cx="300" cy="50" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="50">17</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id29)" /><rect class="frame" height="125" rx="20" ry="20" width="200" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="125">func</text><rect class="name" height="50" width="62" x="138" y="150" /><text dy=".3em" text-anchor="middle" x="169" y="175">x</text><path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id29)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id29" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="86" x="114" y="25" />
+                <text dy=".3em" text-anchor="middle" x="157" y="50">num</text>
+                <circle class="int value" cx="300" cy="50" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="50">17</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id29)" />
+                <rect class="frame" height="125" rx="20" ry="20" width="200" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="125">func</text>
+                <rect class="name" height="50" width="62" x="138" y="150" />
+                <text dy=".3em" text-anchor="middle" x="169" y="175">x</text>
+                <path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id29)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -674,7 +1093,23 @@ class PyNameCogTest(SvgTest):
                         func(num)
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id30" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="86" x="114" y="25" /><text dy=".3em" text-anchor="middle" x="157" y="50">num</text><circle class="int value" cx="300" cy="50" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="50">17</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id30)" /><rect class="frame" height="125" opacity="0.25" rx="20" ry="20" width="200" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="0.25" text-anchor="middle" x="125" y="125">func</text><rect class="name" height="50" opacity="0.25" width="62" x="138" y="150" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="169" y="175">x</text><path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id30)" opacity="0.25" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id30" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="86" x="114" y="25" />
+                <text dy=".3em" text-anchor="middle" x="157" y="50">num</text>
+                <circle class="int value" cx="300" cy="50" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="50">17</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id30)" />
+                <rect class="frame" height="125" opacity="0.25" rx="20" ry="20" width="200" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="0.25" text-anchor="middle" x="125" y="125">func</text>
+                <rect class="name" height="50" opacity="0.25" width="62" x="138" y="150" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="169" y="175">x</text>
+                <path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id30)" opacity="0.25" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -687,7 +1122,18 @@ class PyNameCogTest(SvgTest):
                         func(num)
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id31" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="86" x="114" y="25" /><text dy=".3em" text-anchor="middle" x="157" y="50">num</text><circle class="int value" cx="300" cy="50" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="50">17</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id31)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id31" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="86" x="114" y="25" />
+                <text dy=".3em" text-anchor="middle" x="157" y="50">num</text>
+                <circle class="int value" cx="300" cy="50" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="50">17</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id31)" />
+            </svg>
             </div>
             </div>
             <!-- }}} -->
@@ -754,7 +1200,22 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3, 7, 7]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id32" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="102" y="25" /><text dy=".3em" text-anchor="middle" x="151" y="50">nums</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id32)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id32" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="102" y="25" />
+                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id32)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -769,7 +1230,32 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3, 7, 7]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id33" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="102" y="25" /><text dy=".3em" text-anchor="middle" x="151" y="50">nums</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id33)" /><rect class="frame" height="200" rx="20" ry="20" width="200" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="125">augment_twice</text><rect class="name" height="50" width="122" x="78" y="150" /><text dy=".3em" text-anchor="middle" x="139" y="175">a_list</text><path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id33)" /><rect class="name" height="50" width="86" x="114" y="225" /><text dy=".3em" text-anchor="middle" x="157" y="250">val</text><circle class="int value" cx="300" cy="250" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="250">7</text><path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#id33)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id33" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="102" y="25" />
+                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id33)" />
+                <rect class="frame" height="200" rx="20" ry="20" width="200" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="125">augment_twice</text>
+                <rect class="name" height="50" width="122" x="78" y="150" />
+                <text dy=".3em" text-anchor="middle" x="139" y="175">a_list</text>
+                <path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id33)" />
+                <rect class="name" height="50" width="86" x="114" y="225" />
+                <text dy=".3em" text-anchor="middle" x="157" y="250">val</text>
+                <circle class="int value" cx="300" cy="250" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="250">7</text>
+                <path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#id33)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -784,7 +1270,32 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3, 7, 7]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id34" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="102" y="25" /><text dy=".3em" text-anchor="middle" x="151" y="50">nums</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id34)" /><rect class="frame" height="200" rx="20" ry="20" width="200" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="125">augment_twice</text><rect class="name" height="50" width="122" x="78" y="150" /><text dy=".3em" text-anchor="middle" x="139" y="175">a_list</text><path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id34)" /><rect class="name" height="50" width="86" x="114" y="225" /><text dy=".3em" text-anchor="middle" x="157" y="250">val</text><circle class="int value" cx="300" cy="250" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="250">7</text><path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#id34)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id34" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="102" y="25" />
+                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id34)" />
+                <rect class="frame" height="200" rx="20" ry="20" width="200" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="125">augment_twice</text>
+                <rect class="name" height="50" width="122" x="78" y="150" />
+                <text dy=".3em" text-anchor="middle" x="139" y="175">a_list</text>
+                <path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id34)" />
+                <rect class="name" height="50" width="86" x="114" y="225" />
+                <text dy=".3em" text-anchor="middle" x="157" y="250">val</text>
+                <circle class="int value" cx="300" cy="250" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="250">7</text>
+                <path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#id34)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -799,7 +1310,41 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3, 7, 7]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id35" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="102" y="25" /><text dy=".3em" text-anchor="middle" x="151" y="50">nums</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id35)" /><rect class="frame" height="200" rx="20" ry="20" width="200" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="125">augment_twice</text><rect class="name" height="50" width="122" x="78" y="150" /><text dy=".3em" text-anchor="middle" x="139" y="175">a_list</text><path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id35)" /><rect class="name" height="50" width="86" x="114" y="225" /><text dy=".3em" text-anchor="middle" x="157" y="250">val</text><circle class="int value" cx="300" cy="250" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="250">7</text><path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#id35)" /><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><rect class="list" height="50" width="40" x="395" y="25" /><text dy=".3em" text-anchor="middle" x="415" y="50">7</text><rect class="highlight" height="60" rx="5" ry="5" width="50" x="390" y="20" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id35" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="102" y="25" />
+                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id35)" />
+                <rect class="frame" height="200" rx="20" ry="20" width="200" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="125">augment_twice</text>
+                <rect class="name" height="50" width="122" x="78" y="150" />
+                <text dy=".3em" text-anchor="middle" x="139" y="175">a_list</text>
+                <path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id35)" />
+                <rect class="name" height="50" width="86" x="114" y="225" />
+                <text dy=".3em" text-anchor="middle" x="157" y="250">val</text>
+                <circle class="int value" cx="300" cy="250" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="250">7</text>
+                <path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#id35)" />
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <rect class="list" height="50" width="40" x="395" y="25" />
+                <text dy=".3em" text-anchor="middle" x="415" y="50">7</text>
+                <rect class="highlight" height="60" rx="5" ry="5" width="50" x="390" y="20" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -814,7 +1359,51 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3, 7, 7]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id36" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="102" y="25" /><text dy=".3em" text-anchor="middle" x="151" y="50">nums</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id36)" /><rect class="frame" height="200" rx="20" ry="20" width="200" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="125">augment_twice</text><rect class="name" height="50" width="122" x="78" y="150" /><text dy=".3em" text-anchor="middle" x="139" y="175">a_list</text><path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id36)" /><rect class="name" height="50" width="86" x="114" y="225" /><text dy=".3em" text-anchor="middle" x="157" y="250">val</text><circle class="int value" cx="300" cy="250" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="250">7</text><path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#id36)" /><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><rect class="list" height="50" width="40" x="395" y="25" /><text dy=".3em" text-anchor="middle" x="415" y="50">7</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><rect class="list" height="50" width="40" x="395" y="25" /><text dy=".3em" text-anchor="middle" x="415" y="50">7</text><rect class="list" height="50" width="40" x="435" y="25" /><text dy=".3em" text-anchor="middle" x="455" y="50">7</text><rect class="highlight" height="60" rx="5" ry="5" width="50" x="430" y="20" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id36" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="102" y="25" />
+                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id36)" />
+                <rect class="frame" height="200" rx="20" ry="20" width="200" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="125">augment_twice</text>
+                <rect class="name" height="50" width="122" x="78" y="150" />
+                <text dy=".3em" text-anchor="middle" x="139" y="175">a_list</text>
+                <path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id36)" />
+                <rect class="name" height="50" width="86" x="114" y="225" />
+                <text dy=".3em" text-anchor="middle" x="157" y="250">val</text>
+                <circle class="int value" cx="300" cy="250" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="250">7</text>
+                <path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#id36)" />
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <rect class="list" height="50" width="40" x="395" y="25" />
+                <text dy=".3em" text-anchor="middle" x="415" y="50">7</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <rect class="list" height="50" width="40" x="395" y="25" />
+                <text dy=".3em" text-anchor="middle" x="415" y="50">7</text>
+                <rect class="list" height="50" width="40" x="435" y="25" />
+                <text dy=".3em" text-anchor="middle" x="455" y="50">7</text>
+                <rect class="highlight" height="60" rx="5" ry="5" width="50" x="430" y="20" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -829,7 +1418,50 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3, 7, 7]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id37" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="102" y="25" /><text dy=".3em" text-anchor="middle" x="151" y="50">nums</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id37)" /><rect class="frame" height="200" opacity="0.25" rx="20" ry="20" width="200" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="0.25" text-anchor="middle" x="125" y="125">augment_twice</text><rect class="name" height="50" opacity="0.25" width="122" x="78" y="150" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="139" y="175">a_list</text><path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id37)" opacity="0.25" /><rect class="name" height="50" opacity="0.25" width="86" x="114" y="225" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="157" y="250">val</text><circle class="int value" cx="300" cy="250" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="250">7</text><path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#id37)" opacity="0.25" /><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><rect class="list" height="50" width="40" x="395" y="25" /><text dy=".3em" text-anchor="middle" x="415" y="50">7</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><rect class="list" height="50" width="40" x="395" y="25" /><text dy=".3em" text-anchor="middle" x="415" y="50">7</text><rect class="list" height="50" width="40" x="435" y="25" /><text dy=".3em" text-anchor="middle" x="455" y="50">7</text></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id37" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="102" y="25" />
+                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id37)" />
+                <rect class="frame" height="200" opacity="0.25" rx="20" ry="20" width="200" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="0.25" text-anchor="middle" x="125" y="125">augment_twice</text>
+                <rect class="name" height="50" opacity="0.25" width="122" x="78" y="150" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="139" y="175">a_list</text>
+                <path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id37)" opacity="0.25" />
+                <rect class="name" height="50" opacity="0.25" width="86" x="114" y="225" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="157" y="250">val</text>
+                <circle class="int value" cx="300" cy="250" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="250">7</text>
+                <path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#id37)" opacity="0.25" />
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <rect class="list" height="50" width="40" x="395" y="25" />
+                <text dy=".3em" text-anchor="middle" x="415" y="50">7</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <rect class="list" height="50" width="40" x="395" y="25" />
+                <text dy=".3em" text-anchor="middle" x="415" y="50">7</text>
+                <rect class="list" height="50" width="40" x="435" y="25" />
+                <text dy=".3em" text-anchor="middle" x="455" y="50">7</text>
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -844,7 +1476,42 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3, 7, 7]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id38" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="102" y="25" /><text dy=".3em" text-anchor="middle" x="151" y="50">nums</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id38)" /><circle class="int value" cx="300" cy="250" opacity="0.25" r="25" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="300" y="250">7</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><rect class="list" height="50" width="40" x="395" y="25" /><text dy=".3em" text-anchor="middle" x="415" y="50">7</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><rect class="list" height="50" width="40" x="395" y="25" /><text dy=".3em" text-anchor="middle" x="415" y="50">7</text><rect class="list" height="50" width="40" x="435" y="25" /><text dy=".3em" text-anchor="middle" x="455" y="50">7</text></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id38" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="102" y="25" />
+                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id38)" />
+                <circle class="int value" cx="300" cy="250" opacity="0.25" r="25" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="300" y="250">7</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <rect class="list" height="50" width="40" x="395" y="25" />
+                <text dy=".3em" text-anchor="middle" x="415" y="50">7</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <rect class="list" height="50" width="40" x="395" y="25" />
+                <text dy=".3em" text-anchor="middle" x="415" y="50">7</text>
+                <rect class="list" height="50" width="40" x="435" y="25" />
+                <text dy=".3em" text-anchor="middle" x="455" y="50">7</text>
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -859,7 +1526,40 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3, 7, 7]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id39" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="102" y="25" /><text dy=".3em" text-anchor="middle" x="151" y="50">nums</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id39)" /><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><rect class="list" height="50" width="40" x="395" y="25" /><text dy=".3em" text-anchor="middle" x="415" y="50">7</text><rect class="list" height="50" width="40" x="275" y="25" /><text dy=".3em" text-anchor="middle" x="295" y="50">1</text><rect class="list" height="50" width="40" x="315" y="25" /><text dy=".3em" text-anchor="middle" x="335" y="50">2</text><rect class="list" height="50" width="40" x="355" y="25" /><text dy=".3em" text-anchor="middle" x="375" y="50">3</text><rect class="list" height="50" width="40" x="395" y="25" /><text dy=".3em" text-anchor="middle" x="415" y="50">7</text><rect class="list" height="50" width="40" x="435" y="25" /><text dy=".3em" text-anchor="middle" x="455" y="50">7</text></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id39" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="102" y="25" />
+                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id39)" />
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <rect class="list" height="50" width="40" x="395" y="25" />
+                <text dy=".3em" text-anchor="middle" x="415" y="50">7</text>
+                <rect class="list" height="50" width="40" x="275" y="25" />
+                <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+                <rect class="list" height="50" width="40" x="315" y="25" />
+                <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+                <rect class="list" height="50" width="40" x="355" y="25" />
+                <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+                <rect class="list" height="50" width="40" x="395" y="25" />
+                <text dy=".3em" text-anchor="middle" x="415" y="50">7</text>
+                <rect class="list" height="50" width="40" x="435" y="25" />
+                <text dy=".3em" text-anchor="middle" x="455" y="50">7</text>
+            </svg>
             </div>
             </div>
             <!-- }}} -->
@@ -923,7 +1623,22 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id40" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="132" y="25" /><text dy=".3em" text-anchor="middle" x="181" y="50">nums</text><rect class="list" height="50" width="40" x="305" y="25" /><text dy=".3em" text-anchor="middle" x="325" y="50">1</text><rect class="list" height="50" width="40" x="345" y="25" /><text dy=".3em" text-anchor="middle" x="365" y="50">2</text><rect class="list" height="50" width="40" x="385" y="25" /><text dy=".3em" text-anchor="middle" x="405" y="50">3</text><path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id40)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id40" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="132" y="25" />
+                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="305" y="25" />
+                <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
+                <rect class="list" height="50" width="40" x="345" y="25" />
+                <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
+                <rect class="list" height="50" width="40" x="385" y="25" />
+                <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id40)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -937,7 +1652,32 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id41" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="132" y="25" /><text dy=".3em" text-anchor="middle" x="181" y="50">nums</text><rect class="list" height="50" width="40" x="305" y="25" /><text dy=".3em" text-anchor="middle" x="325" y="50">1</text><rect class="list" height="50" width="40" x="345" y="25" /><text dy=".3em" text-anchor="middle" x="365" y="50">2</text><rect class="list" height="50" width="40" x="385" y="25" /><text dy=".3em" text-anchor="middle" x="405" y="50">3</text><path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id41)" /><rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text><rect class="name" height="50" width="122" x="108" y="150" /><text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text><path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#id41)" /><rect class="name" height="50" width="86" x="144" y="225" /><text dy=".3em" text-anchor="middle" x="187" y="250">val</text><circle class="int value" cx="330" cy="250" r="25" /><text dy=".3em" text-anchor="middle" x="330" y="250">7</text><path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id41)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id41" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="132" y="25" />
+                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="305" y="25" />
+                <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
+                <rect class="list" height="50" width="40" x="345" y="25" />
+                <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
+                <rect class="list" height="50" width="40" x="385" y="25" />
+                <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id41)" />
+                <rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
+                <rect class="name" height="50" width="122" x="108" y="150" />
+                <text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text>
+                <path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#id41)" />
+                <rect class="name" height="50" width="86" x="144" y="225" />
+                <text dy=".3em" text-anchor="middle" x="187" y="250">val</text>
+                <circle class="int value" cx="330" cy="250" r="25" />
+                <text dy=".3em" text-anchor="middle" x="330" y="250">7</text>
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id41)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -951,7 +1691,32 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id42" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="132" y="25" /><text dy=".3em" text-anchor="middle" x="181" y="50">nums</text><rect class="list" height="50" width="40" x="305" y="25" /><text dy=".3em" text-anchor="middle" x="325" y="50">1</text><rect class="list" height="50" width="40" x="345" y="25" /><text dy=".3em" text-anchor="middle" x="365" y="50">2</text><rect class="list" height="50" width="40" x="385" y="25" /><text dy=".3em" text-anchor="middle" x="405" y="50">3</text><path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id42)" /><rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text><rect class="name" height="50" width="122" x="108" y="150" /><text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text><path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#id42)" /><rect class="name" height="50" width="86" x="144" y="225" /><text dy=".3em" text-anchor="middle" x="187" y="250">val</text><circle class="int value" cx="330" cy="250" r="25" /><text dy=".3em" text-anchor="middle" x="330" y="250">7</text><path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id42)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id42" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="132" y="25" />
+                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="305" y="25" />
+                <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
+                <rect class="list" height="50" width="40" x="345" y="25" />
+                <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
+                <rect class="list" height="50" width="40" x="385" y="25" />
+                <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id42)" />
+                <rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
+                <rect class="name" height="50" width="122" x="108" y="150" />
+                <text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text>
+                <path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#id42)" />
+                <rect class="name" height="50" width="86" x="144" y="225" />
+                <text dy=".3em" text-anchor="middle" x="187" y="250">val</text>
+                <circle class="int value" cx="330" cy="250" r="25" />
+                <text dy=".3em" text-anchor="middle" x="330" y="250">7</text>
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id42)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -965,7 +1730,42 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id43" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="132" y="25" /><text dy=".3em" text-anchor="middle" x="181" y="50">nums</text><rect class="list" height="50" width="40" x="305" y="25" /><text dy=".3em" text-anchor="middle" x="325" y="50">1</text><rect class="list" height="50" width="40" x="345" y="25" /><text dy=".3em" text-anchor="middle" x="365" y="50">2</text><rect class="list" height="50" width="40" x="385" y="25" /><text dy=".3em" text-anchor="middle" x="405" y="50">3</text><path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id43)" /><rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text><rect class="name" height="50" width="122" x="108" y="150" /><text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text><path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#id43)" /><rect class="name" height="50" width="86" x="144" y="225" /><text dy=".3em" text-anchor="middle" x="187" y="250">val</text><circle class="int value" cx="330" cy="250" r="25" /><text dy=".3em" text-anchor="middle" x="330" y="250">7</text><path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id43)" /><rect class="list" height="50" width="40" x="305" y="150" /><text dy=".3em" text-anchor="middle" x="325" y="175">1</text><rect class="list" height="50" width="40" x="345" y="150" /><text dy=".3em" text-anchor="middle" x="365" y="175">2</text><rect class="list" height="50" width="40" x="385" y="150" /><text dy=".3em" text-anchor="middle" x="405" y="175">3</text><rect class="list" height="50" width="40" x="425" y="150" /><text dy=".3em" text-anchor="middle" x="445" y="175">7</text><rect class="list" height="50" width="40" x="465" y="150" /><text dy=".3em" text-anchor="middle" x="485" y="175">7</text></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id43" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="132" y="25" />
+                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="305" y="25" />
+                <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
+                <rect class="list" height="50" width="40" x="345" y="25" />
+                <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
+                <rect class="list" height="50" width="40" x="385" y="25" />
+                <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id43)" />
+                <rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
+                <rect class="name" height="50" width="122" x="108" y="150" />
+                <text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text>
+                <path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#id43)" />
+                <rect class="name" height="50" width="86" x="144" y="225" />
+                <text dy=".3em" text-anchor="middle" x="187" y="250">val</text>
+                <circle class="int value" cx="330" cy="250" r="25" />
+                <text dy=".3em" text-anchor="middle" x="330" y="250">7</text>
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id43)" />
+                <rect class="list" height="50" width="40" x="305" y="150" />
+                <text dy=".3em" text-anchor="middle" x="325" y="175">1</text>
+                <rect class="list" height="50" width="40" x="345" y="150" />
+                <text dy=".3em" text-anchor="middle" x="365" y="175">2</text>
+                <rect class="list" height="50" width="40" x="385" y="150" />
+                <text dy=".3em" text-anchor="middle" x="405" y="175">3</text>
+                <rect class="list" height="50" width="40" x="425" y="150" />
+                <text dy=".3em" text-anchor="middle" x="445" y="175">7</text>
+                <rect class="list" height="50" width="40" x="465" y="150" />
+                <text dy=".3em" text-anchor="middle" x="485" y="175">7</text>
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -979,7 +1779,42 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id44" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="132" y="25" /><text dy=".3em" text-anchor="middle" x="181" y="50">nums</text><rect class="list" height="50" width="40" x="305" y="25" /><text dy=".3em" text-anchor="middle" x="325" y="50">1</text><rect class="list" height="50" width="40" x="345" y="25" /><text dy=".3em" text-anchor="middle" x="365" y="50">2</text><rect class="list" height="50" width="40" x="385" y="25" /><text dy=".3em" text-anchor="middle" x="405" y="50">3</text><path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id44)" /><rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text><rect class="name" height="50" width="86" x="144" y="225" /><text dy=".3em" text-anchor="middle" x="187" y="250">val</text><circle class="int value" cx="330" cy="250" r="25" /><text dy=".3em" text-anchor="middle" x="330" y="250">7</text><path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id44)" /><rect class="name" height="50" width="122" x="108" y="150" /><text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text><rect class="list" height="50" width="40" x="305" y="150" /><text dy=".3em" text-anchor="middle" x="325" y="175">1</text><rect class="list" height="50" width="40" x="345" y="150" /><text dy=".3em" text-anchor="middle" x="365" y="175">2</text><rect class="list" height="50" width="40" x="385" y="150" /><text dy=".3em" text-anchor="middle" x="405" y="175">3</text><rect class="list" height="50" width="40" x="425" y="150" /><text dy=".3em" text-anchor="middle" x="445" y="175">7</text><rect class="list" height="50" width="40" x="465" y="150" /><text dy=".3em" text-anchor="middle" x="485" y="175">7</text><path class="arrow" d="M 230,175 C 248,175 248,175 267,175 C 286,175 286,175 305,175" fill="none" marker-end="url(#id44)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id44" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="132" y="25" />
+                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="305" y="25" />
+                <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
+                <rect class="list" height="50" width="40" x="345" y="25" />
+                <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
+                <rect class="list" height="50" width="40" x="385" y="25" />
+                <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id44)" />
+                <rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
+                <rect class="name" height="50" width="86" x="144" y="225" />
+                <text dy=".3em" text-anchor="middle" x="187" y="250">val</text>
+                <circle class="int value" cx="330" cy="250" r="25" />
+                <text dy=".3em" text-anchor="middle" x="330" y="250">7</text>
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id44)" />
+                <rect class="name" height="50" width="122" x="108" y="150" />
+                <text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text>
+                <rect class="list" height="50" width="40" x="305" y="150" />
+                <text dy=".3em" text-anchor="middle" x="325" y="175">1</text>
+                <rect class="list" height="50" width="40" x="345" y="150" />
+                <text dy=".3em" text-anchor="middle" x="365" y="175">2</text>
+                <rect class="list" height="50" width="40" x="385" y="150" />
+                <text dy=".3em" text-anchor="middle" x="405" y="175">3</text>
+                <rect class="list" height="50" width="40" x="425" y="150" />
+                <text dy=".3em" text-anchor="middle" x="445" y="175">7</text>
+                <rect class="list" height="50" width="40" x="465" y="150" />
+                <text dy=".3em" text-anchor="middle" x="485" y="175">7</text>
+                <path class="arrow" d="M 230,175 C 248,175 248,175 267,175 C 286,175 286,175 305,175" fill="none" marker-end="url(#id44)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -993,7 +1828,42 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id45" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="132" y="25" /><text dy=".3em" text-anchor="middle" x="181" y="50">nums</text><rect class="list" height="50" width="40" x="305" y="25" /><text dy=".3em" text-anchor="middle" x="325" y="50">1</text><rect class="list" height="50" width="40" x="345" y="25" /><text dy=".3em" text-anchor="middle" x="365" y="50">2</text><rect class="list" height="50" width="40" x="385" y="25" /><text dy=".3em" text-anchor="middle" x="405" y="50">3</text><path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id45)" /><rect class="frame" height="200" opacity="0.25" rx="20" ry="20" width="230" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="0.25" text-anchor="middle" x="140" y="125">augment_twice_bad</text><rect class="name" height="50" opacity="0.25" width="86" x="144" y="225" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="187" y="250">val</text><circle class="int value" cx="330" cy="250" r="25" /><text dy=".3em" text-anchor="middle" x="330" y="250">7</text><path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id45)" opacity="0.25" /><rect class="name" height="50" opacity="0.25" width="122" x="108" y="150" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="169" y="175">a_list</text><rect class="list" height="50" width="40" x="305" y="150" /><text dy=".3em" text-anchor="middle" x="325" y="175">1</text><rect class="list" height="50" width="40" x="345" y="150" /><text dy=".3em" text-anchor="middle" x="365" y="175">2</text><rect class="list" height="50" width="40" x="385" y="150" /><text dy=".3em" text-anchor="middle" x="405" y="175">3</text><rect class="list" height="50" width="40" x="425" y="150" /><text dy=".3em" text-anchor="middle" x="445" y="175">7</text><rect class="list" height="50" width="40" x="465" y="150" /><text dy=".3em" text-anchor="middle" x="485" y="175">7</text><path class="arrow" d="M 230,175 C 248,175 248,175 267,175 C 286,175 286,175 305,175" fill="none" marker-end="url(#id45)" opacity="0.25" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id45" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="132" y="25" />
+                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="305" y="25" />
+                <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
+                <rect class="list" height="50" width="40" x="345" y="25" />
+                <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
+                <rect class="list" height="50" width="40" x="385" y="25" />
+                <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id45)" />
+                <rect class="frame" height="200" opacity="0.25" rx="20" ry="20" width="230" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="0.25" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
+                <rect class="name" height="50" opacity="0.25" width="86" x="144" y="225" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="187" y="250">val</text>
+                <circle class="int value" cx="330" cy="250" r="25" />
+                <text dy=".3em" text-anchor="middle" x="330" y="250">7</text>
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id45)" opacity="0.25" />
+                <rect class="name" height="50" opacity="0.25" width="122" x="108" y="150" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="169" y="175">a_list</text>
+                <rect class="list" height="50" width="40" x="305" y="150" />
+                <text dy=".3em" text-anchor="middle" x="325" y="175">1</text>
+                <rect class="list" height="50" width="40" x="345" y="150" />
+                <text dy=".3em" text-anchor="middle" x="365" y="175">2</text>
+                <rect class="list" height="50" width="40" x="385" y="150" />
+                <text dy=".3em" text-anchor="middle" x="405" y="175">3</text>
+                <rect class="list" height="50" width="40" x="425" y="150" />
+                <text dy=".3em" text-anchor="middle" x="445" y="175">7</text>
+                <rect class="list" height="50" width="40" x="465" y="150" />
+                <text dy=".3em" text-anchor="middle" x="485" y="175">7</text>
+                <path class="arrow" d="M 230,175 C 248,175 248,175 267,175 C 286,175 286,175 305,175" fill="none" marker-end="url(#id45)" opacity="0.25" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -1007,7 +1877,34 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id46" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="132" y="25" /><text dy=".3em" text-anchor="middle" x="181" y="50">nums</text><rect class="list" height="50" width="40" x="305" y="25" /><text dy=".3em" text-anchor="middle" x="325" y="50">1</text><rect class="list" height="50" width="40" x="345" y="25" /><text dy=".3em" text-anchor="middle" x="365" y="50">2</text><rect class="list" height="50" width="40" x="385" y="25" /><text dy=".3em" text-anchor="middle" x="405" y="50">3</text><path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id46)" /><circle class="int value" cx="330" cy="250" opacity="0.25" r="25" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="330" y="250">7</text><rect class="list" height="50" opacity="0.25" width="40" x="305" y="150" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="325" y="175">1</text><rect class="list" height="50" opacity="0.25" width="40" x="345" y="150" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="365" y="175">2</text><rect class="list" height="50" opacity="0.25" width="40" x="385" y="150" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="405" y="175">3</text><rect class="list" height="50" opacity="0.25" width="40" x="425" y="150" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="445" y="175">7</text><rect class="list" height="50" opacity="0.25" width="40" x="465" y="150" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="485" y="175">7</text></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id46" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="132" y="25" />
+                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="305" y="25" />
+                <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
+                <rect class="list" height="50" width="40" x="345" y="25" />
+                <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
+                <rect class="list" height="50" width="40" x="385" y="25" />
+                <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id46)" />
+                <circle class="int value" cx="330" cy="250" opacity="0.25" r="25" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="330" y="250">7</text>
+                <rect class="list" height="50" opacity="0.25" width="40" x="305" y="150" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="325" y="175">1</text>
+                <rect class="list" height="50" opacity="0.25" width="40" x="345" y="150" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="365" y="175">2</text>
+                <rect class="list" height="50" opacity="0.25" width="40" x="385" y="150" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="405" y="175">3</text>
+                <rect class="list" height="50" opacity="0.25" width="40" x="425" y="150" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="445" y="175">7</text>
+                <rect class="list" height="50" opacity="0.25" width="40" x="465" y="150" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="485" y="175">7</text>
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -1021,7 +1918,22 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id47" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="132" y="25" /><text dy=".3em" text-anchor="middle" x="181" y="50">nums</text><rect class="list" height="50" width="40" x="305" y="25" /><text dy=".3em" text-anchor="middle" x="325" y="50">1</text><rect class="list" height="50" width="40" x="345" y="25" /><text dy=".3em" text-anchor="middle" x="365" y="50">2</text><rect class="list" height="50" width="40" x="385" y="25" /><text dy=".3em" text-anchor="middle" x="405" y="50">3</text><path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id47)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id47" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="132" y="25" />
+                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="305" y="25" />
+                <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
+                <rect class="list" height="50" width="40" x="345" y="25" />
+                <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
+                <rect class="list" height="50" width="40" x="385" y="25" />
+                <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id47)" />
+            </svg>
             </div>
             </div>
             <!-- }}} -->
@@ -1091,7 +2003,22 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3, 7, 7]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id48" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="132" y="25" /><text dy=".3em" text-anchor="middle" x="181" y="50">nums</text><rect class="list" height="50" width="40" x="305" y="25" /><text dy=".3em" text-anchor="middle" x="325" y="50">1</text><rect class="list" height="50" width="40" x="345" y="25" /><text dy=".3em" text-anchor="middle" x="365" y="50">2</text><rect class="list" height="50" width="40" x="385" y="25" /><text dy=".3em" text-anchor="middle" x="405" y="50">3</text><path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id48)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id48" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="132" y="25" />
+                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="305" y="25" />
+                <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
+                <rect class="list" height="50" width="40" x="345" y="25" />
+                <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
+                <rect class="list" height="50" width="40" x="385" y="25" />
+                <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id48)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -1105,7 +2032,32 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3, 7, 7]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id49" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="132" y="25" /><text dy=".3em" text-anchor="middle" x="181" y="50">nums</text><rect class="list" height="50" width="40" x="305" y="25" /><text dy=".3em" text-anchor="middle" x="325" y="50">1</text><rect class="list" height="50" width="40" x="345" y="25" /><text dy=".3em" text-anchor="middle" x="365" y="50">2</text><rect class="list" height="50" width="40" x="385" y="25" /><text dy=".3em" text-anchor="middle" x="405" y="50">3</text><path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id49)" /><rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text><rect class="name" height="50" width="122" x="108" y="150" /><text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text><path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#id49)" /><rect class="name" height="50" width="86" x="144" y="225" /><text dy=".3em" text-anchor="middle" x="187" y="250">val</text><circle class="int value" cx="330" cy="250" r="25" /><text dy=".3em" text-anchor="middle" x="330" y="250">7</text><path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id49)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id49" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="132" y="25" />
+                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="305" y="25" />
+                <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
+                <rect class="list" height="50" width="40" x="345" y="25" />
+                <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
+                <rect class="list" height="50" width="40" x="385" y="25" />
+                <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id49)" />
+                <rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
+                <rect class="name" height="50" width="122" x="108" y="150" />
+                <text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text>
+                <path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#id49)" />
+                <rect class="name" height="50" width="86" x="144" y="225" />
+                <text dy=".3em" text-anchor="middle" x="187" y="250">val</text>
+                <circle class="int value" cx="330" cy="250" r="25" />
+                <text dy=".3em" text-anchor="middle" x="330" y="250">7</text>
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id49)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -1119,7 +2071,32 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3, 7, 7]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id50" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="132" y="25" /><text dy=".3em" text-anchor="middle" x="181" y="50">nums</text><rect class="list" height="50" width="40" x="305" y="25" /><text dy=".3em" text-anchor="middle" x="325" y="50">1</text><rect class="list" height="50" width="40" x="345" y="25" /><text dy=".3em" text-anchor="middle" x="365" y="50">2</text><rect class="list" height="50" width="40" x="385" y="25" /><text dy=".3em" text-anchor="middle" x="405" y="50">3</text><path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id50)" /><rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text><rect class="name" height="50" width="122" x="108" y="150" /><text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text><path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#id50)" /><rect class="name" height="50" width="86" x="144" y="225" /><text dy=".3em" text-anchor="middle" x="187" y="250">val</text><circle class="int value" cx="330" cy="250" r="25" /><text dy=".3em" text-anchor="middle" x="330" y="250">7</text><path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id50)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id50" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="132" y="25" />
+                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="305" y="25" />
+                <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
+                <rect class="list" height="50" width="40" x="345" y="25" />
+                <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
+                <rect class="list" height="50" width="40" x="385" y="25" />
+                <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id50)" />
+                <rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
+                <rect class="name" height="50" width="122" x="108" y="150" />
+                <text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text>
+                <path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#id50)" />
+                <rect class="name" height="50" width="86" x="144" y="225" />
+                <text dy=".3em" text-anchor="middle" x="187" y="250">val</text>
+                <circle class="int value" cx="330" cy="250" r="25" />
+                <text dy=".3em" text-anchor="middle" x="330" y="250">7</text>
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id50)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -1133,7 +2110,42 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3, 7, 7]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id51" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="132" y="25" /><text dy=".3em" text-anchor="middle" x="181" y="50">nums</text><rect class="list" height="50" width="40" x="305" y="25" /><text dy=".3em" text-anchor="middle" x="325" y="50">1</text><rect class="list" height="50" width="40" x="345" y="25" /><text dy=".3em" text-anchor="middle" x="365" y="50">2</text><rect class="list" height="50" width="40" x="385" y="25" /><text dy=".3em" text-anchor="middle" x="405" y="50">3</text><path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id51)" /><rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text><rect class="name" height="50" width="122" x="108" y="150" /><text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text><path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#id51)" /><rect class="name" height="50" width="86" x="144" y="225" /><text dy=".3em" text-anchor="middle" x="187" y="250">val</text><circle class="int value" cx="330" cy="250" r="25" /><text dy=".3em" text-anchor="middle" x="330" y="250">7</text><path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id51)" /><rect class="list" height="50" width="40" x="305" y="150" /><text dy=".3em" text-anchor="middle" x="325" y="175">1</text><rect class="list" height="50" width="40" x="345" y="150" /><text dy=".3em" text-anchor="middle" x="365" y="175">2</text><rect class="list" height="50" width="40" x="385" y="150" /><text dy=".3em" text-anchor="middle" x="405" y="175">3</text><rect class="list" height="50" width="40" x="425" y="150" /><text dy=".3em" text-anchor="middle" x="445" y="175">7</text><rect class="list" height="50" width="40" x="465" y="150" /><text dy=".3em" text-anchor="middle" x="485" y="175">7</text></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id51" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="132" y="25" />
+                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="305" y="25" />
+                <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
+                <rect class="list" height="50" width="40" x="345" y="25" />
+                <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
+                <rect class="list" height="50" width="40" x="385" y="25" />
+                <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id51)" />
+                <rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
+                <rect class="name" height="50" width="122" x="108" y="150" />
+                <text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text>
+                <path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#id51)" />
+                <rect class="name" height="50" width="86" x="144" y="225" />
+                <text dy=".3em" text-anchor="middle" x="187" y="250">val</text>
+                <circle class="int value" cx="330" cy="250" r="25" />
+                <text dy=".3em" text-anchor="middle" x="330" y="250">7</text>
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id51)" />
+                <rect class="list" height="50" width="40" x="305" y="150" />
+                <text dy=".3em" text-anchor="middle" x="325" y="175">1</text>
+                <rect class="list" height="50" width="40" x="345" y="150" />
+                <text dy=".3em" text-anchor="middle" x="365" y="175">2</text>
+                <rect class="list" height="50" width="40" x="385" y="150" />
+                <text dy=".3em" text-anchor="middle" x="405" y="175">3</text>
+                <rect class="list" height="50" width="40" x="425" y="150" />
+                <text dy=".3em" text-anchor="middle" x="445" y="175">7</text>
+                <rect class="list" height="50" width="40" x="465" y="150" />
+                <text dy=".3em" text-anchor="middle" x="485" y="175">7</text>
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -1147,7 +2159,42 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3, 7, 7]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id52" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="132" y="25" /><text dy=".3em" text-anchor="middle" x="181" y="50">nums</text><rect class="list" height="50" width="40" x="305" y="25" /><text dy=".3em" text-anchor="middle" x="325" y="50">1</text><rect class="list" height="50" width="40" x="345" y="25" /><text dy=".3em" text-anchor="middle" x="365" y="50">2</text><rect class="list" height="50" width="40" x="385" y="25" /><text dy=".3em" text-anchor="middle" x="405" y="50">3</text><path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id52)" /><rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text><rect class="name" height="50" width="86" x="144" y="225" /><text dy=".3em" text-anchor="middle" x="187" y="250">val</text><circle class="int value" cx="330" cy="250" r="25" /><text dy=".3em" text-anchor="middle" x="330" y="250">7</text><path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id52)" /><rect class="name" height="50" width="122" x="108" y="150" /><text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text><rect class="list" height="50" width="40" x="305" y="150" /><text dy=".3em" text-anchor="middle" x="325" y="175">1</text><rect class="list" height="50" width="40" x="345" y="150" /><text dy=".3em" text-anchor="middle" x="365" y="175">2</text><rect class="list" height="50" width="40" x="385" y="150" /><text dy=".3em" text-anchor="middle" x="405" y="175">3</text><rect class="list" height="50" width="40" x="425" y="150" /><text dy=".3em" text-anchor="middle" x="445" y="175">7</text><rect class="list" height="50" width="40" x="465" y="150" /><text dy=".3em" text-anchor="middle" x="485" y="175">7</text><path class="arrow" d="M 230,175 C 248,175 248,175 267,175 C 286,175 286,175 305,175" fill="none" marker-end="url(#id52)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id52" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="132" y="25" />
+                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="305" y="25" />
+                <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
+                <rect class="list" height="50" width="40" x="345" y="25" />
+                <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
+                <rect class="list" height="50" width="40" x="385" y="25" />
+                <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id52)" />
+                <rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
+                <rect class="name" height="50" width="86" x="144" y="225" />
+                <text dy=".3em" text-anchor="middle" x="187" y="250">val</text>
+                <circle class="int value" cx="330" cy="250" r="25" />
+                <text dy=".3em" text-anchor="middle" x="330" y="250">7</text>
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id52)" />
+                <rect class="name" height="50" width="122" x="108" y="150" />
+                <text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text>
+                <rect class="list" height="50" width="40" x="305" y="150" />
+                <text dy=".3em" text-anchor="middle" x="325" y="175">1</text>
+                <rect class="list" height="50" width="40" x="345" y="150" />
+                <text dy=".3em" text-anchor="middle" x="365" y="175">2</text>
+                <rect class="list" height="50" width="40" x="385" y="150" />
+                <text dy=".3em" text-anchor="middle" x="405" y="175">3</text>
+                <rect class="list" height="50" width="40" x="425" y="150" />
+                <text dy=".3em" text-anchor="middle" x="445" y="175">7</text>
+                <rect class="list" height="50" width="40" x="465" y="150" />
+                <text dy=".3em" text-anchor="middle" x="485" y="175">7</text>
+                <path class="arrow" d="M 230,175 C 248,175 248,175 267,175 C 286,175 286,175 305,175" fill="none" marker-end="url(#id52)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -1161,7 +2208,44 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3, 7, 7]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id53" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="132" y="25" /><text dy=".3em" text-anchor="middle" x="181" y="50">nums</text><rect class="list" height="50" width="40" x="305" y="25" /><text dy=".3em" text-anchor="middle" x="325" y="50">1</text><rect class="list" height="50" width="40" x="345" y="25" /><text dy=".3em" text-anchor="middle" x="365" y="50">2</text><rect class="list" height="50" width="40" x="385" y="25" /><text dy=".3em" text-anchor="middle" x="405" y="50">3</text><path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id53)" /><rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text><rect class="name" height="50" opacity="0.25" width="86" x="144" y="225" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="187" y="250">val</text><circle class="int value" cx="330" cy="250" opacity="0.25" r="25" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="330" y="250">7</text><path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id53)" opacity="0.25" /><rect class="name" height="50" opacity="0.25" width="122" x="108" y="150" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="169" y="175">a_list</text><rect class="list" height="50" width="40" x="305" y="150" /><text dy=".3em" text-anchor="middle" x="325" y="175">1</text><rect class="list" height="50" width="40" x="345" y="150" /><text dy=".3em" text-anchor="middle" x="365" y="175">2</text><rect class="list" height="50" width="40" x="385" y="150" /><text dy=".3em" text-anchor="middle" x="405" y="175">3</text><rect class="list" height="50" width="40" x="425" y="150" /><text dy=".3em" text-anchor="middle" x="445" y="175">7</text><rect class="list" height="50" width="40" x="465" y="150" /><text dy=".3em" text-anchor="middle" x="485" y="175">7</text><path class="arrow" d="M 230,175 C 248,175 248,175 267,175 C 286,175 286,175 305,175" fill="none" marker-end="url(#id53)" opacity="0.25" /><rect class="name" height="25" width="25" x="243" y="163" /><path class="arrow" d="M 267,175 C 276,175 276,175 286,175 C 295,175 295,175 305,175" fill="none" marker-end="url(#id53)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id53" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="132" y="25" />
+                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="305" y="25" />
+                <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
+                <rect class="list" height="50" width="40" x="345" y="25" />
+                <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
+                <rect class="list" height="50" width="40" x="385" y="25" />
+                <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id53)" />
+                <rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
+                <rect class="name" height="50" opacity="0.25" width="86" x="144" y="225" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="187" y="250">val</text>
+                <circle class="int value" cx="330" cy="250" opacity="0.25" r="25" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="330" y="250">7</text>
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id53)" opacity="0.25" />
+                <rect class="name" height="50" opacity="0.25" width="122" x="108" y="150" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="169" y="175">a_list</text>
+                <rect class="list" height="50" width="40" x="305" y="150" />
+                <text dy=".3em" text-anchor="middle" x="325" y="175">1</text>
+                <rect class="list" height="50" width="40" x="345" y="150" />
+                <text dy=".3em" text-anchor="middle" x="365" y="175">2</text>
+                <rect class="list" height="50" width="40" x="385" y="150" />
+                <text dy=".3em" text-anchor="middle" x="405" y="175">3</text>
+                <rect class="list" height="50" width="40" x="425" y="150" />
+                <text dy=".3em" text-anchor="middle" x="445" y="175">7</text>
+                <rect class="list" height="50" width="40" x="465" y="150" />
+                <text dy=".3em" text-anchor="middle" x="485" y="175">7</text>
+                <path class="arrow" d="M 230,175 C 248,175 248,175 267,175 C 286,175 286,175 305,175" fill="none" marker-end="url(#id53)" opacity="0.25" />
+                <rect class="name" height="25" width="25" x="243" y="163" />
+                <path class="arrow" d="M 267,175 C 276,175 276,175 286,175 C 295,175 295,175 305,175" fill="none" marker-end="url(#id53)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -1175,7 +2259,36 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3, 7, 7]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id54" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="132" y="25" /><text dy=".3em" text-anchor="middle" x="181" y="50">nums</text><rect class="list" height="50" width="40" x="305" y="25" /><text dy=".3em" text-anchor="middle" x="325" y="50">1</text><rect class="list" height="50" width="40" x="345" y="25" /><text dy=".3em" text-anchor="middle" x="365" y="50">2</text><rect class="list" height="50" width="40" x="385" y="25" /><text dy=".3em" text-anchor="middle" x="405" y="50">3</text><path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id54)" /><rect class="frame" height="200" opacity="0.25" rx="20" ry="20" width="230" x="25" y="100" /><text class="framelabel" dy=".3em" opacity="0.25" text-anchor="middle" x="140" y="125">augment_twice_bad</text><rect class="list" height="50" width="40" x="305" y="150" /><text dy=".3em" text-anchor="middle" x="325" y="175">1</text><rect class="list" height="50" width="40" x="345" y="150" /><text dy=".3em" text-anchor="middle" x="365" y="175">2</text><rect class="list" height="50" width="40" x="385" y="150" /><text dy=".3em" text-anchor="middle" x="405" y="175">3</text><rect class="list" height="50" width="40" x="425" y="150" /><text dy=".3em" text-anchor="middle" x="445" y="175">7</text><rect class="list" height="50" width="40" x="465" y="150" /><text dy=".3em" text-anchor="middle" x="485" y="175">7</text><rect class="name" height="25" width="25" x="243" y="163" /><path class="arrow" d="M 267,175 C 276,175 276,175 286,175 C 295,175 295,175 305,175" fill="none" marker-end="url(#id54)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id54" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="132" y="25" />
+                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="305" y="25" />
+                <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
+                <rect class="list" height="50" width="40" x="345" y="25" />
+                <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
+                <rect class="list" height="50" width="40" x="385" y="25" />
+                <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id54)" />
+                <rect class="frame" height="200" opacity="0.25" rx="20" ry="20" width="230" x="25" y="100" />
+                <text class="framelabel" dy=".3em" opacity="0.25" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
+                <rect class="list" height="50" width="40" x="305" y="150" />
+                <text dy=".3em" text-anchor="middle" x="325" y="175">1</text>
+                <rect class="list" height="50" width="40" x="345" y="150" />
+                <text dy=".3em" text-anchor="middle" x="365" y="175">2</text>
+                <rect class="list" height="50" width="40" x="385" y="150" />
+                <text dy=".3em" text-anchor="middle" x="405" y="175">3</text>
+                <rect class="list" height="50" width="40" x="425" y="150" />
+                <text dy=".3em" text-anchor="middle" x="445" y="175">7</text>
+                <rect class="list" height="50" width="40" x="465" y="150" />
+                <text dy=".3em" text-anchor="middle" x="485" y="175">7</text>
+                <rect class="name" height="25" width="25" x="243" y="163" />
+                <path class="arrow" d="M 267,175 C 276,175 276,175 286,175 C 295,175 295,175 305,175" fill="none" marker-end="url(#id54)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -1189,7 +2302,35 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3, 7, 7]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id55" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="132" y="25" /><text dy=".3em" text-anchor="middle" x="181" y="50">nums</text><rect class="list" height="50" opacity="0.25" width="40" x="305" y="25" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="325" y="50">1</text><rect class="list" height="50" opacity="0.25" width="40" x="345" y="25" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="365" y="50">2</text><rect class="list" height="50" opacity="0.25" width="40" x="385" y="25" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="405" y="50">3</text><path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id55)" opacity="0.25" /><rect class="list" height="50" width="40" x="305" y="150" /><text dy=".3em" text-anchor="middle" x="325" y="175">1</text><rect class="list" height="50" width="40" x="345" y="150" /><text dy=".3em" text-anchor="middle" x="365" y="175">2</text><rect class="list" height="50" width="40" x="385" y="150" /><text dy=".3em" text-anchor="middle" x="405" y="175">3</text><rect class="list" height="50" width="40" x="425" y="150" /><text dy=".3em" text-anchor="middle" x="445" y="175">7</text><rect class="list" height="50" width="40" x="465" y="150" /><text dy=".3em" text-anchor="middle" x="485" y="175">7</text><rect class="name" height="50" width="98" x="132" y="25" /><text dy=".3em" text-anchor="middle" x="181" y="50">nums</text><path class="arrow" d="M 230,50 C 266,50 266,76 267,112 C 268,148 268,175 305,175" fill="none" marker-end="url(#id55)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id55" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="132" y="25" />
+                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="list" height="50" opacity="0.25" width="40" x="305" y="25" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="325" y="50">1</text>
+                <rect class="list" height="50" opacity="0.25" width="40" x="345" y="25" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="365" y="50">2</text>
+                <rect class="list" height="50" opacity="0.25" width="40" x="385" y="25" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="405" y="50">3</text>
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id55)" opacity="0.25" />
+                <rect class="list" height="50" width="40" x="305" y="150" />
+                <text dy=".3em" text-anchor="middle" x="325" y="175">1</text>
+                <rect class="list" height="50" width="40" x="345" y="150" />
+                <text dy=".3em" text-anchor="middle" x="365" y="175">2</text>
+                <rect class="list" height="50" width="40" x="385" y="150" />
+                <text dy=".3em" text-anchor="middle" x="405" y="175">3</text>
+                <rect class="list" height="50" width="40" x="425" y="150" />
+                <text dy=".3em" text-anchor="middle" x="445" y="175">7</text>
+                <rect class="list" height="50" width="40" x="465" y="150" />
+                <text dy=".3em" text-anchor="middle" x="485" y="175">7</text>
+                <rect class="name" height="50" width="98" x="132" y="25" />
+                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <path class="arrow" d="M 230,50 C 266,50 266,76 267,112 C 268,148 268,175 305,175" fill="none" marker-end="url(#id55)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -1203,7 +2344,28 @@ class PyNameCogTest(SvgTest):
                         print(nums)         # [1, 2, 3, 7, 7]
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id56" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><rect class="name" height="50" width="98" x="132" y="25" /><text dy=".3em" text-anchor="middle" x="181" y="50">nums</text><rect class="list" height="50" width="40" x="305" y="150" /><text dy=".3em" text-anchor="middle" x="325" y="175">1</text><rect class="list" height="50" width="40" x="345" y="150" /><text dy=".3em" text-anchor="middle" x="365" y="175">2</text><rect class="list" height="50" width="40" x="385" y="150" /><text dy=".3em" text-anchor="middle" x="405" y="175">3</text><rect class="list" height="50" width="40" x="425" y="150" /><text dy=".3em" text-anchor="middle" x="445" y="175">7</text><rect class="list" height="50" width="40" x="465" y="150" /><text dy=".3em" text-anchor="middle" x="485" y="175">7</text><rect class="name" height="50" width="98" x="132" y="25" /><text dy=".3em" text-anchor="middle" x="181" y="50">nums</text><path class="arrow" d="M 230,50 C 266,50 266,76 267,112 C 268,148 268,175 305,175" fill="none" marker-end="url(#id56)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id56" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="98" x="132" y="25" />
+                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="list" height="50" width="40" x="305" y="150" />
+                <text dy=".3em" text-anchor="middle" x="325" y="175">1</text>
+                <rect class="list" height="50" width="40" x="345" y="150" />
+                <text dy=".3em" text-anchor="middle" x="365" y="175">2</text>
+                <rect class="list" height="50" width="40" x="385" y="150" />
+                <text dy=".3em" text-anchor="middle" x="405" y="175">3</text>
+                <rect class="list" height="50" width="40" x="425" y="150" />
+                <text dy=".3em" text-anchor="middle" x="445" y="175">7</text>
+                <rect class="list" height="50" width="40" x="465" y="150" />
+                <text dy=".3em" text-anchor="middle" x="485" y="175">7</text>
+                <rect class="name" height="50" width="98" x="132" y="25" />
+                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <path class="arrow" d="M 230,50 C 266,50 266,76 267,112 C 268,148 268,175 305,175" fill="none" marker-end="url(#id56)" />
+            </svg>
             </div>
             </div>
             <!-- }}} -->
@@ -1259,7 +2421,21 @@ class PyNameCogTest(SvgTest):
                         x[1] = "two"
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id57" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker><marker id="id58" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4"><circle cx="2" cy="2" fill="black" r="2" /></marker></defs><rect class="name" height="50" width="62" x="138" y="100" /><text dy=".3em" text-anchor="middle" x="169" y="125">x</text><circle class="int value" cx="300" cy="50" r="25" /><text dy=".3em" text-anchor="middle" x="300" y="50">12</text><path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id57)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id57" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                    <marker id="id58" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
+                        <circle cx="2" cy="2" fill="black" r="2" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="62" x="138" y="100" />
+                <text dy=".3em" text-anchor="middle" x="169" y="125">x</text>
+                <circle class="int value" cx="300" cy="50" r="25" />
+                <text dy=".3em" text-anchor="middle" x="300" y="50">12</text>
+                <path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id57)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -1270,7 +2446,24 @@ class PyNameCogTest(SvgTest):
                         x[1] = "two"
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id59" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker><marker id="id60" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4"><circle cx="2" cy="2" fill="black" r="2" /></marker></defs><rect class="name" height="50" width="62" x="138" y="100" /><text dy=".3em" text-anchor="middle" x="169" y="125">x</text><circle class="int value" cx="300" cy="50" opacity="0.25" r="25" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="300" y="50">12</text><path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id59)" opacity="0.25" /><rect class="string value" height="50" rx="25" ry="25" width="130" x="275" y="100" /><text dy=".3em" text-anchor="middle" x="340" y="125">'hello'</text><path class="arrow" d="M 200,125 C 218,125 218,125 237,125 C 256,125 256,125 275,125" fill="none" marker-end="url(#id59)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id59" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                    <marker id="id60" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
+                        <circle cx="2" cy="2" fill="black" r="2" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="62" x="138" y="100" />
+                <text dy=".3em" text-anchor="middle" x="169" y="125">x</text>
+                <circle class="int value" cx="300" cy="50" opacity="0.25" r="25" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="300" y="50">12</text>
+                <path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id59)" opacity="0.25" />
+                <rect class="string value" height="50" rx="25" ry="25" width="130" x="275" y="100" />
+                <text dy=".3em" text-anchor="middle" x="340" y="125">'hello'</text>
+                <path class="arrow" d="M 200,125 C 218,125 218,125 237,125 C 256,125 256,125 275,125" fill="none" marker-end="url(#id59)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -1281,7 +2474,31 @@ class PyNameCogTest(SvgTest):
                         x[1] = "two"
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id61" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker><marker id="id62" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4"><circle cx="2" cy="2" fill="black" r="2" /></marker></defs><rect class="name" height="50" width="62" x="138" y="100" /><text dy=".3em" text-anchor="middle" x="169" y="125">x</text><circle class="int value" cx="300" cy="50" opacity="0.25" r="25" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="300" y="50">12</text><path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id61)" opacity="0.25" /><rect class="string value" height="50" opacity="0.25" rx="25" ry="25" width="130" x="275" y="100" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="340" y="125">'hello'</text><path class="arrow" d="M 200,125 C 218,125 218,125 237,125 C 256,125 256,125 275,125" fill="none" marker-end="url(#id61)" opacity="0.25" /><rect class="list" height="50" width="40" x="275" y="175" /><text dy=".3em" text-anchor="middle" x="295" y="200">1</text><rect class="list" height="50" width="40" x="315" y="175" /><text dy=".3em" text-anchor="middle" x="335" y="200">2</text><rect class="list" height="50" width="40" x="355" y="175" /><text dy=".3em" text-anchor="middle" x="375" y="200">3</text><path class="arrow" d="M 200,125 C 226,125 230,137 237,162 C 244,187 248,200 275,200" fill="none" marker-end="url(#id61)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id61" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                    <marker id="id62" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
+                        <circle cx="2" cy="2" fill="black" r="2" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="62" x="138" y="100" />
+                <text dy=".3em" text-anchor="middle" x="169" y="125">x</text>
+                <circle class="int value" cx="300" cy="50" opacity="0.25" r="25" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="300" y="50">12</text>
+                <path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id61)" opacity="0.25" />
+                <rect class="string value" height="50" opacity="0.25" rx="25" ry="25" width="130" x="275" y="100" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="340" y="125">'hello'</text>
+                <path class="arrow" d="M 200,125 C 218,125 218,125 237,125 C 256,125 256,125 275,125" fill="none" marker-end="url(#id61)" opacity="0.25" />
+                <rect class="list" height="50" width="40" x="275" y="175" />
+                <text dy=".3em" text-anchor="middle" x="295" y="200">1</text>
+                <rect class="list" height="50" width="40" x="315" y="175" />
+                <text dy=".3em" text-anchor="middle" x="335" y="200">2</text>
+                <rect class="list" height="50" width="40" x="355" y="175" />
+                <text dy=".3em" text-anchor="middle" x="375" y="200">3</text>
+                <path class="arrow" d="M 200,125 C 226,125 230,137 237,162 C 244,187 248,200 275,200" fill="none" marker-end="url(#id61)" />
+            </svg>
             </div>
             </div>
             <div class="overlay incremental">
@@ -1292,7 +2509,41 @@ class PyNameCogTest(SvgTest):
                         x[1] = "two"
                         </pre>
             <div class="opaque bottomhalf" style="text-align:center">
-            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id63" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker><marker id="id64" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4"><circle cx="2" cy="2" fill="black" r="2" /></marker></defs><rect class="name" height="50" width="62" x="138" y="100" /><text dy=".3em" text-anchor="middle" x="169" y="125">x</text><circle class="int value" cx="300" cy="50" opacity="0.25" r="25" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="300" y="50">12</text><path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id63)" opacity="0.25" /><rect class="string value" height="50" opacity="0.25" rx="25" ry="25" width="130" x="275" y="100" /><text dy=".3em" opacity="0.25" text-anchor="middle" x="340" y="125">'hello'</text><path class="arrow" d="M 200,125 C 218,125 218,125 237,125 C 256,125 256,125 275,125" fill="none" marker-end="url(#id63)" opacity="0.25" /><rect class="list" height="50" width="40" x="275" y="175" /><text dy=".3em" text-anchor="middle" x="295" y="200">1</text><rect class="list" height="50" width="40" x="315" y="175" /><text dy=".3em" text-anchor="middle" x="335" y="200">2</text><rect class="list" height="50" width="40" x="355" y="175" /><text dy=".3em" text-anchor="middle" x="375" y="200">3</text><path class="arrow" d="M 200,125 C 226,125 230,137 237,162 C 244,187 248,200 275,200" fill="none" marker-end="url(#id63)" /><rect class="list" height="50" width="40" x="275" y="175" /><text dy=".3em" text-anchor="middle" x="295" y="200">1</text><rect class="list" height="50" width="40" x="315" y="175" /><text dy=".3em" text-anchor="middle" x="335" y="200"> </text><rect class="list" height="50" width="40" x="355" y="175" /><text dy=".3em" text-anchor="middle" x="375" y="200">3</text><path class="arrow" d="M 200,125 C 226,125 230,137 237,162 C 244,187 248,200 275,200" fill="none" marker-end="url(#id63)" /><rect class="string value" height="50" rx="25" ry="25" width="100" x="285" y="250" /><text dy=".3em" text-anchor="middle" x="335" y="275">'two'</text><path class="arrow" d="M 335,200 C 335,212 335,212 335,225 C 335,237 335,237 335,250" fill="none" marker-end="url(#id63)" marker-start="url(#id64)" /></svg>
+            <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id63" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                    <marker id="id64" markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
+                        <circle cx="2" cy="2" fill="black" r="2" />
+                    </marker>
+                </defs>
+                <rect class="name" height="50" width="62" x="138" y="100" />
+                <text dy=".3em" text-anchor="middle" x="169" y="125">x</text>
+                <circle class="int value" cx="300" cy="50" opacity="0.25" r="25" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="300" y="50">12</text>
+                <path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id63)" opacity="0.25" />
+                <rect class="string value" height="50" opacity="0.25" rx="25" ry="25" width="130" x="275" y="100" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="340" y="125">'hello'</text>
+                <path class="arrow" d="M 200,125 C 218,125 218,125 237,125 C 256,125 256,125 275,125" fill="none" marker-end="url(#id63)" opacity="0.25" />
+                <rect class="list" height="50" width="40" x="275" y="175" />
+                <text dy=".3em" text-anchor="middle" x="295" y="200">1</text>
+                <rect class="list" height="50" width="40" x="315" y="175" />
+                <text dy=".3em" text-anchor="middle" x="335" y="200">2</text>
+                <rect class="list" height="50" width="40" x="355" y="175" />
+                <text dy=".3em" text-anchor="middle" x="375" y="200">3</text>
+                <path class="arrow" d="M 200,125 C 226,125 230,137 237,162 C 244,187 248,200 275,200" fill="none" marker-end="url(#id63)" />
+                <rect class="list" height="50" width="40" x="275" y="175" />
+                <text dy=".3em" text-anchor="middle" x="295" y="200">1</text>
+                <rect class="list" height="50" width="40" x="315" y="175" />
+                <text dy=".3em" text-anchor="middle" x="335" y="200"> </text>
+                <rect class="list" height="50" width="40" x="355" y="175" />
+                <text dy=".3em" text-anchor="middle" x="375" y="200">3</text>
+                <path class="arrow" d="M 200,125 C 226,125 230,137 237,162 C 244,187 248,200 275,200" fill="none" marker-end="url(#id63)" />
+                <rect class="string value" height="50" rx="25" ry="25" width="100" x="285" y="250" />
+                <text dy=".3em" text-anchor="middle" x="335" y="275">'two'</text>
+                <path class="arrow" d="M 335,200 C 335,212 335,212 335,225 C 335,237 335,237 335,250" fill="none" marker-end="url(#id63)" marker-start="url(#id64)" />
+            </svg>
             </div>
             </div>
             <!-- }}} -->
@@ -1350,5 +2601,122 @@ class PyNameCogTest(SvgTest):
         cog.outl(fig.tostring())
 
         self.assert_cog_output("""\
-            <svg baseProfile="full" height="600" version="1.1" width="400" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><marker id="id65" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10"><path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" /></marker></defs><g transform="scale(0.55)"><rect class="name" height="50" width="122" x="78" y="25" /><text dy=".3em" text-anchor="middle" x="139" y="50">qyhgtr</text><rect class="name" height="50" width="98" x="102" y="100" /><text dy=".3em" text-anchor="middle" x="151" y="125">rkud</text><rect class="frame" height="200" rx="20" ry="20" width="200" x="25" y="175" /><text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="200">func_jguqdor</text><rect class="name" height="50" width="86" x="114" y="225" /><text dy=".3em" text-anchor="middle" x="157" y="250">qdi</text><rect class="name" height="50" width="86" x="114" y="300" /><text dy=".3em" text-anchor="middle" x="157" y="325">fzk</text><rect class="frame" height="275" rx="20" ry="20" width="200" x="25" y="400" /><text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="425">func_pwrcp</text><rect class="name" height="50" width="122" x="78" y="450" /><text dy=".3em" text-anchor="middle" x="139" y="475">ecwnfl</text><rect class="name" height="50" width="98" x="102" y="525" /><text dy=".3em" text-anchor="middle" x="151" y="550">uncv</text><rect class="name" height="50" width="86" x="114" y="600" /><text dy=".3em" text-anchor="middle" x="157" y="625">hat</text><rect class="frame" height="200" rx="20" ry="20" width="200" x="25" y="700" /><text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="725">func_cmrnl</text><rect class="name" height="50" width="110" x="90" y="750" /><text dy=".3em" text-anchor="middle" x="145" y="775">lpcmg</text><rect class="name" height="50" width="134" x="66" y="825" /><text dy=".3em" text-anchor="middle" x="133" y="850">ybdsoas</text><rect class="list" height="50" width="40" x="375" y="25" /><text dy=".3em" text-anchor="middle" x="395" y="50">10</text><rect class="list" height="50" width="40" x="415" y="25" /><text dy=".3em" text-anchor="middle" x="435" y="50">14</text><rect class="list" height="50" width="40" x="455" y="25" /><text dy=".3em" text-anchor="middle" x="475" y="50">20</text><rect class="list" height="50" width="40" x="495" y="25" /><text dy=".3em" text-anchor="middle" x="515" y="50">9</text><rect class="list" height="50" width="40" x="535" y="25" /><text dy=".3em" text-anchor="middle" x="555" y="50">9</text><rect class="list" height="50" width="40" x="575" y="25" /><text dy=".3em" text-anchor="middle" x="595" y="50">8</text><rect class="list" height="50" width="40" x="375" y="100" /><text dy=".3em" text-anchor="middle" x="395" y="125">9</text><rect class="list" height="50" width="40" x="415" y="100" /><text dy=".3em" text-anchor="middle" x="435" y="125">11</text><rect class="list" height="50" width="40" x="455" y="100" /><text dy=".3em" text-anchor="middle" x="475" y="125">5</text><rect class="list" height="50" width="40" x="495" y="100" /><text dy=".3em" text-anchor="middle" x="515" y="125">9</text><rect class="list" height="50" width="40" x="535" y="100" /><text dy=".3em" text-anchor="middle" x="555" y="125">20</text><rect class="list" height="50" width="40" x="575" y="100" /><text dy=".3em" text-anchor="middle" x="595" y="125">14</text><rect class="list" height="50" width="40" x="615" y="100" /><text dy=".3em" text-anchor="middle" x="635" y="125">9</text><rect class="list" height="50" width="40" x="375" y="225" /><text dy=".3em" text-anchor="middle" x="395" y="250">9</text><rect class="list" height="50" width="40" x="415" y="225" /><text dy=".3em" text-anchor="middle" x="435" y="250">5</text><rect class="list" height="50" width="40" x="455" y="225" /><text dy=".3em" text-anchor="middle" x="475" y="250">7</text><rect class="list" height="50" width="40" x="495" y="225" /><text dy=".3em" text-anchor="middle" x="515" y="250">8</text><rect class="list" height="50" width="40" x="535" y="225" /><text dy=".3em" text-anchor="middle" x="555" y="250">8</text><rect class="list" height="50" width="40" x="575" y="225" /><text dy=".3em" text-anchor="middle" x="595" y="250">18</text><rect class="string value" height="50" rx="25" ry="25" width="110" x="375" y="300" /><text dy=".3em" text-anchor="middle" x="430" y="325">'pxht'</text><rect class="string value" height="50" rx="25" ry="25" width="120" x="375" y="450" /><text dy=".3em" text-anchor="middle" x="435" y="475">'pytnv'</text><rect class="string value" height="50" rx="25" ry="25" width="110" x="375" y="525" /><text dy=".3em" text-anchor="middle" x="430" y="550">'youi'</text><rect class="list" height="50" width="40" x="375" y="600" /><text dy=".3em" text-anchor="middle" x="395" y="625">8</text><rect class="list" height="50" width="40" x="415" y="600" /><text dy=".3em" text-anchor="middle" x="435" y="625">19</text><rect class="list" height="50" width="40" x="455" y="600" /><text dy=".3em" text-anchor="middle" x="475" y="625">12</text><rect class="list" height="50" width="40" x="495" y="600" /><text dy=".3em" text-anchor="middle" x="515" y="625">10</text><rect class="list" height="50" width="40" x="535" y="600" /><text dy=".3em" text-anchor="middle" x="555" y="625">9</text><rect class="list" height="50" width="40" x="575" y="600" /><text dy=".3em" text-anchor="middle" x="595" y="625">6</text><rect class="list" height="50" width="40" x="615" y="600" /><text dy=".3em" text-anchor="middle" x="635" y="625">8</text><rect class="list" height="50" width="40" x="655" y="600" /><text dy=".3em" text-anchor="middle" x="675" y="625">16</text><circle class="int value" cx="400" cy="775" r="25" /><text dy=".3em" text-anchor="middle" x="400" y="775">9</text><rect class="list" height="50" width="40" x="375" y="825" /><text dy=".3em" text-anchor="middle" x="395" y="850">11</text><rect class="list" height="50" width="40" x="415" y="825" /><text dy=".3em" text-anchor="middle" x="435" y="850">17</text><rect class="list" height="50" width="40" x="455" y="825" /><text dy=".3em" text-anchor="middle" x="475" y="850">9</text><rect class="list" height="50" width="40" x="495" y="825" /><text dy=".3em" text-anchor="middle" x="515" y="850">10</text><rect class="list" height="50" width="40" x="535" y="825" /><text dy=".3em" text-anchor="middle" x="555" y="850">11</text><rect class="list" height="50" width="40" x="575" y="825" /><text dy=".3em" text-anchor="middle" x="595" y="850">7</text><rect class="list" height="50" width="40" x="615" y="825" /><text dy=".3em" text-anchor="middle" x="635" y="850">8</text><path class="arrow" d="M 200,50 C 243,50 243,50 287,50 C 331,50 331,50 375,50" fill="none" marker-end="url(#id65)" /><path class="arrow" d="M 200,250 C 253,250 261,234 287,187 C 313,140 321,125 375,125" fill="none" marker-end="url(#id65)" /><path class="arrow" d="M 200,475 C 271,475 277,433 287,362 C 297,291 303,250 375,250" fill="none" marker-end="url(#id65)" /><path class="arrow" d="M 200,125 C 266,125 273,159 287,225 C 301,290 308,325 375,325" fill="none" marker-end="url(#id65)" /><path class="arrow" d="M 200,325 C 257,325 266,346 287,400 C 308,453 317,475 375,475" fill="none" marker-end="url(#id65)" /><path class="arrow" d="M 200,550 C 243,550 243,550 287,550 C 331,550 331,550 375,550" fill="none" marker-end="url(#id65)" /><path class="arrow" d="M 200,775 C 257,775 266,753 287,700 C 308,646 317,625 375,625" fill="none" marker-end="url(#id65)" /><path class="arrow" d="M 200,625 C 257,625 266,646 287,700 C 308,753 317,775 375,775" fill="none" marker-end="url(#id65)" /><path class="arrow" d="M 200,850 C 243,850 243,850 287,850 C 331,850 331,850 375,850" fill="none" marker-end="url(#id65)" /></g></svg>
+            <svg baseProfile="full" height="600" version="1.1" width="400" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <marker id="id65" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                        <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+                    </marker>
+                </defs>
+                <g transform="scale(0.55)">
+                    <rect class="name" height="50" width="122" x="78" y="25" />
+                    <text dy=".3em" text-anchor="middle" x="139" y="50">qyhgtr</text>
+                    <rect class="name" height="50" width="98" x="102" y="100" />
+                    <text dy=".3em" text-anchor="middle" x="151" y="125">rkud</text>
+                    <rect class="frame" height="200" rx="20" ry="20" width="200" x="25" y="175" />
+                    <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="200">func_jguqdor</text>
+                    <rect class="name" height="50" width="86" x="114" y="225" />
+                    <text dy=".3em" text-anchor="middle" x="157" y="250">qdi</text>
+                    <rect class="name" height="50" width="86" x="114" y="300" />
+                    <text dy=".3em" text-anchor="middle" x="157" y="325">fzk</text>
+                    <rect class="frame" height="275" rx="20" ry="20" width="200" x="25" y="400" />
+                    <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="425">func_pwrcp</text>
+                    <rect class="name" height="50" width="122" x="78" y="450" />
+                    <text dy=".3em" text-anchor="middle" x="139" y="475">ecwnfl</text>
+                    <rect class="name" height="50" width="98" x="102" y="525" />
+                    <text dy=".3em" text-anchor="middle" x="151" y="550">uncv</text>
+                    <rect class="name" height="50" width="86" x="114" y="600" />
+                    <text dy=".3em" text-anchor="middle" x="157" y="625">hat</text>
+                    <rect class="frame" height="200" rx="20" ry="20" width="200" x="25" y="700" />
+                    <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="725">func_cmrnl</text>
+                    <rect class="name" height="50" width="110" x="90" y="750" />
+                    <text dy=".3em" text-anchor="middle" x="145" y="775">lpcmg</text>
+                    <rect class="name" height="50" width="134" x="66" y="825" />
+                    <text dy=".3em" text-anchor="middle" x="133" y="850">ybdsoas</text>
+                    <rect class="list" height="50" width="40" x="375" y="25" />
+                    <text dy=".3em" text-anchor="middle" x="395" y="50">10</text>
+                    <rect class="list" height="50" width="40" x="415" y="25" />
+                    <text dy=".3em" text-anchor="middle" x="435" y="50">14</text>
+                    <rect class="list" height="50" width="40" x="455" y="25" />
+                    <text dy=".3em" text-anchor="middle" x="475" y="50">20</text>
+                    <rect class="list" height="50" width="40" x="495" y="25" />
+                    <text dy=".3em" text-anchor="middle" x="515" y="50">9</text>
+                    <rect class="list" height="50" width="40" x="535" y="25" />
+                    <text dy=".3em" text-anchor="middle" x="555" y="50">9</text>
+                    <rect class="list" height="50" width="40" x="575" y="25" />
+                    <text dy=".3em" text-anchor="middle" x="595" y="50">8</text>
+                    <rect class="list" height="50" width="40" x="375" y="100" />
+                    <text dy=".3em" text-anchor="middle" x="395" y="125">9</text>
+                    <rect class="list" height="50" width="40" x="415" y="100" />
+                    <text dy=".3em" text-anchor="middle" x="435" y="125">11</text>
+                    <rect class="list" height="50" width="40" x="455" y="100" />
+                    <text dy=".3em" text-anchor="middle" x="475" y="125">5</text>
+                    <rect class="list" height="50" width="40" x="495" y="100" />
+                    <text dy=".3em" text-anchor="middle" x="515" y="125">9</text>
+                    <rect class="list" height="50" width="40" x="535" y="100" />
+                    <text dy=".3em" text-anchor="middle" x="555" y="125">20</text>
+                    <rect class="list" height="50" width="40" x="575" y="100" />
+                    <text dy=".3em" text-anchor="middle" x="595" y="125">14</text>
+                    <rect class="list" height="50" width="40" x="615" y="100" />
+                    <text dy=".3em" text-anchor="middle" x="635" y="125">9</text>
+                    <rect class="list" height="50" width="40" x="375" y="225" />
+                    <text dy=".3em" text-anchor="middle" x="395" y="250">9</text>
+                    <rect class="list" height="50" width="40" x="415" y="225" />
+                    <text dy=".3em" text-anchor="middle" x="435" y="250">5</text>
+                    <rect class="list" height="50" width="40" x="455" y="225" />
+                    <text dy=".3em" text-anchor="middle" x="475" y="250">7</text>
+                    <rect class="list" height="50" width="40" x="495" y="225" />
+                    <text dy=".3em" text-anchor="middle" x="515" y="250">8</text>
+                    <rect class="list" height="50" width="40" x="535" y="225" />
+                    <text dy=".3em" text-anchor="middle" x="555" y="250">8</text>
+                    <rect class="list" height="50" width="40" x="575" y="225" />
+                    <text dy=".3em" text-anchor="middle" x="595" y="250">18</text>
+                    <rect class="string value" height="50" rx="25" ry="25" width="110" x="375" y="300" />
+                    <text dy=".3em" text-anchor="middle" x="430" y="325">'pxht'</text>
+                    <rect class="string value" height="50" rx="25" ry="25" width="120" x="375" y="450" />
+                    <text dy=".3em" text-anchor="middle" x="435" y="475">'pytnv'</text>
+                    <rect class="string value" height="50" rx="25" ry="25" width="110" x="375" y="525" />
+                    <text dy=".3em" text-anchor="middle" x="430" y="550">'youi'</text>
+                    <rect class="list" height="50" width="40" x="375" y="600" />
+                    <text dy=".3em" text-anchor="middle" x="395" y="625">8</text>
+                    <rect class="list" height="50" width="40" x="415" y="600" />
+                    <text dy=".3em" text-anchor="middle" x="435" y="625">19</text>
+                    <rect class="list" height="50" width="40" x="455" y="600" />
+                    <text dy=".3em" text-anchor="middle" x="475" y="625">12</text>
+                    <rect class="list" height="50" width="40" x="495" y="600" />
+                    <text dy=".3em" text-anchor="middle" x="515" y="625">10</text>
+                    <rect class="list" height="50" width="40" x="535" y="600" />
+                    <text dy=".3em" text-anchor="middle" x="555" y="625">9</text>
+                    <rect class="list" height="50" width="40" x="575" y="600" />
+                    <text dy=".3em" text-anchor="middle" x="595" y="625">6</text>
+                    <rect class="list" height="50" width="40" x="615" y="600" />
+                    <text dy=".3em" text-anchor="middle" x="635" y="625">8</text>
+                    <rect class="list" height="50" width="40" x="655" y="600" />
+                    <text dy=".3em" text-anchor="middle" x="675" y="625">16</text>
+                    <circle class="int value" cx="400" cy="775" r="25" />
+                    <text dy=".3em" text-anchor="middle" x="400" y="775">9</text>
+                    <rect class="list" height="50" width="40" x="375" y="825" />
+                    <text dy=".3em" text-anchor="middle" x="395" y="850">11</text>
+                    <rect class="list" height="50" width="40" x="415" y="825" />
+                    <text dy=".3em" text-anchor="middle" x="435" y="850">17</text>
+                    <rect class="list" height="50" width="40" x="455" y="825" />
+                    <text dy=".3em" text-anchor="middle" x="475" y="850">9</text>
+                    <rect class="list" height="50" width="40" x="495" y="825" />
+                    <text dy=".3em" text-anchor="middle" x="515" y="850">10</text>
+                    <rect class="list" height="50" width="40" x="535" y="825" />
+                    <text dy=".3em" text-anchor="middle" x="555" y="850">11</text>
+                    <rect class="list" height="50" width="40" x="575" y="825" />
+                    <text dy=".3em" text-anchor="middle" x="595" y="850">7</text>
+                    <rect class="list" height="50" width="40" x="615" y="825" />
+                    <text dy=".3em" text-anchor="middle" x="635" y="850">8</text>
+                    <path class="arrow" d="M 200,50 C 243,50 243,50 287,50 C 331,50 331,50 375,50" fill="none" marker-end="url(#id65)" />
+                    <path class="arrow" d="M 200,250 C 253,250 261,234 287,187 C 313,140 321,125 375,125" fill="none" marker-end="url(#id65)" />
+                    <path class="arrow" d="M 200,475 C 271,475 277,433 287,362 C 297,291 303,250 375,250" fill="none" marker-end="url(#id65)" />
+                    <path class="arrow" d="M 200,125 C 266,125 273,159 287,225 C 301,290 308,325 375,325" fill="none" marker-end="url(#id65)" />
+                    <path class="arrow" d="M 200,325 C 257,325 266,346 287,400 C 308,453 317,475 375,475" fill="none" marker-end="url(#id65)" />
+                    <path class="arrow" d="M 200,550 C 243,550 243,550 287,550 C 331,550 331,550 375,550" fill="none" marker-end="url(#id65)" />
+                    <path class="arrow" d="M 200,775 C 257,775 266,753 287,700 C 308,646 317,625 375,625" fill="none" marker-end="url(#id65)" />
+                    <path class="arrow" d="M 200,625 C 257,625 266,646 287,700 C 308,753 317,775 375,775" fill="none" marker-end="url(#id65)" />
+                    <path class="arrow" d="M 200,850 C 243,850 243,850 287,850 C 331,850 331,850 375,850" fill="none" marker-end="url(#id65)" />
+                </g>
+            </svg>
             """)

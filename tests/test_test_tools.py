@@ -3,7 +3,7 @@
 import os
 import unittest
 
-from .tools import renumber_svg_ids, SvgTest
+from .tools import renumber_svg_ids, canonicalize_svg, SvgTest
 
 
 class RenumberTest(unittest.TestCase):
@@ -21,6 +21,20 @@ class RenumberTest(unittest.TestCase):
         self.assertEqual(
             renumber_svg_ids("<svg id='id10' butnotid='id10'>"),
             "<svg id='newid0' butnotid='id10'>"
+        )
+
+
+class CanonicalizeTest(unittest.TestCase):
+    """Test the canonicalize_svg function."""
+
+    def test_it(self):
+        self.assertEqual(
+            canonicalize_svg("<svg></svg>"),
+            canonicalize_svg("<svg>\n</svg>")
+        )
+        self.assertEqual(
+            canonicalize_svg("<svg>\n   </svg>"),
+            canonicalize_svg("<svg>\n</svg>")
         )
 
 

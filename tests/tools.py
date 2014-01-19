@@ -49,6 +49,14 @@ def renumber_svg_ids(svg):
     return svg
 
 
+def canonicalize_svg(svg):
+    """Remove unimportant details from SVG, for better comparison."""
+    svg = renumber_svg_ids(svg)
+    svg = svg.replace("><", ">\n<")
+    svg = re.sub(r"^\s+<", "<", svg, flags=re.MULTILINE)
+    return svg
+
+
 class SvgTest(unittest.TestCase):
     """Base class for tests of SVG output."""
 
@@ -61,10 +69,8 @@ class SvgTest(unittest.TestCase):
         identity within the SVG.
 
         """
-        svg1 = renumber_svg_ids(svg1)
-        svg1 = svg1.replace("><", ">\n<")
-        svg2 = renumber_svg_ids(svg2)
-        svg2 = svg2.replace("><", ">\n<")
+        svg1 = canonicalize_svg(svg1)
+        svg2 = canonicalize_svg(svg2)
         if svg1 != svg2:
             for i, svg in enumerate([svg1, svg2], start=1):
                 fname = "{}_{}.html".format(self._testMethodName, i)
