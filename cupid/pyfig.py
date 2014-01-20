@@ -1,3 +1,4 @@
+from __future__ import division
 from .box import Box
 from .helpers import add_class, defarg, poparg
 from .svgfig import SvgFig
@@ -37,7 +38,7 @@ class PyFig(SvgFig):
         return self.rect(class_=class_, **args)
 
     def auto_name(self, text, **args):
-        width = int(self.unit * 2 + (self.unit/2)*len(text))
+        width = int(self.unit * 2 + (self.unit * text_width(text)))
         return self.name(pos=self.next_name(), size=(width,self.unit*2), text=text, **args)
 
     def int(self, **args):
@@ -128,3 +129,20 @@ class PyFig(SvgFig):
         font-family: monospace;
     }
     """
+
+# Crude glyph width for typical fonts.
+# The string encodes the widths of characters (starting with space), in tenths
+# of the point size, "0" = .1, "1" = .2, etc.
+# The widths are the average of Times and Helvetica.
+WIDTHS = "22344862223522224444444444225554966665576236586757655668665222442444442442242744442324464443135"
+GLYPH_WIDTHS = { chr(c+ord(' ')) : (int(WIDTHS[c])+1)/10 for c in range(len(WIDTHS)) }
+
+def text_width(text):
+    """Rough guess of the rendered width of the text.
+
+    Returns:
+        A float, the width of the text as a multiple of the point size.
+
+    """
+    # Really crude guess would be: return len(text)/2
+    return sum(GLYPH_WIDTHS.get(c, .5) for c in text)

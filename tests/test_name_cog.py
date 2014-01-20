@@ -68,11 +68,12 @@ class PyNameCogTest(SvgTest):
     def assert_cog_output(self, text):
         text = textwrap.dedent(text)
         output = textwrap.dedent(cog.output())
-        print "-----------------------"
-        print text
-        print "-----------------------"
-        print output
-        print "-----------------------"
+        if 0:
+            print "-----------------------"
+            print text
+            print "-----------------------"
+            print output
+            print "-----------------------"
         self.assert_same_svg(text, output)
 
     def test_fig_names_refer_to_values(self):
@@ -435,29 +436,29 @@ class PyNameCogTest(SvgTest):
             <pre class="python tophalf">
                         nums = [1, 2, 3]
                         other = nums
-                        </pre>
+            </pre>
             </div>
             <div class="overlay incremental">
             <pre class="python tophalf" select="1">
                         nums = [1, 2, 3]
                         other = nums
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id10" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid0' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="102" y="25" />
-                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="96" y="25" />
+                <text dy=".3em" text-anchor="middle" x="148" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
                 <rect class="list" height="50" width="40" x="315" y="25" />
                 <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
                 <rect class="list" height="50" width="40" x="355" y="25" />
                 <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
-                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id10)" />
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#newid0)" />
             </svg>
             </div>
             </div>
@@ -465,26 +466,26 @@ class PyNameCogTest(SvgTest):
             <pre class="python tophalf" select="2">
                         nums = [1, 2, 3]
                         other = nums
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id11" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid1' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="102" y="25" />
-                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="96" y="25" />
+                <text dy=".3em" text-anchor="middle" x="148" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
                 <rect class="list" height="50" width="40" x="315" y="25" />
                 <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
                 <rect class="list" height="50" width="40" x="355" y="25" />
                 <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
-                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id11)" />
-                <rect class="name" height="50" width="110" x="90" y="100" />
-                <text dy=".3em" text-anchor="middle" x="145" y="125">other</text>
-                <path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id11)" />
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#newid1)" />
+                <rect class="name" height="50" width="102" x="98" y="100" />
+                <text dy=".3em" text-anchor="middle" x="149" y="125">other</text>
+                <path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#newid1)" />
             </svg>
             </div>
             </div>
@@ -538,8 +539,8 @@ class PyNameCogTest(SvgTest):
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="102" y="25" />
-                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="96" y="25" />
+                <text dy=".3em" text-anchor="middle" x="148" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
                 <rect class="list" height="50" width="40" x="315" y="25" />
@@ -564,8 +565,8 @@ class PyNameCogTest(SvgTest):
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="102" y="25" />
-                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="96" y="25" />
+                <text dy=".3em" text-anchor="middle" x="148" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
                 <rect class="list" height="50" width="40" x="315" y="25" />
@@ -573,8 +574,8 @@ class PyNameCogTest(SvgTest):
                 <rect class="list" height="50" width="40" x="355" y="25" />
                 <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
                 <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id13)" />
-                <rect class="name" height="50" width="110" x="90" y="100" />
-                <text dy=".3em" text-anchor="middle" x="145" y="125">other</text>
+                <rect class="name" height="50" width="102" x="98" y="100" />
+                <text dy=".3em" text-anchor="middle" x="149" y="125">other</text>
                 <path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id13)" />
             </svg>
             </div>
@@ -593,8 +594,8 @@ class PyNameCogTest(SvgTest):
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="102" y="25" />
-                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="96" y="25" />
+                <text dy=".3em" text-anchor="middle" x="148" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
                 <rect class="list" height="50" width="40" x="315" y="25" />
@@ -602,8 +603,8 @@ class PyNameCogTest(SvgTest):
                 <rect class="list" height="50" width="40" x="355" y="25" />
                 <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
                 <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id14)" />
-                <rect class="name" height="50" width="110" x="90" y="100" />
-                <text dy=".3em" text-anchor="middle" x="145" y="125">other</text>
+                <rect class="name" height="50" width="102" x="98" y="100" />
+                <text dy=".3em" text-anchor="middle" x="149" y="125">other</text>
                 <path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id14)" />
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
@@ -630,8 +631,8 @@ class PyNameCogTest(SvgTest):
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="102" y="25" />
-                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="96" y="25" />
+                <text dy=".3em" text-anchor="middle" x="148" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
                 <rect class="list" height="50" width="40" x="315" y="25" />
@@ -639,8 +640,8 @@ class PyNameCogTest(SvgTest):
                 <rect class="list" height="50" width="40" x="355" y="25" />
                 <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
                 <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id15)" />
-                <rect class="name" height="50" width="110" x="90" y="100" />
-                <text dy=".3em" text-anchor="middle" x="145" y="125">other</text>
+                <rect class="name" height="50" width="102" x="98" y="100" />
+                <text dy=".3em" text-anchor="middle" x="149" y="125">other</text>
                 <path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#id15)" />
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
@@ -837,8 +838,8 @@ class PyNameCogTest(SvgTest):
                         <circle cx="2" cy="2" fill="black" r="2" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="102" y="25" />
-                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="96" y="25" />
+                <text dy=".3em" text-anchor="middle" x="148" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
                 <rect class="list" height="50" width="40" x="315" y="25" />
@@ -864,8 +865,8 @@ class PyNameCogTest(SvgTest):
                         <circle cx="2" cy="2" fill="black" r="2" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="102" y="25" />
-                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="96" y="25" />
+                <text dy=".3em" text-anchor="middle" x="148" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <rect class="list" height="50" width="40" x="315" y="25" />
                 <rect class="list" height="50" width="40" x="355" y="25" />
@@ -897,8 +898,8 @@ class PyNameCogTest(SvgTest):
                         <circle cx="2" cy="2" fill="black" r="2" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="102" y="25" />
-                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="96" y="25" />
+                <text dy=".3em" text-anchor="middle" x="148" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <rect class="list" height="50" width="40" x="315" y="25" />
                 <rect class="list" height="50" width="40" x="355" y="25" />
@@ -974,8 +975,8 @@ class PyNameCogTest(SvgTest):
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="86" x="114" y="25" />
-                <text dy=".3em" text-anchor="middle" x="157" y="50">num</text>
+                <rect class="name" height="50" width="95" x="106" y="25" />
+                <text dy=".3em" text-anchor="middle" x="153" y="50">num</text>
                 <circle class="int value" cx="300" cy="50" r="25" />
                 <text dy=".3em" text-anchor="middle" x="300" y="50">17</text>
                 <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id26)" />
@@ -998,8 +999,8 @@ class PyNameCogTest(SvgTest):
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="86" x="114" y="25" />
-                <text dy=".3em" text-anchor="middle" x="157" y="50">num</text>
+                <rect class="name" height="50" width="95" x="106" y="25" />
+                <text dy=".3em" text-anchor="middle" x="153" y="50">num</text>
                 <circle class="int value" cx="300" cy="50" r="25" />
                 <text dy=".3em" text-anchor="middle" x="300" y="50">17</text>
                 <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id27)" />
@@ -1027,8 +1028,8 @@ class PyNameCogTest(SvgTest):
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="86" x="114" y="25" />
-                <text dy=".3em" text-anchor="middle" x="157" y="50">num</text>
+                <rect class="name" height="50" width="95" x="106" y="25" />
+                <text dy=".3em" text-anchor="middle" x="153" y="50">num</text>
                 <circle class="int value" cx="300" cy="50" r="25" />
                 <text dy=".3em" text-anchor="middle" x="300" y="50">17</text>
                 <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id28)" />
@@ -1056,8 +1057,8 @@ class PyNameCogTest(SvgTest):
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="86" x="114" y="25" />
-                <text dy=".3em" text-anchor="middle" x="157" y="50">num</text>
+                <rect class="name" height="50" width="95" x="106" y="25" />
+                <text dy=".3em" text-anchor="middle" x="153" y="50">num</text>
                 <circle class="int value" cx="300" cy="50" r="25" />
                 <text dy=".3em" text-anchor="middle" x="300" y="50">17</text>
                 <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id29)" />
@@ -1085,8 +1086,8 @@ class PyNameCogTest(SvgTest):
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="86" x="114" y="25" />
-                <text dy=".3em" text-anchor="middle" x="157" y="50">num</text>
+                <rect class="name" height="50" width="95" x="106" y="25" />
+                <text dy=".3em" text-anchor="middle" x="153" y="50">num</text>
                 <circle class="int value" cx="300" cy="50" r="25" />
                 <text dy=".3em" text-anchor="middle" x="300" y="50">17</text>
                 <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id30)" />
@@ -1114,8 +1115,8 @@ class PyNameCogTest(SvgTest):
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="86" x="114" y="25" />
-                <text dy=".3em" text-anchor="middle" x="157" y="50">num</text>
+                <rect class="name" height="50" width="95" x="106" y="25" />
+                <text dy=".3em" text-anchor="middle" x="153" y="50">num</text>
                 <circle class="int value" cx="300" cy="50" r="25" />
                 <text dy=".3em" text-anchor="middle" x="300" y="50">17</text>
                 <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id31)" />
@@ -1171,7 +1172,7 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         augment_twice(nums, 7)
                         print(nums)         # [1, 2, 3, 7, 7]
-                        </pre>
+            </pre>
             </div>
             <div class="overlay incremental">
             <pre class="python tophalf" select="6">
@@ -1183,23 +1184,23 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         augment_twice(nums, 7)
                         print(nums)         # [1, 2, 3, 7, 7]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id32" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid0' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="102" y="25" />
-                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="96" y="25" />
+                <text dy=".3em" text-anchor="middle" x="148" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
                 <rect class="list" height="50" width="40" x="315" y="25" />
                 <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
                 <rect class="list" height="50" width="40" x="355" y="25" />
                 <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
-                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id32)" />
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#newid0)" />
             </svg>
             </div>
             </div>
@@ -1213,33 +1214,33 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         augment_twice(nums, 7)
                         print(nums)         # [1, 2, 3, 7, 7]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id33" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid1' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="102" y="25" />
-                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="96" y="25" />
+                <text dy=".3em" text-anchor="middle" x="148" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
                 <rect class="list" height="50" width="40" x="315" y="25" />
                 <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
                 <rect class="list" height="50" width="40" x="355" y="25" />
                 <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
-                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id33)" />
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#newid1)" />
                 <rect class="frame" height="200" rx="20" ry="20" width="200" x="25" y="100" />
                 <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="125">augment_twice</text>
-                <rect class="name" height="50" width="122" x="78" y="150" />
-                <text dy=".3em" text-anchor="middle" x="139" y="175">a_list</text>
-                <path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id33)" />
-                <rect class="name" height="50" width="86" x="114" y="225" />
-                <text dy=".3em" text-anchor="middle" x="157" y="250">val</text>
+                <rect class="name" height="50" width="107" x="94" y="150" />
+                <text dy=".3em" text-anchor="middle" x="147" y="175">a_list</text>
+                <path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#newid1)" />
+                <rect class="name" height="50" width="82" x="118" y="225" />
+                <text dy=".3em" text-anchor="middle" x="159" y="250">val</text>
                 <circle class="int value" cx="300" cy="250" r="25" />
                 <text dy=".3em" text-anchor="middle" x="300" y="250">7</text>
-                <path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#id33)" />
+                <path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#newid1)" />
             </svg>
             </div>
             </div>
@@ -1253,33 +1254,33 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         augment_twice(nums, 7)
                         print(nums)         # [1, 2, 3, 7, 7]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id34" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid2' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="102" y="25" />
-                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="96" y="25" />
+                <text dy=".3em" text-anchor="middle" x="148" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
                 <rect class="list" height="50" width="40" x="315" y="25" />
                 <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
                 <rect class="list" height="50" width="40" x="355" y="25" />
                 <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
-                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id34)" />
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#newid2)" />
                 <rect class="frame" height="200" rx="20" ry="20" width="200" x="25" y="100" />
                 <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="125">augment_twice</text>
-                <rect class="name" height="50" width="122" x="78" y="150" />
-                <text dy=".3em" text-anchor="middle" x="139" y="175">a_list</text>
-                <path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id34)" />
-                <rect class="name" height="50" width="86" x="114" y="225" />
-                <text dy=".3em" text-anchor="middle" x="157" y="250">val</text>
+                <rect class="name" height="50" width="107" x="94" y="150" />
+                <text dy=".3em" text-anchor="middle" x="147" y="175">a_list</text>
+                <path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#newid2)" />
+                <rect class="name" height="50" width="82" x="118" y="225" />
+                <text dy=".3em" text-anchor="middle" x="159" y="250">val</text>
                 <circle class="int value" cx="300" cy="250" r="25" />
                 <text dy=".3em" text-anchor="middle" x="300" y="250">7</text>
-                <path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#id34)" />
+                <path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#newid2)" />
             </svg>
             </div>
             </div>
@@ -1293,33 +1294,33 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         augment_twice(nums, 7)
                         print(nums)         # [1, 2, 3, 7, 7]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id35" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid3' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="102" y="25" />
-                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="96" y="25" />
+                <text dy=".3em" text-anchor="middle" x="148" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
                 <rect class="list" height="50" width="40" x="315" y="25" />
                 <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
                 <rect class="list" height="50" width="40" x="355" y="25" />
                 <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
-                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id35)" />
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#newid3)" />
                 <rect class="frame" height="200" rx="20" ry="20" width="200" x="25" y="100" />
                 <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="125">augment_twice</text>
-                <rect class="name" height="50" width="122" x="78" y="150" />
-                <text dy=".3em" text-anchor="middle" x="139" y="175">a_list</text>
-                <path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id35)" />
-                <rect class="name" height="50" width="86" x="114" y="225" />
-                <text dy=".3em" text-anchor="middle" x="157" y="250">val</text>
+                <rect class="name" height="50" width="107" x="94" y="150" />
+                <text dy=".3em" text-anchor="middle" x="147" y="175">a_list</text>
+                <path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#newid3)" />
+                <rect class="name" height="50" width="82" x="118" y="225" />
+                <text dy=".3em" text-anchor="middle" x="159" y="250">val</text>
                 <circle class="int value" cx="300" cy="250" r="25" />
                 <text dy=".3em" text-anchor="middle" x="300" y="250">7</text>
-                <path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#id35)" />
+                <path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#newid3)" />
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
                 <rect class="list" height="50" width="40" x="315" y="25" />
@@ -1342,33 +1343,33 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         augment_twice(nums, 7)
                         print(nums)         # [1, 2, 3, 7, 7]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id36" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid4' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="102" y="25" />
-                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="96" y="25" />
+                <text dy=".3em" text-anchor="middle" x="148" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
                 <rect class="list" height="50" width="40" x="315" y="25" />
                 <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
                 <rect class="list" height="50" width="40" x="355" y="25" />
                 <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
-                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id36)" />
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#newid4)" />
                 <rect class="frame" height="200" rx="20" ry="20" width="200" x="25" y="100" />
                 <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="125">augment_twice</text>
-                <rect class="name" height="50" width="122" x="78" y="150" />
-                <text dy=".3em" text-anchor="middle" x="139" y="175">a_list</text>
-                <path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id36)" />
-                <rect class="name" height="50" width="86" x="114" y="225" />
-                <text dy=".3em" text-anchor="middle" x="157" y="250">val</text>
+                <rect class="name" height="50" width="107" x="94" y="150" />
+                <text dy=".3em" text-anchor="middle" x="147" y="175">a_list</text>
+                <path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#newid4)" />
+                <rect class="name" height="50" width="82" x="118" y="225" />
+                <text dy=".3em" text-anchor="middle" x="159" y="250">val</text>
                 <circle class="int value" cx="300" cy="250" r="25" />
                 <text dy=".3em" text-anchor="middle" x="300" y="250">7</text>
-                <path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#id36)" />
+                <path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#newid4)" />
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
                 <rect class="list" height="50" width="40" x="315" y="25" />
@@ -1401,33 +1402,33 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         augment_twice(nums, 7)
                         print(nums)         # [1, 2, 3, 7, 7]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id37" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid5' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="102" y="25" />
-                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="96" y="25" />
+                <text dy=".3em" text-anchor="middle" x="148" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
                 <rect class="list" height="50" width="40" x="315" y="25" />
                 <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
                 <rect class="list" height="50" width="40" x="355" y="25" />
                 <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
-                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id37)" />
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#newid5)" />
                 <rect class="frame" height="200" opacity="0.25" rx="20" ry="20" width="200" x="25" y="100" />
                 <text class="framelabel" dy=".3em" opacity="0.25" text-anchor="middle" x="125" y="125">augment_twice</text>
-                <rect class="name" height="50" opacity="0.25" width="122" x="78" y="150" />
-                <text dy=".3em" opacity="0.25" text-anchor="middle" x="139" y="175">a_list</text>
-                <path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#id37)" opacity="0.25" />
-                <rect class="name" height="50" opacity="0.25" width="86" x="114" y="225" />
-                <text dy=".3em" opacity="0.25" text-anchor="middle" x="157" y="250">val</text>
+                <rect class="name" height="50" opacity="0.25" width="107" x="94" y="150" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="147" y="175">a_list</text>
+                <path class="arrow" d="M 200,175 C 236,175 236,148 237,112 C 238,76 238,50 275,50" fill="none" marker-end="url(#newid5)" opacity="0.25" />
+                <rect class="name" height="50" opacity="0.25" width="82" x="118" y="225" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="159" y="250">val</text>
                 <circle class="int value" cx="300" cy="250" r="25" />
                 <text dy=".3em" text-anchor="middle" x="300" y="250">7</text>
-                <path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#id37)" opacity="0.25" />
+                <path class="arrow" d="M 200,250 C 218,250 218,250 237,250 C 256,250 256,250 275,250" fill="none" marker-end="url(#newid5)" opacity="0.25" />
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
                 <rect class="list" height="50" width="40" x="315" y="25" />
@@ -1459,23 +1460,23 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         augment_twice(nums, 7)
                         print(nums)         # [1, 2, 3, 7, 7]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id38" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid6' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="102" y="25" />
-                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="96" y="25" />
+                <text dy=".3em" text-anchor="middle" x="148" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
                 <rect class="list" height="50" width="40" x="315" y="25" />
                 <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
                 <rect class="list" height="50" width="40" x="355" y="25" />
                 <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
-                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id38)" />
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#newid6)" />
                 <circle class="int value" cx="300" cy="250" opacity="0.25" r="25" />
                 <text dy=".3em" opacity="0.25" text-anchor="middle" x="300" y="250">7</text>
                 <rect class="list" height="50" width="40" x="275" y="25" />
@@ -1509,23 +1510,23 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         augment_twice(nums, 7)
                         print(nums)         # [1, 2, 3, 7, 7]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id39" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid7' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="102" y="25" />
-                <text dy=".3em" text-anchor="middle" x="151" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="96" y="25" />
+                <text dy=".3em" text-anchor="middle" x="148" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
                 <rect class="list" height="50" width="40" x="315" y="25" />
                 <text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
                 <rect class="list" height="50" width="40" x="355" y="25" />
                 <text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
-                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#id39)" />
+                <path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#newid7)" />
                 <rect class="list" height="50" width="40" x="275" y="25" />
                 <text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
                 <rect class="list" height="50" width="40" x="315" y="25" />
@@ -1594,7 +1595,7 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         augment_twice_bad(nums, 7)
                         print(nums)         # [1, 2, 3]
-                        </pre>
+            </pre>
             </div>
             <div class="overlay incremental">
             <pre class="python tophalf" select="5">
@@ -1605,23 +1606,23 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         augment_twice_bad(nums, 7)
                         print(nums)         # [1, 2, 3]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id40" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid0' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="132" y="25" />
-                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="126" y="25" />
+                <text dy=".3em" text-anchor="middle" x="178" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="305" y="25" />
                 <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
                 <rect class="list" height="50" width="40" x="345" y="25" />
                 <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
                 <rect class="list" height="50" width="40" x="385" y="25" />
                 <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
-                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id40)" />
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#newid0)" />
             </svg>
             </div>
             </div>
@@ -1634,33 +1635,33 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         augment_twice_bad(nums, 7)
                         print(nums)         # [1, 2, 3]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id41" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid1' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="132" y="25" />
-                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="126" y="25" />
+                <text dy=".3em" text-anchor="middle" x="178" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="305" y="25" />
                 <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
                 <rect class="list" height="50" width="40" x="345" y="25" />
                 <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
                 <rect class="list" height="50" width="40" x="385" y="25" />
                 <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
-                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id41)" />
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#newid1)" />
                 <rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" />
                 <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
-                <rect class="name" height="50" width="122" x="108" y="150" />
-                <text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text>
-                <path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#id41)" />
-                <rect class="name" height="50" width="86" x="144" y="225" />
-                <text dy=".3em" text-anchor="middle" x="187" y="250">val</text>
+                <rect class="name" height="50" width="107" x="124" y="150" />
+                <text dy=".3em" text-anchor="middle" x="177" y="175">a_list</text>
+                <path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#newid1)" />
+                <rect class="name" height="50" width="82" x="148" y="225" />
+                <text dy=".3em" text-anchor="middle" x="189" y="250">val</text>
                 <circle class="int value" cx="330" cy="250" r="25" />
                 <text dy=".3em" text-anchor="middle" x="330" y="250">7</text>
-                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id41)" />
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#newid1)" />
             </svg>
             </div>
             </div>
@@ -1673,33 +1674,33 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         augment_twice_bad(nums, 7)
                         print(nums)         # [1, 2, 3]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id42" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid2' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="132" y="25" />
-                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="126" y="25" />
+                <text dy=".3em" text-anchor="middle" x="178" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="305" y="25" />
                 <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
                 <rect class="list" height="50" width="40" x="345" y="25" />
                 <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
                 <rect class="list" height="50" width="40" x="385" y="25" />
                 <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
-                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id42)" />
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#newid2)" />
                 <rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" />
                 <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
-                <rect class="name" height="50" width="122" x="108" y="150" />
-                <text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text>
-                <path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#id42)" />
-                <rect class="name" height="50" width="86" x="144" y="225" />
-                <text dy=".3em" text-anchor="middle" x="187" y="250">val</text>
+                <rect class="name" height="50" width="107" x="124" y="150" />
+                <text dy=".3em" text-anchor="middle" x="177" y="175">a_list</text>
+                <path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#newid2)" />
+                <rect class="name" height="50" width="82" x="148" y="225" />
+                <text dy=".3em" text-anchor="middle" x="189" y="250">val</text>
                 <circle class="int value" cx="330" cy="250" r="25" />
                 <text dy=".3em" text-anchor="middle" x="330" y="250">7</text>
-                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id42)" />
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#newid2)" />
             </svg>
             </div>
             </div>
@@ -1712,33 +1713,33 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         augment_twice_bad(nums, 7)
                         print(nums)         # [1, 2, 3]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id43" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid3' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="132" y="25" />
-                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="126" y="25" />
+                <text dy=".3em" text-anchor="middle" x="178" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="305" y="25" />
                 <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
                 <rect class="list" height="50" width="40" x="345" y="25" />
                 <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
                 <rect class="list" height="50" width="40" x="385" y="25" />
                 <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
-                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id43)" />
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#newid3)" />
                 <rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" />
                 <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
-                <rect class="name" height="50" width="122" x="108" y="150" />
-                <text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text>
-                <path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#id43)" />
-                <rect class="name" height="50" width="86" x="144" y="225" />
-                <text dy=".3em" text-anchor="middle" x="187" y="250">val</text>
+                <rect class="name" height="50" width="107" x="124" y="150" />
+                <text dy=".3em" text-anchor="middle" x="177" y="175">a_list</text>
+                <path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#newid3)" />
+                <rect class="name" height="50" width="82" x="148" y="225" />
+                <text dy=".3em" text-anchor="middle" x="189" y="250">val</text>
                 <circle class="int value" cx="330" cy="250" r="25" />
                 <text dy=".3em" text-anchor="middle" x="330" y="250">7</text>
-                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id43)" />
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#newid3)" />
                 <rect class="list" height="50" width="40" x="305" y="150" />
                 <text dy=".3em" text-anchor="middle" x="325" y="175">1</text>
                 <rect class="list" height="50" width="40" x="345" y="150" />
@@ -1761,32 +1762,32 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         augment_twice_bad(nums, 7)
                         print(nums)         # [1, 2, 3]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id44" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid4' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="132" y="25" />
-                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="126" y="25" />
+                <text dy=".3em" text-anchor="middle" x="178" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="305" y="25" />
                 <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
                 <rect class="list" height="50" width="40" x="345" y="25" />
                 <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
                 <rect class="list" height="50" width="40" x="385" y="25" />
                 <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
-                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id44)" />
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#newid4)" />
                 <rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" />
                 <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
-                <rect class="name" height="50" width="86" x="144" y="225" />
-                <text dy=".3em" text-anchor="middle" x="187" y="250">val</text>
+                <rect class="name" height="50" width="82" x="148" y="225" />
+                <text dy=".3em" text-anchor="middle" x="189" y="250">val</text>
                 <circle class="int value" cx="330" cy="250" r="25" />
                 <text dy=".3em" text-anchor="middle" x="330" y="250">7</text>
-                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id44)" />
-                <rect class="name" height="50" width="122" x="108" y="150" />
-                <text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text>
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#newid4)" />
+                <rect class="name" height="50" width="107" x="124" y="150" />
+                <text dy=".3em" text-anchor="middle" x="177" y="175">a_list</text>
                 <rect class="list" height="50" width="40" x="305" y="150" />
                 <text dy=".3em" text-anchor="middle" x="325" y="175">1</text>
                 <rect class="list" height="50" width="40" x="345" y="150" />
@@ -1797,7 +1798,7 @@ class PyNameCogTest(SvgTest):
                 <text dy=".3em" text-anchor="middle" x="445" y="175">7</text>
                 <rect class="list" height="50" width="40" x="465" y="150" />
                 <text dy=".3em" text-anchor="middle" x="485" y="175">7</text>
-                <path class="arrow" d="M 230,175 C 248,175 248,175 267,175 C 286,175 286,175 305,175" fill="none" marker-end="url(#id44)" />
+                <path class="arrow" d="M 230,175 C 248,175 248,175 267,175 C 286,175 286,175 305,175" fill="none" marker-end="url(#newid4)" />
             </svg>
             </div>
             </div>
@@ -1810,32 +1811,32 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         augment_twice_bad(nums, 7)
                         print(nums)         # [1, 2, 3]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id45" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid5' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="132" y="25" />
-                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="126" y="25" />
+                <text dy=".3em" text-anchor="middle" x="178" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="305" y="25" />
                 <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
                 <rect class="list" height="50" width="40" x="345" y="25" />
                 <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
                 <rect class="list" height="50" width="40" x="385" y="25" />
                 <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
-                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id45)" />
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#newid5)" />
                 <rect class="frame" height="200" opacity="0.25" rx="20" ry="20" width="230" x="25" y="100" />
                 <text class="framelabel" dy=".3em" opacity="0.25" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
-                <rect class="name" height="50" opacity="0.25" width="86" x="144" y="225" />
-                <text dy=".3em" opacity="0.25" text-anchor="middle" x="187" y="250">val</text>
+                <rect class="name" height="50" opacity="0.25" width="82" x="148" y="225" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="189" y="250">val</text>
                 <circle class="int value" cx="330" cy="250" r="25" />
                 <text dy=".3em" text-anchor="middle" x="330" y="250">7</text>
-                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id45)" opacity="0.25" />
-                <rect class="name" height="50" opacity="0.25" width="122" x="108" y="150" />
-                <text dy=".3em" opacity="0.25" text-anchor="middle" x="169" y="175">a_list</text>
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#newid5)" opacity="0.25" />
+                <rect class="name" height="50" opacity="0.25" width="107" x="124" y="150" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="177" y="175">a_list</text>
                 <rect class="list" height="50" width="40" x="305" y="150" />
                 <text dy=".3em" text-anchor="middle" x="325" y="175">1</text>
                 <rect class="list" height="50" width="40" x="345" y="150" />
@@ -1846,7 +1847,7 @@ class PyNameCogTest(SvgTest):
                 <text dy=".3em" text-anchor="middle" x="445" y="175">7</text>
                 <rect class="list" height="50" width="40" x="465" y="150" />
                 <text dy=".3em" text-anchor="middle" x="485" y="175">7</text>
-                <path class="arrow" d="M 230,175 C 248,175 248,175 267,175 C 286,175 286,175 305,175" fill="none" marker-end="url(#id45)" opacity="0.25" />
+                <path class="arrow" d="M 230,175 C 248,175 248,175 267,175 C 286,175 286,175 305,175" fill="none" marker-end="url(#newid5)" opacity="0.25" />
             </svg>
             </div>
             </div>
@@ -1859,23 +1860,23 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         augment_twice_bad(nums, 7)
                         print(nums)         # [1, 2, 3]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id46" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid6' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="132" y="25" />
-                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="126" y="25" />
+                <text dy=".3em" text-anchor="middle" x="178" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="305" y="25" />
                 <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
                 <rect class="list" height="50" width="40" x="345" y="25" />
                 <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
                 <rect class="list" height="50" width="40" x="385" y="25" />
                 <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
-                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id46)" />
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#newid6)" />
                 <circle class="int value" cx="330" cy="250" opacity="0.25" r="25" />
                 <text dy=".3em" opacity="0.25" text-anchor="middle" x="330" y="250">7</text>
                 <rect class="list" height="50" opacity="0.25" width="40" x="305" y="150" />
@@ -1900,23 +1901,23 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         augment_twice_bad(nums, 7)
                         print(nums)         # [1, 2, 3]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id47" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid7' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="132" y="25" />
-                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="126" y="25" />
+                <text dy=".3em" text-anchor="middle" x="178" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="305" y="25" />
                 <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
                 <rect class="list" height="50" width="40" x="345" y="25" />
                 <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
                 <rect class="list" height="50" width="40" x="385" y="25" />
                 <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
-                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id47)" />
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#newid7)" />
             </svg>
             </div>
             </div>
@@ -1973,7 +1974,7 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         nums = augment_twice_good(nums, 7)
                         print(nums)         # [1, 2, 3, 7, 7]
-                        </pre>
+            </pre>
             </div>
             <div class="overlay incremental">
             <pre class="python tophalf" select="5">
@@ -1984,23 +1985,23 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         nums = augment_twice_good(nums, 7)
                         print(nums)         # [1, 2, 3, 7, 7]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id48" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid0' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="132" y="25" />
-                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="126" y="25" />
+                <text dy=".3em" text-anchor="middle" x="178" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="305" y="25" />
                 <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
                 <rect class="list" height="50" width="40" x="345" y="25" />
                 <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
                 <rect class="list" height="50" width="40" x="385" y="25" />
                 <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
-                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id48)" />
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#newid0)" />
             </svg>
             </div>
             </div>
@@ -2013,33 +2014,33 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         nums = augment_twice_good(nums, 7)
                         print(nums)         # [1, 2, 3, 7, 7]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id49" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid1' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="132" y="25" />
-                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="126" y="25" />
+                <text dy=".3em" text-anchor="middle" x="178" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="305" y="25" />
                 <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
                 <rect class="list" height="50" width="40" x="345" y="25" />
                 <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
                 <rect class="list" height="50" width="40" x="385" y="25" />
                 <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
-                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id49)" />
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#newid1)" />
                 <rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" />
                 <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
-                <rect class="name" height="50" width="122" x="108" y="150" />
-                <text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text>
-                <path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#id49)" />
-                <rect class="name" height="50" width="86" x="144" y="225" />
-                <text dy=".3em" text-anchor="middle" x="187" y="250">val</text>
+                <rect class="name" height="50" width="107" x="124" y="150" />
+                <text dy=".3em" text-anchor="middle" x="177" y="175">a_list</text>
+                <path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#newid1)" />
+                <rect class="name" height="50" width="82" x="148" y="225" />
+                <text dy=".3em" text-anchor="middle" x="189" y="250">val</text>
                 <circle class="int value" cx="330" cy="250" r="25" />
                 <text dy=".3em" text-anchor="middle" x="330" y="250">7</text>
-                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id49)" />
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#newid1)" />
             </svg>
             </div>
             </div>
@@ -2052,33 +2053,33 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         nums = augment_twice_good(nums, 7)
                         print(nums)         # [1, 2, 3, 7, 7]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id50" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid2' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="132" y="25" />
-                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="126" y="25" />
+                <text dy=".3em" text-anchor="middle" x="178" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="305" y="25" />
                 <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
                 <rect class="list" height="50" width="40" x="345" y="25" />
                 <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
                 <rect class="list" height="50" width="40" x="385" y="25" />
                 <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
-                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id50)" />
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#newid2)" />
                 <rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" />
                 <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
-                <rect class="name" height="50" width="122" x="108" y="150" />
-                <text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text>
-                <path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#id50)" />
-                <rect class="name" height="50" width="86" x="144" y="225" />
-                <text dy=".3em" text-anchor="middle" x="187" y="250">val</text>
+                <rect class="name" height="50" width="107" x="124" y="150" />
+                <text dy=".3em" text-anchor="middle" x="177" y="175">a_list</text>
+                <path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#newid2)" />
+                <rect class="name" height="50" width="82" x="148" y="225" />
+                <text dy=".3em" text-anchor="middle" x="189" y="250">val</text>
                 <circle class="int value" cx="330" cy="250" r="25" />
                 <text dy=".3em" text-anchor="middle" x="330" y="250">7</text>
-                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id50)" />
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#newid2)" />
             </svg>
             </div>
             </div>
@@ -2091,33 +2092,33 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         nums = augment_twice_good(nums, 7)
                         print(nums)         # [1, 2, 3, 7, 7]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id51" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid3' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="132" y="25" />
-                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="126" y="25" />
+                <text dy=".3em" text-anchor="middle" x="178" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="305" y="25" />
                 <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
                 <rect class="list" height="50" width="40" x="345" y="25" />
                 <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
                 <rect class="list" height="50" width="40" x="385" y="25" />
                 <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
-                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id51)" />
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#newid3)" />
                 <rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" />
                 <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
-                <rect class="name" height="50" width="122" x="108" y="150" />
-                <text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text>
-                <path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#id51)" />
-                <rect class="name" height="50" width="86" x="144" y="225" />
-                <text dy=".3em" text-anchor="middle" x="187" y="250">val</text>
+                <rect class="name" height="50" width="107" x="124" y="150" />
+                <text dy=".3em" text-anchor="middle" x="177" y="175">a_list</text>
+                <path class="arrow" d="M 230,175 C 266,175 266,148 267,112 C 268,76 268,50 305,50" fill="none" marker-end="url(#newid3)" />
+                <rect class="name" height="50" width="82" x="148" y="225" />
+                <text dy=".3em" text-anchor="middle" x="189" y="250">val</text>
                 <circle class="int value" cx="330" cy="250" r="25" />
                 <text dy=".3em" text-anchor="middle" x="330" y="250">7</text>
-                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id51)" />
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#newid3)" />
                 <rect class="list" height="50" width="40" x="305" y="150" />
                 <text dy=".3em" text-anchor="middle" x="325" y="175">1</text>
                 <rect class="list" height="50" width="40" x="345" y="150" />
@@ -2140,32 +2141,32 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         nums = augment_twice_good(nums, 7)
                         print(nums)         # [1, 2, 3, 7, 7]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id52" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid4' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="132" y="25" />
-                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="126" y="25" />
+                <text dy=".3em" text-anchor="middle" x="178" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="305" y="25" />
                 <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
                 <rect class="list" height="50" width="40" x="345" y="25" />
                 <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
                 <rect class="list" height="50" width="40" x="385" y="25" />
                 <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
-                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id52)" />
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#newid4)" />
                 <rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" />
                 <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
-                <rect class="name" height="50" width="86" x="144" y="225" />
-                <text dy=".3em" text-anchor="middle" x="187" y="250">val</text>
+                <rect class="name" height="50" width="82" x="148" y="225" />
+                <text dy=".3em" text-anchor="middle" x="189" y="250">val</text>
                 <circle class="int value" cx="330" cy="250" r="25" />
                 <text dy=".3em" text-anchor="middle" x="330" y="250">7</text>
-                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id52)" />
-                <rect class="name" height="50" width="122" x="108" y="150" />
-                <text dy=".3em" text-anchor="middle" x="169" y="175">a_list</text>
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#newid4)" />
+                <rect class="name" height="50" width="107" x="124" y="150" />
+                <text dy=".3em" text-anchor="middle" x="177" y="175">a_list</text>
                 <rect class="list" height="50" width="40" x="305" y="150" />
                 <text dy=".3em" text-anchor="middle" x="325" y="175">1</text>
                 <rect class="list" height="50" width="40" x="345" y="150" />
@@ -2176,7 +2177,7 @@ class PyNameCogTest(SvgTest):
                 <text dy=".3em" text-anchor="middle" x="445" y="175">7</text>
                 <rect class="list" height="50" width="40" x="465" y="150" />
                 <text dy=".3em" text-anchor="middle" x="485" y="175">7</text>
-                <path class="arrow" d="M 230,175 C 248,175 248,175 267,175 C 286,175 286,175 305,175" fill="none" marker-end="url(#id52)" />
+                <path class="arrow" d="M 230,175 C 248,175 248,175 267,175 C 286,175 286,175 305,175" fill="none" marker-end="url(#newid4)" />
             </svg>
             </div>
             </div>
@@ -2189,32 +2190,32 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         nums = augment_twice_good(nums, 7)
                         print(nums)         # [1, 2, 3, 7, 7]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id53" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid5' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="132" y="25" />
-                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="126" y="25" />
+                <text dy=".3em" text-anchor="middle" x="178" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="305" y="25" />
                 <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
                 <rect class="list" height="50" width="40" x="345" y="25" />
                 <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
                 <rect class="list" height="50" width="40" x="385" y="25" />
                 <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
-                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id53)" />
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#newid5)" />
                 <rect class="frame" height="200" rx="20" ry="20" width="230" x="25" y="100" />
                 <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
-                <rect class="name" height="50" opacity="0.25" width="86" x="144" y="225" />
-                <text dy=".3em" opacity="0.25" text-anchor="middle" x="187" y="250">val</text>
+                <rect class="name" height="50" opacity="0.25" width="82" x="148" y="225" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="189" y="250">val</text>
                 <circle class="int value" cx="330" cy="250" opacity="0.25" r="25" />
                 <text dy=".3em" opacity="0.25" text-anchor="middle" x="330" y="250">7</text>
-                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#id53)" opacity="0.25" />
-                <rect class="name" height="50" opacity="0.25" width="122" x="108" y="150" />
-                <text dy=".3em" opacity="0.25" text-anchor="middle" x="169" y="175">a_list</text>
+                <path class="arrow" d="M 230,250 C 248,250 248,250 267,250 C 286,250 286,250 305,250" fill="none" marker-end="url(#newid5)" opacity="0.25" />
+                <rect class="name" height="50" opacity="0.25" width="107" x="124" y="150" />
+                <text dy=".3em" opacity="0.25" text-anchor="middle" x="177" y="175">a_list</text>
                 <rect class="list" height="50" width="40" x="305" y="150" />
                 <text dy=".3em" text-anchor="middle" x="325" y="175">1</text>
                 <rect class="list" height="50" width="40" x="345" y="150" />
@@ -2225,9 +2226,9 @@ class PyNameCogTest(SvgTest):
                 <text dy=".3em" text-anchor="middle" x="445" y="175">7</text>
                 <rect class="list" height="50" width="40" x="465" y="150" />
                 <text dy=".3em" text-anchor="middle" x="485" y="175">7</text>
-                <path class="arrow" d="M 230,175 C 248,175 248,175 267,175 C 286,175 286,175 305,175" fill="none" marker-end="url(#id53)" opacity="0.25" />
+                <path class="arrow" d="M 230,175 C 248,175 248,175 267,175 C 286,175 286,175 305,175" fill="none" marker-end="url(#newid5)" opacity="0.25" />
                 <rect class="name" height="25" width="25" x="243" y="163" />
-                <path class="arrow" d="M 267,175 C 276,175 276,175 286,175 C 295,175 295,175 305,175" fill="none" marker-end="url(#id53)" />
+                <path class="arrow" d="M 267,175 C 276,175 276,175 286,175 C 295,175 295,175 305,175" fill="none" marker-end="url(#newid5)" />
             </svg>
             </div>
             </div>
@@ -2240,23 +2241,23 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         nums = augment_twice_good(nums, 7)
                         print(nums)         # [1, 2, 3, 7, 7]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id54" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid6' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="132" y="25" />
-                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="126" y="25" />
+                <text dy=".3em" text-anchor="middle" x="178" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="305" y="25" />
                 <text dy=".3em" text-anchor="middle" x="325" y="50">1</text>
                 <rect class="list" height="50" width="40" x="345" y="25" />
                 <text dy=".3em" text-anchor="middle" x="365" y="50">2</text>
                 <rect class="list" height="50" width="40" x="385" y="25" />
                 <text dy=".3em" text-anchor="middle" x="405" y="50">3</text>
-                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id54)" />
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#newid6)" />
                 <rect class="frame" height="200" opacity="0.25" rx="20" ry="20" width="230" x="25" y="100" />
                 <text class="framelabel" dy=".3em" opacity="0.25" text-anchor="middle" x="140" y="125">augment_twice_bad</text>
                 <rect class="list" height="50" width="40" x="305" y="150" />
@@ -2270,7 +2271,7 @@ class PyNameCogTest(SvgTest):
                 <rect class="list" height="50" width="40" x="465" y="150" />
                 <text dy=".3em" text-anchor="middle" x="485" y="175">7</text>
                 <rect class="name" height="25" width="25" x="243" y="163" />
-                <path class="arrow" d="M 267,175 C 276,175 276,175 286,175 C 295,175 295,175 305,175" fill="none" marker-end="url(#id54)" />
+                <path class="arrow" d="M 267,175 C 276,175 276,175 286,175 C 295,175 295,175 305,175" fill="none" marker-end="url(#newid6)" />
             </svg>
             </div>
             </div>
@@ -2283,23 +2284,23 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         nums = augment_twice_good(nums, 7)
                         print(nums)         # [1, 2, 3, 7, 7]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id55" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid7' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="132" y="25" />
-                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="126" y="25" />
+                <text dy=".3em" text-anchor="middle" x="178" y="50">nums</text>
                 <rect class="list" height="50" opacity="0.25" width="40" x="305" y="25" />
                 <text dy=".3em" opacity="0.25" text-anchor="middle" x="325" y="50">1</text>
                 <rect class="list" height="50" opacity="0.25" width="40" x="345" y="25" />
                 <text dy=".3em" opacity="0.25" text-anchor="middle" x="365" y="50">2</text>
                 <rect class="list" height="50" opacity="0.25" width="40" x="385" y="25" />
                 <text dy=".3em" opacity="0.25" text-anchor="middle" x="405" y="50">3</text>
-                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#id55)" opacity="0.25" />
+                <path class="arrow" d="M 230,50 C 248,50 248,50 267,50 C 286,50 286,50 305,50" fill="none" marker-end="url(#newid7)" opacity="0.25" />
                 <rect class="list" height="50" width="40" x="305" y="150" />
                 <text dy=".3em" text-anchor="middle" x="325" y="175">1</text>
                 <rect class="list" height="50" width="40" x="345" y="150" />
@@ -2310,9 +2311,9 @@ class PyNameCogTest(SvgTest):
                 <text dy=".3em" text-anchor="middle" x="445" y="175">7</text>
                 <rect class="list" height="50" width="40" x="465" y="150" />
                 <text dy=".3em" text-anchor="middle" x="485" y="175">7</text>
-                <rect class="name" height="50" width="98" x="132" y="25" />
-                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
-                <path class="arrow" d="M 230,50 C 266,50 266,76 267,112 C 268,148 268,175 305,175" fill="none" marker-end="url(#id55)" />
+                <rect class="name" height="50" width="105" x="126" y="25" />
+                <text dy=".3em" text-anchor="middle" x="178" y="50">nums</text>
+                <path class="arrow" d="M 230,50 C 266,50 266,76 267,112 C 268,148 268,175 305,175" fill="none" marker-end="url(#newid7)" />
             </svg>
             </div>
             </div>
@@ -2325,16 +2326,16 @@ class PyNameCogTest(SvgTest):
                         nums = [1, 2, 3]
                         nums = augment_twice_good(nums, 7)
                         print(nums)         # [1, 2, 3, 7, 7]
-                        </pre>
+            </pre>
             <div class="opaque bottomhalf" style="text-align:center">
             <svg baseProfile="full" height="400" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
-                    <marker id="id56" markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+                    <marker id='newid8' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
                         <path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
                     </marker>
                 </defs>
-                <rect class="name" height="50" width="98" x="132" y="25" />
-                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
+                <rect class="name" height="50" width="105" x="126" y="25" />
+                <text dy=".3em" text-anchor="middle" x="178" y="50">nums</text>
                 <rect class="list" height="50" width="40" x="305" y="150" />
                 <text dy=".3em" text-anchor="middle" x="325" y="175">1</text>
                 <rect class="list" height="50" width="40" x="345" y="150" />
@@ -2345,9 +2346,9 @@ class PyNameCogTest(SvgTest):
                 <text dy=".3em" text-anchor="middle" x="445" y="175">7</text>
                 <rect class="list" height="50" width="40" x="465" y="150" />
                 <text dy=".3em" text-anchor="middle" x="485" y="175">7</text>
-                <rect class="name" height="50" width="98" x="132" y="25" />
-                <text dy=".3em" text-anchor="middle" x="181" y="50">nums</text>
-                <path class="arrow" d="M 230,50 C 266,50 266,76 267,112 C 268,148 268,175 305,175" fill="none" marker-end="url(#id56)" />
+                <rect class="name" height="50" width="105" x="126" y="25" />
+                <text dy=".3em" text-anchor="middle" x="178" y="50">nums</text>
+                <path class="arrow" d="M 230,50 C 266,50 266,76 267,112 C 268,148 268,175 305,175" fill="none" marker-end="url(#newid8)" />
             </svg>
             </div>
             </div>
@@ -2590,30 +2591,30 @@ class PyNameCogTest(SvgTest):
                     </marker>
                 </defs>
                 <g transform="scale(0.55)">
-                    <rect class="name" height="50" width="122" x="78" y="25" />
-                    <text dy=".3em" text-anchor="middle" x="139" y="50">qyhgtr</text>
-                    <rect class="name" height="50" width="98" x="102" y="100" />
-                    <text dy=".3em" text-anchor="middle" x="151" y="125">rkud</text>
+                    <rect class="name" height="50" width="114" x="86" y="25" />
+                    <text dy=".3em" text-anchor="middle" x="143" y="50">qyhgtr</text>
+                    <rect class="name" height="50" width="95" x="106" y="100" />
+                    <text dy=".3em" text-anchor="middle" x="153" y="125">rkud</text>
                     <rect class="frame" height="200" rx="20" ry="20" width="200" x="25" y="175" />
                     <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="200">func_jguqdor</text>
-                    <rect class="name" height="50" width="86" x="114" y="225" />
-                    <text dy=".3em" text-anchor="middle" x="157" y="250">qdi</text>
-                    <rect class="name" height="50" width="86" x="114" y="300" />
-                    <text dy=".3em" text-anchor="middle" x="157" y="325">fzk</text>
+                    <rect class="name" height="50" width="82" x="118" y="225" />
+                    <text dy=".3em" text-anchor="middle" x="159" y="250">qdi</text>
+                    <rect class="name" height="50" width="82" x="118" y="300" />
+                    <text dy=".3em" text-anchor="middle" x="159" y="325">fzk</text>
                     <rect class="frame" height="275" rx="20" ry="20" width="200" x="25" y="400" />
                     <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="425">func_pwrcp</text>
-                    <rect class="name" height="50" width="122" x="78" y="450" />
-                    <text dy=".3em" text-anchor="middle" x="139" y="475">ecwnfl</text>
-                    <rect class="name" height="50" width="98" x="102" y="525" />
-                    <text dy=".3em" text-anchor="middle" x="151" y="550">uncv</text>
-                    <rect class="name" height="50" width="86" x="114" y="600" />
-                    <text dy=".3em" text-anchor="middle" x="157" y="625">hat</text>
+                    <rect class="name" height="50" width="120" x="80" y="450" />
+                    <text dy=".3em" text-anchor="middle" x="140" y="475">ecwnfl</text>
+                    <rect class="name" height="50" width="100" x="100" y="525" />
+                    <text dy=".3em" text-anchor="middle" x="150" y="550">uncv</text>
+                    <rect class="name" height="50" width="82" x="118" y="600" />
+                    <text dy=".3em" text-anchor="middle" x="159" y="625">hat</text>
                     <rect class="frame" height="200" rx="20" ry="20" width="200" x="25" y="700" />
                     <text class="framelabel" dy=".3em" opacity="1" text-anchor="middle" x="125" y="725">func_cmrnl</text>
-                    <rect class="name" height="50" width="110" x="90" y="750" />
-                    <text dy=".3em" text-anchor="middle" x="145" y="775">lpcmg</text>
-                    <rect class="name" height="50" width="134" x="66" y="825" />
-                    <text dy=".3em" text-anchor="middle" x="133" y="850">ybdsoas</text>
+                    <rect class="name" height="50" width="115" x="86" y="750" />
+                    <text dy=".3em" text-anchor="middle" x="143" y="775">lpcmg</text>
+                    <rect class="name" height="50" width="132" x="68" y="825" />
+                    <text dy=".3em" text-anchor="middle" x="134" y="850">ybdsoas</text>
                     <rect class="list" height="50" width="40" x="375" y="25" />
                     <text dy=".3em" text-anchor="middle" x="395" y="50">10</text>
                     <rect class="list" height="50" width="40" x="415" y="25" />
@@ -2690,15 +2691,15 @@ class PyNameCogTest(SvgTest):
                     <text dy=".3em" text-anchor="middle" x="595" y="850">7</text>
                     <rect class="list" height="50" width="40" x="615" y="825" />
                     <text dy=".3em" text-anchor="middle" x="635" y="850">8</text>
-                    <path class="arrow" d="M 200,50 C 243,50 243,50 287,50 C 331,50 331,50 375,50" fill="none" marker-end="url(#id65)" />
-                    <path class="arrow" d="M 200,250 C 253,250 261,234 287,187 C 313,140 321,125 375,125" fill="none" marker-end="url(#id65)" />
-                    <path class="arrow" d="M 200,475 C 271,475 277,433 287,362 C 297,291 303,250 375,250" fill="none" marker-end="url(#id65)" />
-                    <path class="arrow" d="M 200,125 C 266,125 273,159 287,225 C 301,290 308,325 375,325" fill="none" marker-end="url(#id65)" />
-                    <path class="arrow" d="M 200,325 C 257,325 266,346 287,400 C 308,453 317,475 375,475" fill="none" marker-end="url(#id65)" />
-                    <path class="arrow" d="M 200,550 C 243,550 243,550 287,550 C 331,550 331,550 375,550" fill="none" marker-end="url(#id65)" />
-                    <path class="arrow" d="M 200,775 C 257,775 266,753 287,700 C 308,646 317,625 375,625" fill="none" marker-end="url(#id65)" />
-                    <path class="arrow" d="M 200,625 C 257,625 266,646 287,700 C 308,753 317,775 375,775" fill="none" marker-end="url(#id65)" />
-                    <path class="arrow" d="M 200,850 C 243,850 243,850 287,850 C 331,850 331,850 375,850" fill="none" marker-end="url(#id65)" />
+                    <path class="arrow" d="M 200,50 C 243,50 243,50 287,50 C 331,50 331,50 375,50" fill="none" marker-end="url(#newid0)" />
+                    <path class="arrow" d="M 200,250 C 253,250 261,234 287,187 C 313,140 321,125 375,125" fill="none" marker-end="url(#newid0)" />
+                    <path class="arrow" d="M 200,475 C 271,475 277,433 287,362 C 297,291 303,250 375,250" fill="none" marker-end="url(#newid0)" />
+                    <path class="arrow" d="M 200,125 C 266,125 273,159 287,225 C 301,290 308,325 375,325" fill="none" marker-end="url(#newid0)" />
+                    <path class="arrow" d="M 200,325 C 257,325 266,346 287,400 C 308,453 317,475 375,475" fill="none" marker-end="url(#newid0)" />
+                    <path class="arrow" d="M 200,550 C 243,550 243,550 287,550 C 331,550 331,550 375,550" fill="none" marker-end="url(#newid0)" />
+                    <path class="arrow" d="M 200,775 C 257,775 266,753 287,700 C 308,646 317,625 375,625" fill="none" marker-end="url(#newid0)" />
+                    <path class="arrow" d="M 200,625 C 257,625 266,646 287,700 C 308,753 317,775 375,775" fill="none" marker-end="url(#newid0)" />
+                    <path class="arrow" d="M 200,850 C 243,850 243,850 287,850 C 331,850 331,850 375,850" fill="none" marker-end="url(#newid0)" />
                 </g>
             </svg>
             """)
