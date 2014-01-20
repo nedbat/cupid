@@ -5,13 +5,19 @@ from .svgfig import SvgFig
 
 
 class PyFig(SvgFig):
-    def __init__(self, unit=25, y=None, y_stride=None, name_right=None, val_gap=None, **kwargs):
+    def __init__(self,
+            unit=25, y=None, y_stride=None, name_right=None, val_gap=None,
+            name_shape='rect',
+            **kwargs
+            ):
+
         super(PyFig, self).__init__(**kwargs)
         self.unit = unit
         self.y = y or self.unit
         self.y_stride = y_stride or self.unit*3
         self.name_right = name_right or self.unit*8
         self.val_left = self.name_right + (val_gap or self.unit*3)
+        self.name_shape = name_shape
 
     def next_name(self):
         """Produce a position for the next name."""
@@ -33,9 +39,10 @@ class PyFig(SvgFig):
     def end_frame(self):
         self.y += self.unit
 
-    def name(self, **args):
+    def name(self, shape=None, **args):
         class_ = add_class("name", poparg(args, class_=None))
-        return self.rect(class_=class_, **args)
+        shape_method = getattr(self, shape or self.name_shape)
+        return shape_method(class_=class_, **args)
 
     def auto_name(self, text, **args):
         width = int(self.unit * 2 + (self.unit * text_width(text)))
@@ -71,7 +78,7 @@ class PyFig(SvgFig):
             dst_angle = 0
             if scooch:
                 dst = dst[0], dst[1] + scooch*self.unit
-                dst_angle = scooch*-45
+                dst_angle = scooch*-90
             self.connect(name.east, 0, dst, dst_angle, class_="arrow", **args)
 
     def frame(self, n_names=None, **args):

@@ -159,9 +159,31 @@ class SvgFig(object):
         rad = size[1]/2
         return self.rect(rx=rad, ry=rad, **args)
 
-    def text_for_box(self, text, box, **args):
+    def tag(self, **args):
+        box = Box(args)
+        text = poparg(args, text=None)
+        if self.should_draw(box, args):
+            inset = box.h / 8
+            points = [
+                (box.left, box.top),
+                (box.right - inset, box.top),
+                (box.right, box.cy),
+                (box.right - inset, box.bottom),
+                (box.left, box.bottom),
+            ]
+            p = self.dwg.polygon(points=points, **args)
+            self.root.add(p)
+
+            self.text_for_box(text, box, scooch=(-box.h / 16, 0))
+        self._add_to_bbox(box)
+        return box
+
+    def text_for_box(self, text, box, scooch=None, **args):
         if text and self.should_draw(box, args):
-            t = self.dwg.text(text, insert=box.center, text_anchor="middle", dy=[".3em"], **args)
+            insert = box.center
+            if scooch:
+                insert = (insert[0]+scooch[0], insert[1]+scooch[1])
+            t = self.dwg.text(text, insert=insert, text_anchor="middle", dy=[".3em"], **args)
             self.root.add(t)
 
     def line(self, start, end, **extra):
