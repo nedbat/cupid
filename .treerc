@@ -1,0 +1,6 @@
+[default]
+ignore =
+    .treerc
+    build
+    htmlcov
+    *.egg *.egg-info
