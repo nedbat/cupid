@@ -37,7 +37,7 @@ class PyFig(SvgFig):
         return self.rect(class_=class_, **args)
 
     def auto_name(self, text, **args):
-        width = self.unit * 2 + 12*len(text)
+        width = int(self.unit * 2 + (self.unit/2)*len(text))
         return self.name(pos=self.next_name(), size=(width,self.unit*2), text=text, **args)
 
     def int(self, **args):
