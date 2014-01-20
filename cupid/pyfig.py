@@ -63,11 +63,16 @@ class PyFig(SvgFig):
             box = box.translate(box.w, 0)
         return boxes
 
-    def reference(self, name, val, **args):
+    def reference(self, name, val, scooch=None, **args):
         sd_args = {}
         if self.should_draw(name, sd_args) and self.should_draw(val, sd_args):
             args.update(sd_args)
-            self.connect(name.east, 0, val.west, 0, class_="arrow", **args)
+            dst = val.west
+            dst_angle = 0
+            if scooch:
+                dst = dst[0], dst[1] + scooch*self.unit
+                dst_angle = scooch*-45
+            self.connect(name.east, 0, dst, dst_angle, class_="arrow", **args)
 
     def frame(self, n_names=None, **args):
         text = poparg(args, text=None)
