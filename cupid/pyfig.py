@@ -68,12 +68,27 @@ class PyFig(SvgFig):
             args.update(sd_args)
             self.connect(name.east, 0, val.west, 0, class_="arrow", **args)
 
-    def frame(self, **args):
+    def frame(self, n_names=None, **args):
         text = poparg(args, text=None)
         class_ = poparg(args, class_=None)
         rclass = add_class("frame", class_)
+
+        if 'pos' not in args:
+            args['pos'] = self.next_frame()
+
+        size = poparg(args, size=(200, 200))
+        if n_names:
+            size = (
+                size[0],
+                (
+                    self.unit +                     # The top margin and frame label
+                    (n_names * self.y_stride) +     # The names
+                    self.unit                       # The bottom margin
+                )
+            )
+
         r = int(self.unit * .8)
-        box = self.rect(class_=rclass, rx=r, ry=r, **args)
+        box = self.rect(class_=rclass, rx=r, ry=r, size=size, **args)
         tclass = add_class("framelabel", class_)
         if self.should_draw(box, args):
             text_box = Box({'center':(box.cx, box.top+self.unit), 'size':(box.w, self.unit)})
