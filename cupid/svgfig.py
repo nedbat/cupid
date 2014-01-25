@@ -22,6 +22,14 @@ class SvgFig(object):
         if title:
             self.dwg.set_desc(title=title)
 
+        # Draw a grid if desired.
+        if draw_grid:
+            self._draw_a_grid(self.size or (1000, 1000))
+
+        # Indicate which animation frame this is, if desired.
+        if label_frames:
+            self.dwg.add(self.dwg.text(str(frame_num), insert=(2, 20), class_="framenum"))
+
         need_container = scale or not self.size
 
         if need_container:
@@ -38,14 +46,6 @@ class SvgFig(object):
         # Markers we might eventually create.
         self._arrow = None
         self._dot = None
-
-        # Draw a grid if desired.
-        if draw_grid:
-            self._draw_a_grid(size or (1000, 1000))
-
-        # Indicate which animation frame this is, if desired.
-        if label_frames:
-            self.dwg.add(self.dwg.text(str(frame_num), insert=(2, 20), class_="framenum"))
 
     def _draw_a_grid(self, size):
         grid = self.dwg.g(class_="grid")
