@@ -55,7 +55,7 @@ class Box(object):
         assert size, "Have to specify a size!"
 
         pos_name = pos = None
-        arg_names = "left center right topleft topright".split()
+        arg_names = "left center right top topleft topright".split()
         for arg_name in arg_names:
             arg = poparg(args, **{arg_name: None})
             if arg is not None:
@@ -75,6 +75,8 @@ class Box(object):
             center = (pos[0]-size[0]/2, pos[1])
         elif pos_name == 'center':
             center = pos
+        elif pos_name == 'top':
+            center = (pos[0], pos[1]+size[1]/2)
         elif pos_name == 'topleft':
             center = (pos[0]+size[0]/2, pos[1]+size[1]/2)
         elif pos_name == 'topright':

@@ -77,6 +77,7 @@ class BoxTest(unittest.TestCase):
         b = Box(dict(size=(10, 50), left=(100, 200)))
         self.assertEqual(b, Box(dict(size=(10, 50), right=(110, 200))))
         self.assertEqual(b, Box(dict(size=(10, 50), center=(105, 200))))
+        self.assertEqual(b, Box(dict(size=(10, 50), top=(105, 175))))
         self.assertEqual(b, Box(dict(size=(10, 50), topleft=(100, 175))))
         self.assertEqual(b, Box(dict(size=(10, 50), topright=(110, 175))))
 
