@@ -289,6 +289,7 @@ def pathop(op, *coords):
     return res
 
 def offset(point, angle, dist):
+    """Find the point `dist` from `point`, in the direction `angle`."""
     x, y = point
     angle = math.radians(angle)
     x += dist * math.cos(angle)
@@ -296,6 +297,7 @@ def offset(point, angle, dist):
     return x, y
 
 def distance(start, end):
+    """Calculate the distance between two points."""
     x0, y0 = start
     x1, y1 = end
     dx = x1 - x0
@@ -304,15 +306,16 @@ def distance(start, end):
     return start_to_end
 
 def midpoint(start, end):
+    """Find the mid-point between two points."""
     x0, y0 = start
     x1, y1 = end
     return (x0+x1)/2, (y0+y1)/2
 
 def toward(start, dist, end):
+    """Find the point that is `dist` from `start`, headed toward `end`."""
     x0, y0 = start
     x1, y1 = end
     dx = x1 - x0
     dy = y1 - y0
-    start_to_end = math.sqrt(dx*dx + dy*dy)
-    frac = float(dist) / start_to_end
+    frac = float(dist) / distance(start, end)
     return x0 + frac*dx, y0 + frac*dy
