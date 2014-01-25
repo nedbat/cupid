@@ -1,5 +1,6 @@
 """Tests of tests/tools.py"""
 
+import glob
 import os
 import unittest
 
@@ -44,31 +45,51 @@ class SvgTestTest(SvgTest):
     def test_success(self):
         # assert_same_svg uses renumbering, so equivalent but not identical
         # SVG will pass the assert.
-        self.assert_same_svg(
-            "<svg id='id10'><x id='id20' y='#id10'/></svg>",
-            "<svg id='id99'><x id='id98' y='#id99'/></svg>"
-        )
+        self.assert_good_svg("<svg id='id10'><x id='id20' y='#id10'/></svg>")
 
     def test_failure(self):
-        # assert_same_svg will get write failures to files for examination.
+        # assert_good_svg will get write failures to files for examination.
         # The rewriting includes the new numbering, and also some newlines for
         # making the SVG more readable.
-        with self.assertRaises(AssertionError):
-            self.assert_same_svg(
-                "<svg id='id10'><x id='id20' y='#id10'/></svg>",
-                "<svg id='id99'><x id='id98' y='#id97'/></svg>"
+
+        # There should be no result files stored for this test.
+        self.assertEqual(glob.glob(self.result_file_name("*", ".*")), [])
+
+        # Write a bogus "ok" file, so the test will fail.
+        ok_out_filename = self.result_file_name("ok", ".out")
+        self.addCleanup(os.remove, ok_out_filename)
+        with open(ok_out_filename, "w") as ok_out:
+            ok_out.write(
+                "<svg id='id99'><x id='id98' y='#id97'/></svg>\n"
             )
 
-        # assert_same_svg has written two html files with the two strings.
-        self.addCleanup(os.remove, "test_failure_1.html")
-        self.addCleanup(os.remove, "test_failure_2.html")
-        with open("test_failure_1.html") as t1:
+        # Now assert_good_svg will raise an AssertionError.
+        with self.assertRaises(AssertionError):
+            self.assert_good_svg(
+                "<svg id='id10'><x id='id20' y='#id10'/></svg>",
+            )
+
+        # assert_good_svg has written an out file and two html files.
+        xx_out_filename = self.result_file_name("xx", ".out")
+        self.addCleanup(os.remove, xx_out_filename)
+        with open(xx_out_filename) as xx_out:
             self.assertIn(
                 "<svg id='newid0'>\n<x id='newid1' y='#newid0'/>\n</svg>",
-                t1.read()
+                xx_out.read()
             )
-        with open("test_failure_2.html") as t2:
+
+        ok_html_filename = self.result_file_name("ok", ".html")
+        self.addCleanup(os.remove, ok_html_filename)
+        with open(ok_html_filename) as ok_html:
             self.assertIn(
                 "<svg id='newid0'>\n<x id='newid1' y='#newid2'/>\n</svg>",
-                t2.read()
+                ok_html.read()
+            )
+
+        xx_html_filename = self.result_file_name("xx", ".html")
+        self.addCleanup(os.remove, xx_html_filename)
+        with open(xx_html_filename) as xx_html:
+            self.assertIn(
+                "<svg id='newid0'>\n<x id='newid1' y='#newid0'/>\n</svg>",
+                xx_html.read()
             )

@@ -5,10 +5,14 @@ import functools
 import glob
 import itertools
 import os
+import os.path
 import re
 import unittest
 
 from cupid.pyfig import PyFig
+
+
+HERE = os.path.dirname(__file__)
 
 
 def renumber_svg_ids(svg):
@@ -62,26 +66,53 @@ class SvgTest(unittest.TestCase):
 
     maxDiff = None  # Show me error diffs, no matter how long.
 
-    def assert_same_svg(self, svg1, svg2):
-        """Assert that two SVG figures are the same.
+    def result_file_name(self, slug, ext):
+        """Make a file name for a test result.
 
-        SVG has ids in it that might differ.  Replace them, but preserve
-        identity within the SVG.
+        The name of the test is used as part of the file name, with `slug`
+        added in, and an extension of `ext`, which should include the dot.
 
         """
-        svg1 = canonicalize_svg(svg1)
-        svg2 = canonicalize_svg(svg2)
-        if svg1 != svg2:
-            for i, svg in enumerate([svg1, svg2], start=1):
-                fname = "{}_{}.html".format(self._testMethodName, i)
-                with open(fname, "w") as svgout:
-                    svgout.write("<!DOCTYPE html>\n<html><head><style>\n")
-                    svgout.write(PyFig.CSS)
-                    svgout.write("</style></head><body><div>")
-                    svgout.write(svg)
-                    svgout.write("</div></body></html>\n")
+        test_name = self._testMethodName
+        assert test_name.startswith("test_")
+        file_name = "{}_{}{}".format(test_name[5:], slug, ext)
+        return os.path.join(HERE, "results", file_name)
+
+    def assert_good_svg(self, svg):
+        """Assert that an SVG result is correct.
+
+        The name of the test is used to find a saved file of the correct
+        output. `svg` is compared to it.  `svg` doesn't actually have to be
+        SVG, we also use this function for HTML mixed with SVG.
+
+        If the test fails, then `svg` is written to a file, and two .html files
+        are written that show the figures, so they can be viewed in a browser
+        and compared.
+
+        """
+        try:
+            with open(self.result_file_name("ok", ".out")) as f:
+                svg_good = canonicalize_svg(f.read())
+        except IOError:                     # pragma: no cover
+            # Maybe we don't have a good file to compare with.
+            svg_good = "<svg></svg>"
+
+        svg = canonicalize_svg(svg)
+        if svg != svg_good:
+            with open(self.result_file_name("xx", ".out"), "w") as out:
+                out.write(svg)
+
+            for kind, content in zip(["ok", "xx"], [svg_good, svg]):
+                with open(self.result_file_name(kind, ".html"), "w") as out:
+                    out.write("<!DOCTYPE html>\n<html><head><style>\n")
+                    out.write(PyFig.CSS)
+                    out.write("</style></head><body><div>")
+                    out.write(content)
+                    out.write("</div></body></html>\n")
         else:
-            # Remove any remaining previous test failures.
-            for fname in glob.glob("{}_?.html".format(self._testMethodName)):
-                os.remove(fname)        # pragma: no cover
-        self.assertMultiLineEqual(svg1, svg2)
+            for file_parts in [("xx", ".out"), ("xx", ".html"), ("ok", ".html")]:
+                fname = self.result_file_name(*file_parts)
+                if os.path.exists(fname):
+                    os.remove(fname)        # pragma: no cover
+
+        self.assertMultiLineEqual(svg, svg_good)

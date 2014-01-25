@@ -1,0 +1,59 @@
+<!-- Animation {{{ -->
+<div class="overlay">
+<pre class="python tophalf">
+            nums = [1, 2, 3]
+            other = nums
+</pre>
+</div>
+<div class="overlay incremental">
+<pre class="python tophalf" select="1">
+            nums = [1, 2, 3]
+            other = nums
+</pre>
+<div class="opaque bottomhalf" style="text-align:center">
+<svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<marker id='newid0' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+<path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+</marker>
+</defs>
+<rect class="name" height="50" width="105" x="95" y="25" />
+<text dy=".3em" text-anchor="middle" x="147.5" y="50">nums</text>
+<rect class="list" height="50" width="40" x="275" y="25" />
+<text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+<rect class="list" height="50" width="40" x="315" y="25" />
+<text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+<rect class="list" height="50" width="40" x="355" y="25" />
+<text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+<path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#newid0)" />
+</svg>
+</div>
+</div>
+<div class="overlay incremental">
+<pre class="python tophalf" select="2">
+            nums = [1, 2, 3]
+            other = nums
+</pre>
+<div class="opaque bottomhalf" style="text-align:center">
+<svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<marker id='newid1' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+<path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+</marker>
+</defs>
+<rect class="name" height="50" width="105" x="95" y="25" />
+<text dy=".3em" text-anchor="middle" x="147.5" y="50">nums</text>
+<rect class="list" height="50" width="40" x="275" y="25" />
+<text dy=".3em" text-anchor="middle" x="295" y="50">1</text>
+<rect class="list" height="50" width="40" x="315" y="25" />
+<text dy=".3em" text-anchor="middle" x="335" y="50">2</text>
+<rect class="list" height="50" width="40" x="355" y="25" />
+<text dy=".3em" text-anchor="middle" x="375" y="50">3</text>
+<path class="arrow" d="M 200,50 C 218,50 218,50 237,50 C 256,50 256,50 275,50" fill="none" marker-end="url(#newid1)" />
+<rect class="name" height="50" width="102" x="98" y="100" />
+<text dy=".3em" text-anchor="middle" x="149" y="125">other</text>
+<path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#newid1)" />
+</svg>
+</div>
+</div>
+<!-- }}} -->

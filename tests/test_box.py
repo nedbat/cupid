@@ -93,4 +93,4 @@ class BoxTest(unittest.TestCase):
 
         b1 = Box(dict(size=(1, 1), topleft=(100, 200)))
         b2 = Box(dict(size=(1, 1), topleft=(200, 300)))
-        self.assertEqual(b1.union(b2), Box(dict(size=(100, 100), topleft=(100, 200))))
+        self.assertEqual(b1.union(b2), Box(dict(size=(101, 101), topleft=(100, 200))))

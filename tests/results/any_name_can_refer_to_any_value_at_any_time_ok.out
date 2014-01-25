@@ -1,0 +1,143 @@
+<!-- Animation {{{ -->
+<div class="overlay">
+<pre class="python tophalf">
+            x = 12
+            x = "hello"
+            x = [1, 2, 3]
+            x[1] = "two"
+</pre>
+</div>
+<div class="overlay incremental">
+<pre class="python tophalf" select="1">
+            x = 12
+            x = "hello"
+            x = [1, 2, 3]
+            x[1] = "two"
+</pre>
+<div class="opaque bottomhalf" style="text-align:center">
+<svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<marker id='newid0' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+<path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+</marker>
+<marker id='newid1' markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
+<circle cx="2" cy="2" fill="black" r="2" stroke="none" />
+</marker>
+</defs>
+<rect class="name" height="50" width="62" x="138" y="100" />
+<text dy=".3em" text-anchor="middle" x="169" y="125">x</text>
+<circle class="int value" cx="300" cy="50" r="25" />
+<text dy=".3em" text-anchor="middle" x="300" y="50">12</text>
+<path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#newid0)" />
+</svg>
+</div>
+</div>
+<div class="overlay incremental">
+<pre class="python tophalf" select="2">
+            x = 12
+            x = "hello"
+            x = [1, 2, 3]
+            x[1] = "two"
+</pre>
+<div class="opaque bottomhalf" style="text-align:center">
+<svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<marker id='newid2' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+<path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+</marker>
+<marker id='newid3' markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
+<circle cx="2" cy="2" fill="black" r="2" stroke="none" />
+</marker>
+</defs>
+<rect class="name" height="50" width="62" x="138" y="100" />
+<text dy=".3em" text-anchor="middle" x="169" y="125">x</text>
+<circle class="int value" cx="300" cy="50" opacity="0.25" r="25" />
+<text dy=".3em" opacity="0.25" text-anchor="middle" x="300" y="50">12</text>
+<path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#newid2)" opacity="0.25" />
+<rect class="string value" height="50" rx="25" ry="25" width="130" x="275" y="100" />
+<text dy=".3em" text-anchor="middle" x="340" y="125">'hello'</text>
+<path class="arrow" d="M 200,125 C 218,125 218,125 237,125 C 256,125 256,125 275,125" fill="none" marker-end="url(#newid2)" />
+</svg>
+</div>
+</div>
+<div class="overlay incremental">
+<pre class="python tophalf" select="3">
+            x = 12
+            x = "hello"
+            x = [1, 2, 3]
+            x[1] = "two"
+</pre>
+<div class="opaque bottomhalf" style="text-align:center">
+<svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<marker id='newid4' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+<path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+</marker>
+<marker id='newid5' markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
+<circle cx="2" cy="2" fill="black" r="2" stroke="none" />
+</marker>
+</defs>
+<rect class="name" height="50" width="62" x="138" y="100" />
+<text dy=".3em" text-anchor="middle" x="169" y="125">x</text>
+<circle class="int value" cx="300" cy="50" opacity="0.25" r="25" />
+<text dy=".3em" opacity="0.25" text-anchor="middle" x="300" y="50">12</text>
+<path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#newid4)" opacity="0.25" />
+<rect class="string value" height="50" opacity="0.25" rx="25" ry="25" width="130" x="275" y="100" />
+<text dy=".3em" opacity="0.25" text-anchor="middle" x="340" y="125">'hello'</text>
+<path class="arrow" d="M 200,125 C 218,125 218,125 237,125 C 256,125 256,125 275,125" fill="none" marker-end="url(#newid4)" opacity="0.25" />
+<rect class="list" height="50" width="40" x="275" y="175" />
+<text dy=".3em" text-anchor="middle" x="295" y="200">1</text>
+<rect class="list" height="50" width="40" x="315" y="175" />
+<text dy=".3em" text-anchor="middle" x="335" y="200">2</text>
+<rect class="list" height="50" width="40" x="355" y="175" />
+<text dy=".3em" text-anchor="middle" x="375" y="200">3</text>
+<path class="arrow" d="M 200,125 C 226,125 230,137 237,162 C 244,187 248,200 275,200" fill="none" marker-end="url(#newid4)" />
+</svg>
+</div>
+</div>
+<div class="overlay incremental">
+<pre class="python tophalf" select="4">
+            x = 12
+            x = "hello"
+            x = [1, 2, 3]
+            x[1] = "two"
+</pre>
+<div class="opaque bottomhalf" style="text-align:center">
+<svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<marker id='newid6' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+<path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+</marker>
+<marker id='newid7' markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
+<circle cx="2" cy="2" fill="black" r="2" stroke="none" />
+</marker>
+</defs>
+<rect class="name" height="50" width="62" x="138" y="100" />
+<text dy=".3em" text-anchor="middle" x="169" y="125">x</text>
+<circle class="int value" cx="300" cy="50" opacity="0.25" r="25" />
+<text dy=".3em" opacity="0.25" text-anchor="middle" x="300" y="50">12</text>
+<path class="arrow" d="M 200,125 C 226,125 230,112 237,87 C 244,62 248,50 275,50" fill="none" marker-end="url(#newid6)" opacity="0.25" />
+<rect class="string value" height="50" opacity="0.25" rx="25" ry="25" width="130" x="275" y="100" />
+<text dy=".3em" opacity="0.25" text-anchor="middle" x="340" y="125">'hello'</text>
+<path class="arrow" d="M 200,125 C 218,125 218,125 237,125 C 256,125 256,125 275,125" fill="none" marker-end="url(#newid6)" opacity="0.25" />
+<rect class="list" height="50" width="40" x="275" y="175" />
+<text dy=".3em" text-anchor="middle" x="295" y="200">1</text>
+<rect class="list" height="50" width="40" x="315" y="175" />
+<text dy=".3em" text-anchor="middle" x="335" y="200">2</text>
+<rect class="list" height="50" width="40" x="355" y="175" />
+<text dy=".3em" text-anchor="middle" x="375" y="200">3</text>
+<path class="arrow" d="M 200,125 C 226,125 230,137 237,162 C 244,187 248,200 275,200" fill="none" marker-end="url(#newid6)" />
+<rect class="list" height="50" width="40" x="275" y="175" />
+<text dy=".3em" text-anchor="middle" x="295" y="200">1</text>
+<rect class="list" height="50" width="40" x="315" y="175" />
+<text dy=".3em" text-anchor="middle" x="335" y="200"> </text>
+<rect class="list" height="50" width="40" x="355" y="175" />
+<text dy=".3em" text-anchor="middle" x="375" y="200">3</text>
+<path class="arrow" d="M 200,125 C 226,125 230,137 237,162 C 244,187 248,200 275,200" fill="none" marker-end="url(#newid6)" />
+<rect class="string value" height="50" rx="25" ry="25" width="100" x="285" y="250" />
+<text dy=".3em" text-anchor="middle" x="335" y="275">'two'</text>
+<path class="arrow" d="M 335,200 C 335,212 335,212 335,225 C 335,237 335,237 335,250" fill="none" marker-end="url(#newid6)" marker-start="url(#newid7)" />
+</svg>
+</div>
+</div>
+<!-- }}} -->

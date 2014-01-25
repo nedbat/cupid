@@ -1,5 +1,6 @@
 """Make figures with SVG."""
 
+from __future__ import division
 import math
 
 import svgwrite
@@ -132,8 +133,8 @@ class SvgFig(object):
         text = poparg(args, text=None)
         if self.should_draw(box, args):
             r = self.dwg.rect(
-                insert=(box.left, box.top),
-                size=box.size,
+                insert=nice_point((box.left, box.top)),
+                size=nice_point(box.size),
                 **args
             )
             self.root.add(r)
@@ -147,8 +148,8 @@ class SvgFig(object):
         text = poparg(args, text=None)
         if self.should_draw(box, args):
             c = self.dwg.circle(
-                center=box.center,
-                r=box.size[0]/2,
+                center=nice_point(box.center),
+                r=nice_number(box.size[0]/2),
                 **args
             )
             self.root.add(c)
@@ -159,7 +160,7 @@ class SvgFig(object):
 
     def pill(self, **args):
         size = args.get('size')
-        rad = size[1]/2
+        rad = nice_number(size[1]/2)
         return self.rect(rx=rad, ry=rad, **args)
 
     def tag(self, **args):
@@ -168,11 +169,11 @@ class SvgFig(object):
         if self.should_draw(box, args):
             inset = box.h / 8
             points = [
-                (box.left, box.top),
-                (box.right - inset, box.top),
-                (box.right, box.cy),
-                (box.right - inset, box.bottom),
-                (box.left, box.bottom),
+                nice_point((box.left, box.top)),
+                nice_point((box.right - inset, box.top)),
+                nice_point((box.right, box.cy)),
+                nice_point((box.right - inset, box.bottom)),
+                nice_point((box.left, box.bottom)),
             ]
             p = self.dwg.polygon(points=points, **args)
             self.root.add(p)
@@ -186,7 +187,7 @@ class SvgFig(object):
             insert = box.center
             if scooch:
                 insert = (insert[0]+scooch[0], insert[1]+scooch[1])
-            t = self.dwg.text(text, insert=insert, text_anchor="middle", dy=[".3em"], **args)
+            t = self.dwg.text(text, insert=nice_point(insert), text_anchor="middle", dy=[".3em"], **args)
             self.root.add(t)
 
     def line(self, start, end, **extra):
@@ -281,6 +282,20 @@ class SvgFig(object):
         fill: #f00;
     }
     """
+
+def nice_number(num):
+    """If num can be an int, make it an int."""
+    if int(num) == num:
+        return int(num)
+    else:
+        return num
+
+def nice_numbers(*nums):
+    for num in nums:
+        yield nice_number(num)
+
+def nice_point(pt):
+    return tuple(nice_numbers(*pt))
 
 def pathop(op, *coords):
     res = op

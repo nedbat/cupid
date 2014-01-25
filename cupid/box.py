@@ -1,5 +1,7 @@
 """Box geometry."""
 
+from __future__ import division
+
 from .helpers import poparg
 
 
@@ -13,7 +15,7 @@ class Box(object):
         >>> args = {'foo': 17, 'size': (10, 50), 'left': (100, 200)}
         >>> b = Box(args)
         >>> b.center
-        (105, 200)
+        (105.0, 200)
         >>> b.size
         (10, 50)
         >>> args
@@ -22,7 +24,7 @@ class Box(object):
     The center and size are available as individual components also::
 
         >>> b.cx
-        105
+        105.0
         >>> b.cy
         200
         >>> b.w
@@ -34,13 +36,13 @@ class Box(object):
     right) or points (north, south, east, west)::
 
         >>> b.north
-        (105, 175)
+        (105.0, 175.0)
         >>> b.south
-        (105, 225)
+        (105.0, 225.0)
         >>> b.top
-        175
+        175.0
         >>> b.bottom
-        225
+        225.0
 
     """
 
