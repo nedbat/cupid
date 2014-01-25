@@ -146,8 +146,9 @@ class PyFig(SvgFig):
 # The string encodes the widths of characters (starting with space), in tenths
 # of the point size, "0" = .1, "1" = .2, etc.
 # The widths are the average of Times and Helvetica.
+#          !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
 WIDTHS = "22344862223522224444444444225554966665576236586757655668665222442444442442242744442324464443135"
-GLYPH_WIDTHS = { chr(c+ord(' ')) : (int(WIDTHS[c])+1)/10 for c in range(len(WIDTHS)) }
+GLYPH_WIDTHS = { chr(c): (int(w)+1)/10 for c, w in enumerate(WIDTHS, ord(' ')) }
 
 def text_width(text):
     """Rough guess of the rendered width of the text.

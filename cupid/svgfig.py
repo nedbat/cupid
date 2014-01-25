@@ -76,6 +76,9 @@ class SvgFig(object):
         else:
             self.bbox = box
 
+    def bounding_box(self):
+        return self.bbox
+
     @property
     def ARROW(self):
         if self._arrow is None:
