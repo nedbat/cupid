@@ -18,6 +18,19 @@ class PyFig(SvgFig):
         self.name_right = name_right or self.unit*8
         self.val_left = self.name_right + (val_gap or self.unit*3)
         self.name_shape = name_shape
+        self.code_for_top = None
+
+    def top_code(self, code):
+        """Add a line of code to the top of the figure."""
+        self.code_for_top = (self.y, code)
+        self.y += self.unit*1.5
+
+    def finish_figure(self):
+        if self.code_for_top:
+            y, code = self.code_for_top
+            fig_box = self.bounding_box()
+            self.text(code, center=(fig_box.cx, y), size=(fig_box.w, self.unit*2), class_="top_code")
+        super(PyFig, self).finish_figure()
 
     def next_name(self):
         """Produce a position for the next name."""

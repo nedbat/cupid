@@ -104,9 +104,13 @@ class SvgFig(object):
             self.dwg.defs.add(self._dot)
         return self._dot
 
+    def finish_figure(self):
+        pass
+
     def tostring(self):
+        self.finish_figure()
         if not self.size:
-            margin = 10
+            margin = 2
             bbox = self.bbox
             #if self.scale:
             #    bbox = bbox.scale(self.scale)
@@ -181,6 +185,13 @@ class SvgFig(object):
             self.text_for_box(text, box, scooch=(-box.h / 16, 0))
         self._add_to_bbox(box)
         return box
+
+    def text(self, text, **args):
+        box = Box(args)
+        if self.should_draw(box, args):
+            self.text_for_box(text, box, **args)
+        textbox = Box(dict(center=box.center, size=(box.w, .6*box.h)))
+        self._add_to_bbox(textbox)
 
     def text_for_box(self, text, box, scooch=None, **args):
         if text and self.should_draw(box, args):
