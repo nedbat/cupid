@@ -71,8 +71,13 @@ class PyFig(SvgFig):
         return self.pill(class_=class_, **args)
 
     def list(self, **args):
-        defarg(args, size=(int(self.unit*1.6), self.unit*2))
-        texts = poparg(args, texts=['x', 'y', 'z'])
+        elem_width = poparg(args, elem_width=1.6)
+        length = poparg(args, length=None)
+        if length is not None:
+            texts = [""] * length
+        else:
+            texts = poparg(args, texts=['x', 'y', 'z'])
+        defarg(args, size=(int(self.unit*elem_width), self.unit*2))
         box = Box(args)
         class_ = poparg(args, class_=None)
         class_ = add_class("list", class_)
