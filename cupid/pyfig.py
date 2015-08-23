@@ -86,6 +86,10 @@ class PyFig(SvgFig):
             b = self.rect(box=box, class_=class_, text=text, **args)
             boxes.append(b)
             box = box.translate(box.w, 0)
+
+        boxes = ListBox(boxes)
+        args = dict(size=(sum(b.w for b in boxes), boxes[0].h), left=boxes[0].west)
+        boxes.box = Box(args)
         return boxes
 
     def reference(self, name, val, scooch=None, **args):
@@ -159,6 +163,11 @@ class PyFig(SvgFig):
         font-family: monospace;
     }
     """
+
+class ListBox(list):
+    """A list we can add attributes to."""
+    pass
+
 
 # Crude glyph width for typical fonts.
 # The string encodes the widths of characters (starting with space), in tenths
