@@ -30,6 +30,10 @@ class BoxTest(unittest.TestCase):
         self.assertEqual(b.left, 100)
         self.assertEqual(b.right, 110)
 
+    def test_repr(self):
+        b = Box(dict(size=(10, 50), center=(100, 200)))
+        self.assertEqual(repr(b), "<Box =10x50 @100,200>")
+
     def test_equal(self):
         b1 = Box(dict(size=(10, 50), left=(100, 200)))
         b2 = Box(dict(size=(10, 50), right=(110, 200)))
@@ -85,6 +89,13 @@ class BoxTest(unittest.TestCase):
         b = Box(dict(size=(10, 50), left=(100, 200)))
         b2 = b.translate(dx=1000, dy=2000)
         self.assertEqual(b2, Box(dict(size=(10, 50), left=(1100, 2200))))
+
+    def test_scale(self):
+        b = Box(dict(size=(10, 50), left=(100, 200)))
+        b2 = b.scale(sx=2)
+        self.assertEqual(b2, Box(dict(size=(20, 100), left=(200, 400))))
+        b3 = b.scale(sx=2, sy=3)
+        self.assertEqual(b3, Box(dict(size=(20, 150), left=(200, 600))))
 
     def test_union(self):
         b1 = Box(dict(size=(10, 50), topleft=(100, 200)))
