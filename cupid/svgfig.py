@@ -167,18 +167,27 @@ class SvgFig(object):
         rad = nice_number(size[1]/2)
         return self.rect(rx=rad, ry=rad, **args)
 
-    def tag(self, **args):
+    def tag(self, face_left=False, **args):
         box = Box(args)
         text = poparg(args, text=None)
         if self.should_draw(box, args):
-            inset = box.h / 8
-            points = [
-                nice_point((box.left, box.top)),
-                nice_point((box.right - inset, box.top)),
-                nice_point((box.right, box.cy)),
-                nice_point((box.right - inset, box.bottom)),
-                nice_point((box.left, box.bottom)),
-            ]
+            inset = box.h / 6
+            if face_left:
+                points = [
+                    nice_point((box.left + inset, box.top)),
+                    nice_point((box.right, box.top)),
+                    nice_point((box.right, box.bottom)),
+                    nice_point((box.left + inset, box.bottom)),
+                    nice_point((box.left, box.cy)),
+                ]
+            else:
+                points = [
+                    nice_point((box.left, box.top)),
+                    nice_point((box.right - inset, box.top)),
+                    nice_point((box.right, box.cy)),
+                    nice_point((box.right - inset, box.bottom)),
+                    nice_point((box.left, box.bottom)),
+                ]
             p = self.dwg.polygon(points=points, **args)
             self.root.add(p)
 

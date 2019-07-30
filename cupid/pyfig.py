@@ -52,6 +52,9 @@ class PyFig(SvgFig):
     def end_frame(self):
         self.y += self.unit
 
+    def end_module(self):
+        self.y += self.unit
+
     def name(self, shape=None, **args):
         class_ = add_class("name", poparg(args, class_=None))
         shape_method = getattr(self, shape or self.name_shape)
@@ -104,9 +107,15 @@ class PyFig(SvgFig):
             self.connect(name.east, 0, dst, dst_angle, class_="arrow", **args)
 
     def frame(self, n_names=None, **args):
+        return self.container_box(n_names, first_class="frame", round=.8, **args)
+
+    def module(self, n_names=None, **args):
+        return self.container_box(n_names, first_class="module", round=.4, **args)
+
+    def container_box(self, n_names, first_class, round, **args):
         text = poparg(args, text=None)
         class_ = poparg(args, class_=None)
-        rclass = add_class("frame", class_)
+        rclass = add_class(first_class, class_)
 
         if 'pos' not in args:
             args['pos'] = self.next_frame()
@@ -122,9 +131,11 @@ class PyFig(SvgFig):
                 )
             )
 
-        r = int(self.unit * .8)
+        r = int(self.unit * round)
         box = self.rect(class_=rclass, rx=r, ry=r, size=size, **args)
-        tclass = add_class("framelabel", class_)
+        self.name_right = box.right - self.unit
+        self.y = box.top + self.y_stride - self.unit
+        tclass = add_class(first_class + "label", class_)
         if self.should_draw(box, args):
             text_box = Box({'center':(box.cx, box.top+self.unit), 'size':(box.w, self.unit)})
             # PAIN: having to dig out the opacity from args.
@@ -158,7 +169,19 @@ class PyFig(SvgFig):
         fill: none;
     }
 
+    svg .module {
+        stroke-width: 2;
+        stroke: #666;
+        stroke-dasharray: 5 5;
+        fill: none;
+    }
+
     svg text.framelabel {
+        font-size: 75%;
+        font-family: monospace;
+    }
+
+    svg text.modulelabel {
         font-size: 75%;
         font-family: monospace;
     }
