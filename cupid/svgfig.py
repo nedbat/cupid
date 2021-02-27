@@ -85,10 +85,10 @@ class SvgFig(object):
         if self._arrow is None:
             # Define our arrow.
             self._arrow = self.dwg.marker(
-                insert=(10,5), size=(10,10), orient="auto",
+                class_="arrowend", insert=(10,5), size=(10,10), orient="auto",
             )
             self._arrow.viewbox(0, 0, 10, 10)
-            self._arrow.add(self.dwg.path(d="M 0,0 L 10,5 L 0,10 L 1,5 z", stroke="none", fill="black"))
+            self._arrow.add(self.dwg.path(d="M 0,0 L 10,5 L 0,10 L 1,5 z"))
             self.dwg.defs.add(self._arrow)
         return self._arrow
 
@@ -97,10 +97,10 @@ class SvgFig(object):
         if self._dot is None:
             # Define our dot.
             self._dot = self.dwg.marker(
-                insert=(2,2), size=(4,4), orient="auto",
+                class_="arrowend", insert=(2,2), size=(4,4), orient="auto",
             )
             self._dot.viewbox(0, 0, 4, 4)
-            self._dot.add(self.dwg.circle(center=(2,2), r=2, stroke="none", fill="black"))
+            self._dot.add(self.dwg.circle(center=(2,2), r=2))
             self.dwg.defs.add(self._dot)
         return self._dot
 
@@ -268,6 +268,11 @@ class SvgFig(object):
         fill: none;
         stroke: black;
         stroke-width: 1;
+    }
+
+    svg .arrowend {
+        fill: black;
+        stroke: none;
     }
 
     svg .highlight {

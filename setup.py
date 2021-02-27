@@ -7,7 +7,7 @@ with open("README.rst") as readme:
 
 setup(
     name="Cupid",
-    version="0.4",
+    version="0.5",
     description="Cupid SVG figure-drawing",
     long_description=long_description,
     author="Ned Batchelder",

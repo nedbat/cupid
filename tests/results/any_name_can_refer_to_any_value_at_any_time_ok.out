@@ -17,11 +17,11 @@
 <div class="opaque bottomhalf" style="text-align:center">
 <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<marker id='newid0' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
-<path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+<marker class="arrowend" id='newid0' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+<path d="M 0,0 L 10,5 L 0,10 L 1,5 z" />
 </marker>
-<marker id='newid1' markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
-<circle cx="2" cy="2" fill="black" r="2" stroke="none" />
+<marker class="arrowend" id='newid1' markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
+<circle cx="2" cy="2" r="2" />
 </marker>
 </defs>
 <rect class="name" height="50" width="62" x="138" y="100" />
@@ -42,11 +42,11 @@
 <div class="opaque bottomhalf" style="text-align:center">
 <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<marker id='newid2' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
-<path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+<marker class="arrowend" id='newid2' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+<path d="M 0,0 L 10,5 L 0,10 L 1,5 z" />
 </marker>
-<marker id='newid3' markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
-<circle cx="2" cy="2" fill="black" r="2" stroke="none" />
+<marker class="arrowend" id='newid3' markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
+<circle cx="2" cy="2" r="2" />
 </marker>
 </defs>
 <rect class="name" height="50" width="62" x="138" y="100" />
@@ -70,11 +70,11 @@
 <div class="opaque bottomhalf" style="text-align:center">
 <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<marker id='newid4' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
-<path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+<marker class="arrowend" id='newid4' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+<path d="M 0,0 L 10,5 L 0,10 L 1,5 z" />
 </marker>
-<marker id='newid5' markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
-<circle cx="2" cy="2" fill="black" r="2" stroke="none" />
+<marker class="arrowend" id='newid5' markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
+<circle cx="2" cy="2" r="2" />
 </marker>
 </defs>
 <rect class="name" height="50" width="62" x="138" y="100" />
@@ -105,11 +105,11 @@
 <div class="opaque bottomhalf" style="text-align:center">
 <svg baseProfile="full" height="400" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<marker id='newid6' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
-<path d="M 0,0 L 10,5 L 0,10 L 1,5 z" fill="black" stroke="none" />
+<marker class="arrowend" id='newid6' markerHeight="10" markerWidth="10" orient="auto" refX="10" refY="5" viewBox="0,0,10,10">
+<path d="M 0,0 L 10,5 L 0,10 L 1,5 z" />
 </marker>
-<marker id='newid7' markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
-<circle cx="2" cy="2" fill="black" r="2" stroke="none" />
+<marker class="arrowend" id='newid7' markerHeight="4" markerWidth="4" orient="auto" refX="2" refY="2" viewBox="0,0,4,4">
+<circle cx="2" cy="2" r="2" />
 </marker>
 </defs>
 <rect class="name" height="50" width="62" x="138" y="100" />
