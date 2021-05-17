@@ -19,7 +19,8 @@ class SvgFig(object):
 
         self.scale = scale
         self.size = extra.get('size')
-        self.dwg = svgwrite.Drawing(debug=True, **extra)
+        viewbox = "0 0 {} {}".format(*self.size)
+        self.dwg = svgwrite.Drawing(debug=True, viewBox=viewbox, **extra)
         if title:
             self.dwg.set_desc(title=title)
 
