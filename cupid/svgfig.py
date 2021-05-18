@@ -19,8 +19,7 @@ class SvgFig(object):
 
         self.scale = scale
         self.size = extra.get('size')
-        viewbox = "0 0 {} {}".format(*self.size)
-        self.dwg = svgwrite.Drawing(debug=True, viewBox=viewbox, **extra)
+        self.dwg = svgwrite.Drawing(debug=True, **extra)
         if title:
             self.dwg.set_desc(title=title)
 
@@ -110,7 +109,9 @@ class SvgFig(object):
 
     def tostring(self):
         self.finish_figure()
-        if not self.size:
+        if self.size:
+            w, h = self.size
+        else:
             margin = 2
             bbox = self.bbox
             #if self.scale:
@@ -118,8 +119,11 @@ class SvgFig(object):
             tx, ty = bbox.left, bbox.top
             self.root.translate(margin-tx, margin-ty)
             w, h = bbox.size
-            self.dwg['width'] = w + margin * 2
-            self.dwg['height'] = h + margin * 2
+            w += margin * 2
+            h += margin * 2
+            self.dwg['width'] = w
+            self.dwg['height'] = h
+        self.dwg["viewBox"] = "0 0 {} {}".format(w, h)
         return self.dwg.tostring()
 
     def should_draw(self, box, args):
