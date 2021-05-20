@@ -140,6 +140,7 @@ class SvgFig(object):
     def rect(self, **args):
         box = Box(args)
         text = poparg(args, text=None)
+        default_graphics(args)
         if self.should_draw(box, args):
             r = self.dwg.rect(
                 insert=nice_point((box.left, box.top)),
@@ -155,6 +156,7 @@ class SvgFig(object):
     def circle(self, **args):
         box = Box(args)
         text = poparg(args, text=None)
+        default_graphics(args)
         if self.should_draw(box, args):
             c = self.dwg.circle(
                 center=nice_point(box.center),
@@ -175,6 +177,7 @@ class SvgFig(object):
     def tag(self, face_left=False, **args):
         box = Box(args)
         text = poparg(args, text=None)
+        default_graphics(args)
         if self.should_draw(box, args):
             inset = box.h / 6
             if face_left:
@@ -215,8 +218,9 @@ class SvgFig(object):
             t = self.dwg.text(text, insert=nice_point(insert), text_anchor="middle", dy=[".3em"], **args)
             self.root.add(t)
 
-    def line(self, start, end, **extra):
-        l = self.dwg.polyline([start, end], **extra)
+    def line(self, start, end, **args):
+        default_graphics(args, fill=False)
+        l = self.dwg.polyline([start, end], **args)
         l['marker-end'] = self.ARROW.get_funciri()
         self.root.add(l)
 
@@ -240,6 +244,7 @@ class SvgFig(object):
             pathops.append(pathop("C", start_jump, pre_mid, mid))
             pathops.append(pathop("C", post_mid, end_jump, end))
 
+            default_graphics(args, fill=False)
             p = self.dwg.path(" ".join(pathops), fill="none", **args)
             p['marker-end'] = self.ARROW.get_funciri()
             if start_marker:
@@ -312,6 +317,17 @@ class SvgFig(object):
         fill: #f00;
     }
     """
+
+def default_graphics(args, fill=True):
+    """Write the default graphic styling in the args."""
+    if fill:
+        args.setdefault("fill", "white")
+    args.setdefault("stroke", "black")
+    cls = args.get("class_", "")
+    if cls:
+        args["class_"] += " normal"
+    else:
+        args["class_"] = "normal"
 
 def nice_number(num):
     """If num can be an int, make it an int."""
